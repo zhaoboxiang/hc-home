@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Product</h1>
+    <h1>components文件夹蛀牙放一些可复用都公共组件</h1>
   </div>
 </template>
 
