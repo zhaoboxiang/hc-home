@@ -1,11 +1,13 @@
 <template>
   <div class="home">
-    <h1>虹川科技</h1>
+    <hc-header></hc-header>
   </div>
 </template>
 
 <script>
+  import HcHeader from "../components/hc-header";
 export default {
-  name: "home"
+  name: "home",
+  components: { HcHeader }
 };
 </script>
