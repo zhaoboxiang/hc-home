@@ -8,4 +8,9 @@
 export default {};
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="less" scoped>
+h1 {
+  height: 10px;
+  color: green;
+}
+</style>
