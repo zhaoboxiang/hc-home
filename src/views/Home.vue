@@ -2,9 +2,8 @@
   <div class="home">
     <hc-header></hc-header>
     <!--banner-->
-    <div class="banner-content">
-      <div class="content slider-content">banner</div>
-    </div>
+    <!--<banner-slider></banner-slider>-->
+    <!--<banner>tte</banner>-->
     <!--关于我们-->
     <div class="section-box intro-box">
       <div class="content intro">
@@ -25,7 +24,7 @@
       <div class="content">
         <h3>专业领域</h3>
         <h6>四大核心领域，专业的场景化解决方案</h6>
-        <div class="core-item-box">
+        <div class="core-item-box" @click="changeCore">
           <div class="item core-city">
             <div class="img"></div>
             <div class="txt">智慧城市</div>
@@ -90,6 +89,84 @@
           </div>
         </div>
       </div>
+      <div class="business-item content">
+        <div class="title-box">
+          <div class="business-title">
+            <b>智慧环保</b><span>覆盖生态环境全数据，为中国生态保驾护航</span>
+          </div>
+          <div class="btn btn-white">了解更多</div>
+        </div>
+        <div class="business-content">
+          <ul>
+            <li>
+              <span>大气环境监控</span>
+              <span>企业电量监控</span>
+              <span>AI图像识别</span>
+              <span>污染源特征分析</span>
+              <span>臭氧动态溯源</span>
+            </li>
+            <li>
+              <span>环境综合分析报告</span>
+              <span>网格监管</span>
+              <span>重污染天气应对</span>
+              <span>空气质量评估</span>
+              <span>节能减排评估</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="business-item content">
+        <div class="title-box">
+          <div class="business-title">
+            <b>智慧水务</b><span>供水排水水务全流程管理，为城市生活供给生</span>
+          </div>
+          <div class="btn btn-white">了解更多</div>
+        </div>
+        <div class="business-content">
+          <ul>
+            <li>
+              <span>水源水质监测</span>
+              <span>供排水管理</span>
+              <span>GIS管网</span>
+              <span>直饮水水质监测</span>
+              <span>水利管理</span>
+            </li>
+            <li>
+              <span>防汛抗旱</span>
+              <span>SCADA运行调度</span>
+              <span>河湖长制管理</span>
+              <span>海绵城市</span>
+              <span>污水处理监测</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="business-item content">
+        <div class="title-box">
+          <div class="business-title">
+            <b>智慧园区</b><span>让园区管理像操作APP一样简单</span>
+          </div>
+          <div class="btn btn-white">了解更多</div>
+        </div>
+        <div class="business-content">
+          <ul>
+            <li>
+              <span>物业管理</span>
+              <span>移动OA</span>
+              <span>招商管理</span>
+              <span>视频监控</span>
+              <span>客户管理</span>
+            </li>
+            <li>
+              <span>能耗管理</span>
+              <span>门禁管理</span>
+              <span>消防管理</span>
+              <span>租赁管理</span>
+              <span>资产管理</span>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <!--核心技术-->
     <div class="core-technology-box">
@@ -101,16 +178,16 @@
           已在环境监测、气象预测、灾难模拟等场景应用卓见成效。</p>
         <div class="tec-box">
           <div class="tec-item tec-item-one">
-            <div class="tips-en">big data</div>
+            <div class="tips-en">BIG DATA</div>
             <div class="tips-ch">大数据</div>
           </div>
           <div class="tec-item tec-item-two">
-            <div class="tips-en">big data</div>
-            <div class="tips-ch">大数据</div>
+            <div class="tips-en">INTERNET OF THINGS</div>
+            <div class="tips-ch">物联网</div>
           </div>
           <div class="tec-item tec-item-three">
-            <div class="tips-en">big data</div>
-            <div class="tips-ch">大数据</div>
+            <div class="tips-en">ARTIFICIAL INTELLIGENCE</div>
+            <div class="tips-ch">人工智能</div>
           </div>
         </div>
       </div>
@@ -122,9 +199,27 @@
 <script>
   import HcHeader from "../components/hc-header";
   import HcFooter from '../components/hc-footer';
+  // import BannerSlider from '../components/banner-slider';
+  // import Banner from '../components/banner';
 export default {
   name: "home",
-  components: { HcHeader, HcFooter }
+  components: {
+    HcHeader,
+    HcFooter,
+    // BannerSlider
+    // Banner,
+  },
+  data(){
+    return{
+      current_core:'water',
+    }
+
+  },
+  methods: {
+    changeCore: function(e) {
+      console.log(e)
+    }
+  }
 };
 </script>
 <style scoped lang="less">
@@ -326,6 +421,29 @@ export default {
               margin-top: 20px;
               padding-top: 20px;
               border-top: 1px solid rgba(255,255,255,0.16);
+            }
+          }
+        }
+        &>ul{
+          width: 100%;
+          padding: 120px 0 180px;
+          li{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 80px;
+            &:first-child{
+              margin-top: 0;
+            }
+            &>span{
+              display: inline-block;
+              width: 200px;
+              height: 80px;
+              line-height: 80px;
+              font-size: 18px;
+              text-align: center;
+              background:rgba(13,25,136,0.3);
+              border-radius:4px;
             }
           }
         }
