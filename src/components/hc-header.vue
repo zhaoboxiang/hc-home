@@ -1,5 +1,5 @@
 <template>
-    <div class="hc-header">
+    <div class="content hc-header">
         <div class="hc-logo"><div class="logo"></div></div>
         <div class="hc-nav-box">
             <div class="nav-item"><router-link :to="{name:'home'}">首页</router-link></div>
@@ -18,31 +18,51 @@
 </script>
 
 <style lang="less" scoped>
+    @import "../assets/css/global";
     .hc-header{
         display: flex;
         align-items: center;
-        height: 100px;
-    }
-    .hc-logo{
-        flex: 2;
-    }
-    .logo{
-        width: 160px;
+        justify-content: space-between;
         height: 68px;
-        background: url("../assets/images/img_logo_nav_1.png") center no-repeat;
-        margin: auto;
-    }
-    .hc-nav-box{
-        flex: 3;
-        display: flex;
-        height: 100%;
-        align-items: center;
-    }
-    .nav-item{
-        padding: 0 20px;
+        font-size: 14px;
+        .hc-logo{
+            .logo{
+                width: 160px;
+                height: 68px;
+                background: url("../assets/images/img_logo_nav_1.png") center no-repeat;
+                margin: auto;
+            }
+        }
+        .hc-nav-box{
+            display: flex;
+            height: 100%;
+            align-items: center;
+            .nav-item{
+                height: 100%;
+                &>a{
+                    text-decoration: none;
+                    display: block;
+                    line-height: 68px;
+                    padding: 0 20px;
+                    color: @font-color;
+                    font-weight: 400;
+                }
+                &:hover, &.cur{
+                    border-bottom: 2px solid @font-color-active;
+                    background:rgba(247,249,255,1);
+                    color: @font-color-active;
+                    &>a{
+                        color: @font-color-active;
+                        font-weight: 500;
+                    }
+                }
 
+            }
+
+        }
     }
-    .nav-item a{
-        text-decoration: none;
-    }
+
+
+
+
 </style>

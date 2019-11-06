@@ -1,0 +1,55 @@
+@import "variables";
+HTML, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote,
+pre, form, fieldset, table, th, td {
+  border:none;
+  font-family:"微软雅黑","黑体","宋体";
+  font-size:14px;
+  margin:0px;
+  padding:0px;
+
+}
+h1, h2, h3, h4, h5, h6{
+  //font-weight: 500;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+  color: @font-color-default;
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+a{
+  text-decoration:none;
+  out-line: none;
+  color:@font-color-default;
+}
+//
+//a:link{
+//  color:#fff;
+//}
+//a:visited{
+//  color:#fff;
+//}
+//a:hover{
+//  color:#fff;
+//}
+//a:active {
+//  color: #fff;
+//}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+img{
+  border:none;
+}
+ul,ol,li{
+  list-style-type:none;
+}
+
+.content{
+  width: @container-width-default;
+  margin: 0 auto;
+}

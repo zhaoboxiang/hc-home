@@ -11,6 +11,9 @@
   </div>
 </template>
 
+<style lang="less">
+  @import "./assets/css/global.less";
+</style>
 <style>
 #nav a.router-link-exact-active {
   color: #373ea4;
