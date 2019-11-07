@@ -96,7 +96,7 @@
           </div>
           <div class="btn btn-white">了解更多</div>
         </div>
-        <div class="business-content">
+        <div class="hc-grid">
           <ul>
             <li>
               <span>大气环境监控</span>
@@ -122,7 +122,7 @@
           </div>
           <div class="btn btn-white">了解更多</div>
         </div>
-        <div class="business-content">
+        <div class="hc-grid">
           <ul>
             <li>
               <span>水源水质监测</span>
@@ -148,7 +148,7 @@
           </div>
           <div class="btn btn-white">了解更多</div>
         </div>
-        <div class="business-content">
+        <div class="hc-grid">
           <ul>
             <li>
               <span>物业管理</span>
@@ -226,6 +226,10 @@ export default {
   @import "../assets/css/global";
   .section-box{
     width: 100%;
+  }
+
+  .hc-grid{
+    padding: 120px 0 180px;
   }
 
   .intro-box{
@@ -424,29 +428,6 @@ export default {
             }
           }
         }
-        &>ul{
-          width: 100%;
-          padding: 120px 0 180px;
-          li{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-top: 80px;
-            &:first-child{
-              margin-top: 0;
-            }
-            &>span{
-              display: inline-block;
-              width: 200px;
-              height: 80px;
-              line-height: 80px;
-              font-size: 18px;
-              text-align: center;
-              background:rgba(13,25,136,0.3);
-              border-radius:4px;
-            }
-          }
-        }
       }
     }
   }
@@ -466,7 +447,7 @@ export default {
       padding: 40px 0 60px;
       line-height:24px;
     }
-    .tec-box{
+    /*.tec-box{
       display: flex;
       justify-content: space-between;
       .tec-item{
@@ -497,7 +478,7 @@ export default {
         background: url("../assets/images/img_index__technology_3.png") center no-repeat;
         background-size: 100% 100%;
       }
-    }
+    }*/
   }
 
   .btn{

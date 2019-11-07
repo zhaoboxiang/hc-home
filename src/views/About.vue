@@ -59,7 +59,7 @@
       </div>
     </div>
     <!--企业文化和企业资质-->
-    <div class="culture-box">
+    <div class="culture-box bg-light-purple">
       <div class="content cul-content">
         <h3 class="section-h3">企业文化</h3>
         <h6 class="section-h6">enterprise culture</h6>
@@ -126,12 +126,10 @@ import HcFooter from "../components/hc-footer";
 // import BannerSlider from '../components/banner-slider';
 // import Banner from '../components/banner';
 export default {
-  name: "home",
+  name: "about",
   components: {
     HcHeader,
     HcFooter
-    // BannerSlider
-    // Banner,
   },
   data() {
     return {
@@ -253,7 +251,6 @@ export default {
 
   }
   .culture-box{
-    background: #F7F9FF;
     padding: 80px 0 210px;
     .cul-content{
       text-align: center;

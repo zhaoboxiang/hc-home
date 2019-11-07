@@ -4,7 +4,10 @@
         <div class="hc-nav-box">
             <div class="nav-item"><router-link :to="{name:'home'}">首页</router-link></div>
             <div class="nav-item"><router-link :to="{name:'about'}">关于虹川</router-link></div>
-            <div class="nav-item"><router-link :to="{name:'solution'}">解决方案</router-link></div>
+            <div class="nav-item"><router-link :to="{name:'solution-city'}">解决方案-城市</router-link></div>
+            <div class="nav-item"><router-link :to="{name:'solution-evn-pro'}">解决方案-环保</router-link></div>
+            <div class="nav-item"><router-link :to="{name:'solution-water'}">解决方案-水务</router-link></div>
+            <div class="nav-item"><router-link :to="{name:'solution-park'}">解决方案-园区</router-link></div>
             <div class="nav-item"><router-link :to="{name:'product'}">产品中心</router-link></div>
             <div class="nav-item"><router-link :to="{name:'careers'}">广纳人才</router-link></div>
         </div>

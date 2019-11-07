@@ -1,5 +1,5 @@
 <template>
-    <div class="hc-footer-box">
+    <div class="hc-footer-box bg-light-purple">
         <div class="content hc-footer">
             <div class="hc-footer-content">
                 <div class="hc-map"></div>
@@ -9,7 +9,7 @@
                     <div class="footer-logo"></div>
                 </div>
             </div>
-            <footer>© 2019 虹川科技Hong Chuan Technology. All Rights Reserved. 粤ICP备XXXXX号</footer>
+            <footer>© 2019 虹川科技Hong Chuan Technology. All Rights Reserved. <a href="http://www.beian.miit.gov.cn" target="_blank">粤ICP备19122684号-2</a></footer>
         </div>
     </div>
 </template>
@@ -23,7 +23,6 @@
 <style lang="less" scoped>
     @import "../assets/css/global.less";
     .hc-footer-box{
-        background: #F7F9FF;
         .hc-footer{
             .hc-footer-content{
                 display: flex;
@@ -69,6 +68,9 @@
                     position: absolute;
                     top:0;
                     left: 0;
+                }
+                a{
+                    color: inherit;
                 }
             }
         }
