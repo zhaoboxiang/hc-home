@@ -1,28 +1,44 @@
 <template>
-  <div class="home">
-    <home-content-carousel></home-content-carousel>
-    <home-content-introduction></home-content-introduction>
-    <home-content-professional></home-content-professional>
-    <home-content-core-technology></home-content-core-technology>
+  <div class="hc-core-technology">
+    <!--核心技术-->
+    <div class="core-technology-box">
+      <div class="content">
+        <div data-aos="fade-up">
+          <h6>核心技术</h6>
+          <b>优质的解决方案需要先进的技术</b>
+          <span>
+            强大的数据处理和AI智能分析是我们得以处理各类复杂业务应用场景的有力基石。<br />
+            虹川科技致力与各重点院校以及专业的研究机构一起合作，开发各类数据模型，<br />
+            已在环境监测、气象预测、灾难模拟等场景应用卓见成效。
+          </span>
+        </div>
+        <div data-aos="fade-up">
+          <div class="tec-box">
+            <div class="tec-item tec-item-one">
+              <div class="tips-en">BIG DATA</div>
+              <div class="tips-ch">大数据</div>
+            </div>
+            <div class="tec-item tec-item-two">
+              <div class="tips-en">INTERNET OF THINGS</div>
+              <div class="tips-ch">物联网</div>
+            </div>
+            <div class="tec-item tec-item-three">
+              <div class="tips-en">ARTIFICIAL INTELLIGENCE</div>
+              <div class="tips-ch">人工智能</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import HomeContentCarousel from "../components/Carousel";
-import HomeContentIntroduction from "../views/HomeContentIntroduction";
-import HomeContentCoreTechnology from "../views/HomeContentCoreTechnology";
-import HomeContentProfessional from "../views/HomeContentProfessional";
-
 export default {
-  name: "home",
-  components: {
-    HomeContentCarousel,
-    HomeContentIntroduction,
-    HomeContentCoreTechnology,
-    HomeContentProfessional
-  }
+  name: "HomeContentCoreTechnology"
 };
 </script>
+
 <style scoped lang="less">
 @import "../assets/css/global";
 .section-box {
@@ -257,8 +273,12 @@ export default {
 }
 
 .core-technology-box {
+  height: 660px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: center;
   text-align: center;
-  padding: 80px 0 160px;
   h6 {
     color: @font-color-active;
     font-size: 32px;
@@ -266,12 +286,15 @@ export default {
   }
   b {
     font-size: 20px;
+    display: block;
+    padding: 16px 0 40px;
   }
   p {
     padding: 40px 0 60px;
     line-height: 24px;
   }
   .tec-box {
+    padding-top: 60px;
     display: flex;
     justify-content: space-between;
     .tec-item {

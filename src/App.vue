@@ -1,21 +1,26 @@
 <template>
   <div id="app">
-    <!--<div id="nav">-->
-      <!--<router-link :to="{ name: 'home' }">首页</router-link>|-->
-      <!--<router-link :to="{ name: 'about' }">关于虹川</router-link>-->
-      <!--<router-link :to="{ name: 'solution' }">解决方案</router-link>-->
-      <!--<router-link :to="{ name: 'product' }">产品中心</router-link>-->
-      <!--<router-link :to="{ name: 'careers' }">广纳贤才</router-link>-->
-    <!--</div>-->
+    <Header></Header>
     <router-view />
+    <Footer></Footer>
   </div>
 </template>
 
 <style lang="less">
-  @import "./assets/css/global.less";
+@import "./assets/css/global.less";
 </style>
 <style>
 #nav a.router-link-exact-active {
   color: #373ea4;
 }
 </style>
+<script>
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+export default {
+  components: {
+    Header,
+    Footer
+  }
+};
+</script>

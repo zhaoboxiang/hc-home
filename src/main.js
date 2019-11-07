@@ -2,16 +2,27 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
-import BootstrapVue from "bootstrap-vue";
+import VueAwesomeSwiper from "vue-awesome-swiper"; // 轮播
+import "swiper/dist/css/swiper.css";
+import AOS from "aos"; // 滚动动画
+import "aos/dist/aos.css";
+import "./assets/css/index.less";
+import VueMaterial from "vue-material";
+import "vue-material/dist/vue-material.min.css";
+
+Vue.use(VueMaterial);
+
+Vue.use(VueAwesomeSwiper /* { default global options } */);
 
 Vue.config.productionTip = false;
 
 new Vue({
+  created() {
+    AOS.init({
+      once: true
+    });
+  },
   router,
   store,
   render: h => h(App)
 }).$mount("#app");
-
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap-vue/dist/bootstrap-vue.css";
-Vue.use(BootstrapVue);
