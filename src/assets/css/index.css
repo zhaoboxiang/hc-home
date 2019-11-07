@@ -1,0 +1,63 @@
+html,
+body {
+  font-family: PingFangSC-Medium, PingFang SC, Microsoft Yahei, sans-serif;
+}
+.hc-header {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+.hc-header .hc-nav {
+  align-self: center;
+}
+.hc-header .hc-nav a {
+  display: inline-block;
+  height: 68px;
+  line-height: 68px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #303ca8;
+  padding: 0 10px;
+  margin: 0 16px;
+  text-underline: none;
+}
+.hc-header .hc-nav a:hover {
+  text-decoration: none;
+}
+.hc-header .hc-nav a.router-link-exact-active {
+  border-bottom: 2px solid #303ca8;
+  color: #373ea4;
+}
+.hc-introduction {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: center;
+  background: #f7f9ff;
+  height: 420px;
+}
+.hc-introduction h1 {
+  height: 32px;
+  font-size: 32px;
+  font-weight: 600;
+  color: #00359d;
+}
+.hc-introduction .intro-title {
+  padding: 16px 0 30px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #101010;
+}
+.hc-introduction .btn-more {
+  margin-top: 60px;
+  width: 144px;
+  height: 40px;
+  background: rgba(247, 249, 255, 0.4);
+  border-radius: 20px;
+  border: 1px solid #303ca8;
+  text-align: center;
+  line-height: 40px;
+  color: #303ca8;
+  cursor: pointer;
+}
+/*# sourceMappingURL=index.css.map */

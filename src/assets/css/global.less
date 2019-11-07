@@ -15,6 +15,8 @@ html,body{
   height: 100%;
   width: 100%;
   color: @font-color-default;
+  background: #fff;
+  font-size: 14px;
 }
 address, caption, cite, code, dfn, em, strong, th, var {
   font-style: normal;
@@ -24,6 +26,9 @@ a{
   text-decoration:none;
   out-line: none;
   color:@font-color-default;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 //
 //a:link{
@@ -52,4 +57,69 @@ ul,ol,li{
 .content{
   width: @container-width-default;
   margin: 0 auto;
+}
+
+.tec-box{
+  display: flex;
+  justify-content: space-between;
+  .tec-item{
+    width: 320px;
+    height: 180px;
+    background: bisque;
+    text-align: left;
+    .tips-en{
+      padding: 20px 0 3px 20px;
+      color:rgba(149,171,216,1);
+      font-size: 16px;
+    }
+    .tips-ch{
+      padding-left: 20px;
+      font-size: 24px;
+      color: @font-color-active;
+    }
+  }
+  .tec-item-1{
+    background: url("../images/img_index__technology_1.png") center no-repeat;
+    background-size: 100% 100%;
+  }
+  .tec-item-2{
+    background: url("../images/img_index__technology_2.png") center no-repeat;
+    background-size: 100% 100%;
+  }
+  .tec-item-3{
+    background: url("../images/img_index__technology_3.png") center no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+.bg-light-purple{
+  background: #F7F9FF;
+}
+
+.hc-grid{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  ul{
+    width: 100%;
+    li{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 80px;
+      &:first-child{
+        margin-top: 0;
+      }
+      &>span{
+        display: inline-block;
+        width: 200px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 18px;
+        text-align: center;
+        background:rgba(13,25,136,0.3);
+        border-radius:4px;
+      }
+    }
+  }
 }

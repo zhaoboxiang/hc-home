@@ -2,7 +2,10 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 const About = () => import("../views/About.vue");
-const Solution = () => import("../views/Solution.vue");
+const SolutionCity = () => import("../views/SolutionCity.vue");
+const SolutionWater = () => import("../views/SolutionWater.vue");
+const SolutionPark = () => import("../views/SolutionPark.vue");
+const SolutionEvnPro = () => import("../views/SolutionEvnPro.vue");
 const Product = () => import("../views/Product.vue");
 const Careers = () => import("../views/Careers.vue");
 
@@ -22,10 +25,30 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: About
   },
+  // {
+  //   path: "/solution",
+  //   name: "solution",
+  //   component: Solution
+  // },
   {
-    path: "/solution",
-    name: "solution",
-    component: Solution
+    path: "/solution-city",
+    name: "solution-city",
+    component: SolutionCity
+  },
+  {
+    path: "/solution-evn-pro",
+    name: "solution-evn-pro",
+    component: SolutionEvnPro
+  },
+  {
+    path: "/solution-water",
+    name: "solution-water",
+    component: SolutionWater
+  },
+  {
+    path: "/solution-park",
+    name: "solution-park",
+    component: SolutionPark
   },
   {
     path: "/product",
