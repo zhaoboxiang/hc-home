@@ -1,0 +1,475 @@
+HTML,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+p,
+blockquote,
+pre,
+form,
+fieldset,
+table,
+th,
+td {
+  border: none;
+  font-family: "微软雅黑", "黑体", "宋体";
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  color: #444;
+  background: #fff;
+  font-size: 14px;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  out-line: none;
+  color: #444;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+img {
+  border: none;
+}
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+.content {
+  width: 1200px;
+  margin: 0 auto;
+}
+.tec-box {
+  display: flex;
+  justify-content: space-between;
+}
+.tec-box .tec-item {
+  width: 320px;
+  height: 180px;
+  background: bisque;
+  text-align: left;
+}
+.tec-box .tec-item .tips-en {
+  padding: 20px 0 3px 20px;
+  color: #95abd8;
+  font-size: 16px;
+}
+.tec-box .tec-item .tips-ch {
+  padding-left: 20px;
+  font-size: 24px;
+  color: #303CA8;
+}
+.tec-box .tec-item-1 {
+  background: url("../images/img_index__technology_1.png") center no-repeat;
+  background-size: 100% 100%;
+}
+.tec-box .tec-item-2 {
+  background: url("../images/img_index__technology_2.png") center no-repeat;
+  background-size: 100% 100%;
+}
+.tec-box .tec-item-3 {
+  background: url("../images/img_index__technology_3.png") center no-repeat;
+  background-size: 100% 100%;
+}
+.bg-light-purple {
+  background: #F7F9FF;
+}
+.hc-grid {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.hc-grid ul {
+  width: 100%;
+}
+.hc-grid ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.hc-grid ul li:first-child {
+  margin-top: 0;
+}
+.hc-grid ul li > span {
+  display: inline-block;
+  width: 200px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 18px;
+  text-align: center;
+  background: rgba(13, 25, 136, 0.3);
+  border-radius: 4px;
+}
+.section-h3,
+.section-h6 {
+  text-align: center;
+}
+.section-h3 {
+  font-size: 32px;
+  color: #303CA8;
+}
+.section-h6 {
+  font-size: 18px;
+  color: #95ABD8;
+  margin-top: 10px;
+}
+.hc-grid {
+  padding: 90px 0 208px;
+}
+.hc-grid ul li > span {
+  color: #303CA8;
+  border: 1px solid #303CA8;
+  background: none;
+}
+.solution .solution-banner-box {
+  background: #303CA8;
+  padding: 120px 0 130px;
+  color: #fff;
+}
+.solution .solution-banner-box > .banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.solution .solution-banner-box > .banner-content .ban-left {
+  flex: 1;
+}
+.solution .solution-banner-box > .banner-content .ban-left .ban-h3 {
+  font-size: 48px;
+}
+.solution .solution-banner-box > .banner-content .ban-left .ban-h6 {
+  font-size: 32px;
+}
+.solution .solution-banner-box > .banner-content .ban-left .ban-p {
+  line-height: 24px;
+  margin-top: 20px;
+}
+.solution .section {
+  padding-top: 80px;
+}
+.solution .section .section-content .info-container {
+  position: relative;
+}
+.solution .section .section-content .section-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.solution .section-1 .section-content .section-flex {
+  margin-top: 60px;
+}
+.solution .section-1 .section-content .section-flex > .flex-item {
+  width: 300px;
+  box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  padding: 30px 10px 38px;
+  text-align: center;
+}
+.solution .section-1 .section-content .section-flex > .flex-item .item-icon {
+  width: 68px;
+  height: 68px;
+  margin: 0 auto;
+}
+.solution .section-1 .section-content .section-flex > .flex-item .icon-1 {
+  background: url("../images/solution/icon_jjfa_zhcs_1.png") center no-repeat;
+  background-size: 100% 100%;
+}
+.solution .section-1 .section-content .section-flex > .flex-item .icon-2 {
+  background: url("../images/solution/icon_jjfa_zhcs_2.png") center no-repeat;
+  background-size: 100% 100%;
+}
+.solution .section-1 .section-content .section-flex > .flex-item .icon-3 {
+  background: url("../images/solution/icon_jjfa_zhcs_3.png") center no-repeat;
+  background-size: 100% 100%;
+}
+.solution .section-1 .section-content .section-flex > .flex-item .item-tips {
+  margin-top: 24px;
+  font-size: 20px;
+  color: #101010;
+}
+.solution .section-1 .section-content .section-flex > .flex-item .item-h {
+  font-size: 16px;
+  color: #303CA8;
+  line-height: 24px;
+  margin: 12px 0 14px;
+}
+.solution .section-1 .section-content .section-flex > .flex-item .item-p {
+  line-height: 22px;
+}
+.solution .section-2 {
+  padding-bottom: 137px;
+}
+.solution .section-2 .section-content .info-container {
+  margin-top: 60px;
+}
+.solution .section-2 .section-content .info-container > .info-title {
+  font-size: 24px;
+  color: #101010;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.solution .section-2 .section-content .info-container > .info-title > span {
+  font-size: 50px;
+  color: #303CA8;
+  padding-left: 20px;
+}
+.solution .section-2 .section-content .info-container > .info-title > span:first-child {
+  padding-left: 0;
+}
+.solution .section-2 .section-content .info-container > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.solution .section-2 .section-content .tec-box {
+  margin-top: 50px;
+}
+.solution .section-3 {
+  padding-bottom: 240px;
+}
+.solution .section-3 .section-content .section-flex {
+  margin-top: 98px;
+}
+.solution .section-3 .section-content .section-flex > .flex-item {
+  width: 320px;
+  height: 200px;
+  display: flex;
+  padding-top: 35px;
+  padding-right: 20px;
+  box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  position: relative;
+}
+.solution .section-3 .section-content .section-flex > .flex-item:after {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.solution .section-3 .section-content .section-flex > .flex-item .left {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  background: #303CA8;
+  font-size: 40px;
+  text-align: center;
+  margin-right: 20px;
+}
+.solution .section-3 .section-content .section-flex > .flex-item .right {
+  flex: 1;
+  line-height: 24px;
+}
+.solution .section-3 .section-content .section-flex > .item-1:after {
+  background: url("../images/solution/img_jjfa_zhcs_fatd_1.png") center no-repeat;
+  background-size: 100% 100%;
+}
+.solution .section-3 .section-content .section-flex > .item-2:after {
+  background: url("../images/solution/img_jjfa_zhcs_fatd_2.png") center no-repeat;
+  background-size: 100% 100%;
+}
+.solution .section-3 .section-content .section-flex > .item-n:after {
+  background: url("../images/solution/img_jjfa_zhcs_fatd_3.png") center no-repeat;
+  background-size: 100% 100%;
+}
+.solution .hc-env-pro {
+  padding-bottom: 198px;
+}
+.solution .hc-env-pro .section-content .section-flex > .flex-item {
+  width: 282px;
+  height: 260px;
+}
+.solution .hc-env-pro .section-content .section-flex > .flex-item .right h6 {
+  font-size: 18px;
+  color: #101010;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.solution .hc-env-pro .section-content .section-flex > .item-1:after {
+  background: url("../images/solution/img_jjfa_fatd_1.png") center no-repeat;
+  background-size: 100% 100%;
+}
+.solution .hc-env-pro .section-content .section-flex > .item-2:after {
+  background: url("../images/solution/img_jjfa_fatd_2.png") center no-repeat;
+  background-size: 100% 100%;
+}
+.solution .hc-env-pro .section-content .section-flex > .item-3:after {
+  background: url("../images/solution/img_jjfa_fatd_3.png") center no-repeat;
+  background-size: 100% 100%;
+}
+.solution .hc-env-pro .section-content .section-flex > .item-4:after {
+  background: url("../images/solution/img_jjfa_fatd_4.png") center no-repeat;
+  background-size: 100% 100%;
+}
+.solution .section-2-hc-water .section-content .info-container > .info-course {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  text-align: center;
+}
+.solution .section-2-hc-water .section-content .info-container > .info-course .course-item {
+  flex: 1;
+  font-size: 20px;
+  color: #101010;
+}
+.solution .section-2-hc-water .section-content .info-container > .info-course .course-item .course-icon {
+  width: 68px;
+  height: 68px;
+  background: red;
+  margin: 0 auto;
+}
+.solution .section-2-hc-water .section-content .info-container > .info-course .course-item .icon-1 {
+  background: url("../images/solution/icon_jjfa_zhsw_dcjg_1.png") center no-repeat;
+  background-size: 100% 100%;
+}
+.solution .section-2-hc-water .section-content .info-container > .info-course .course-item .icon-2 {
+  background: url("../images/solution/icon_jjfa_zhsw_dcjg_2.png") center no-repeat;
+  background-size: 100% 100%;
+}
+.solution .section-2-hc-water .section-content .info-container > .info-course .course-item .icon-3 {
+  background: url("../images/solution/icon_jjfa_zhsw_dcjg_3.png") center no-repeat;
+  background-size: 100% 100%;
+}
+.solution .section-2-hc-water .section-content .info-container > .info-course .course-item .course-tips {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #101010;
+  font-weight: bold;
+}
+.solution .section-3-hc-water {
+  padding-bottom: 178px;
+}
+.solution .section-3-hc-water .section-content .section-flex > .flex-item {
+  display: block;
+  padding: 0;
+  height: auto;
+}
+.solution .section-3-hc-water .section-content .section-flex > .flex-item:after {
+  display: none;
+}
+.solution .section-3-hc-water .section-content .section-flex > .flex-item .item-t {
+  color: #fff;
+  font-size: 28px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  background: red;
+}
+.solution .section-3-hc-water .section-content .section-flex > .flex-item .i-t-1 {
+  background: url("../images/solution/img_jjfa_zhsw_fatd_1.png") center no-repeat;
+  background-size: 100% 100%;
+}
+.solution .section-3-hc-water .section-content .section-flex > .flex-item .i-t-2 {
+  background: url("../images/solution/img_jjfa_zhsw_fatd_2.png") center no-repeat;
+  background-size: 100% 100%;
+}
+.solution .section-3-hc-water .section-content .section-flex > .flex-item .i-t-3 {
+  background: url("../images/solution/img_jjfa_zhsw_fatd_3.png") center no-repeat;
+  background-size: 100% 100%;
+}
+.solution .section-3-hc-water .section-content .section-flex > .flex-item .item-p {
+  height: 200px;
+  line-height: 24px;
+  padding: 30px 40px 0;
+}
+.solution .section-3-hc-park .section-content .section-flex > .flex-item {
+  width: 320px;
+  height: 440px;
+  padding: 0;
+  text-align: center;
+}
+.solution .section-3-hc-park .section-content .section-flex > .flex-item .item-p {
+  font-size: 20px;
+  color: #fff;
+  width: 100%;
+  padding: 40px 0 0;
+  line-height: 36px;
+}
+.solution .section-3-hc-park .section-content .section-flex .item-1 {
+  background: url("../images/solution/img_jjfa_zhyq_hybj_1.png") center no-repeat;
+  background-size: 100% 100%;
+}
+.solution .section-3-hc-park .section-content .section-flex .item-2 {
+  background: url("../images/solution/img_jjfa_zhyq_hybj_2.png") center no-repeat;
+  background-size: 100% 100%;
+}
+.solution .section-3-hc-park .section-content .section-flex .item-3 {
+  background: url("../images/solution/img_jjfa_zhyq_hybj_3.png") center no-repeat;
+  background-size: 100% 100%;
+}
+.solution .section-a-hc-park .section-content .section-flex > .flex-item {
+  width: 320px;
+  height: 320px;
+  padding: 40px 0 0;
+  text-align: center;
+  display: block;
+}
+.solution .section-a-hc-park .section-content .section-flex > .flex-item .item-icon {
+  width: 68px;
+  height: 68px;
+  background: red;
+  margin: 0 auto;
+  color: #101010;
+}
+.solution .section-a-hc-park .section-content .section-flex > .flex-item .item-tips {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0 30px;
+}
+.solution .section-a-hc-park .section-content .section-flex > .flex-item .item-p {
+  margin: 0 40px;
+  text-align: left;
+}
+.solution .section-a-hc-park .section-content .section-flex > .flex-item .icon-1 {
+  background: url("../images/solution/icon_jjfa_zhyq_fatd_1.png") center no-repeat;
+  background-size: 100% 100%;
+}
+.solution .section-a-hc-park .section-content .section-flex > .flex-item .icon-2 {
+  background: url("../images/solution/icon_jjfa_zhyq_fatd_2.png") center no-repeat;
+  background-size: 100% 100%;
+}
+.solution .section-a-hc-park .section-content .section-flex > .flex-item .icon-3 {
+  background: url("../images/solution/icon_jjfa_zhyq_fatd_3.png") center no-repeat;
+  background-size: 100% 100%;
+}
+/*# sourceMappingURL=solution.css.map */
