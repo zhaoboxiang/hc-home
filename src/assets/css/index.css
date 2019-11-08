@@ -24,7 +24,8 @@ body {
 .hc-header .hc-nav a:hover {
   text-decoration: none;
 }
-.hc-header .hc-nav a.router-link-exact-active {
+.hc-header .hc-nav a.router-link-exact-active,
+.hc-header .hc-nav .router-link-active {
   border-bottom: 2px solid #303ca8;
   color: #373ea4;
 }
