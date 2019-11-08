@@ -1,7 +1,5 @@
 <template>
     <div class="solution">
-        <hc-header></hc-header>
-
         <!--智慧水务-->
         <div class="solution-banner-box">
             <div class="content banner-content">
@@ -86,19 +84,13 @@
                 </div>
             </div>
         </div>
-
-        <hc-footer></hc-footer>
     </div>
 </template>
 
 <script>
-  import HcHeader from "../components/hc-header";
-  import HcFooter from "../components/hc-footer";
   export default {
     name: "SolutionWater",
     components: {
-      HcHeader,
-      HcFooter
     },
   };
 </script>

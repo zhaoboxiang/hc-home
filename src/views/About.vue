@@ -1,6 +1,5 @@
 <template>
   <div class="about">
-    <hc-header></hc-header>
     <div class="about-banner-box">
       <div class="content banner-content">
         <div class="caption">
@@ -117,19 +116,12 @@
         </div>
       </div>
     </div>
-    <hc-footer></hc-footer>
   </div>
 </template>
 <script>
-import HcHeader from "../components/hc-header";
-import HcFooter from "../components/hc-footer";
-// import BannerSlider from '../components/banner-slider';
-// import Banner from '../components/banner';
 export default {
   name: "about",
   components: {
-    HcHeader,
-    HcFooter
   },
   data() {
     return {

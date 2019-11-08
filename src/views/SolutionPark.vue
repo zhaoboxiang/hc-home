@@ -1,7 +1,5 @@
 <template>
     <div class="solution">
-        <hc-header></hc-header>
-
         <!--智慧园区-->
         <div class="solution-banner-box">
             <div class="content banner-content">
@@ -101,19 +99,13 @@
                 </div>
             </div>
         </div>
-
-        <hc-footer></hc-footer>
     </div>
 </template>
 
 <script>
-  import HcHeader from "../components/hc-header";
-  import HcFooter from "../components/hc-footer";
   export default {
     name: "SolutionPark",
     components: {
-      HcHeader,
-      HcFooter
     },
   };
 </script>
