@@ -25,11 +25,42 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: About
   },
-  // {
-  //   path: "/solution",
-  //   name: "solution",
-  //   component: Solution
-  // },
+  {
+    path: "/solution",
+    name: "solution",
+    redirect: "/solution/wisdom-city",
+    component: SolutionCity,
+    children: [
+      {
+        path: "wisdom-city",
+        name: "wisdom-city",
+        component: SolutionCity,
+        // a meta field
+        meta: { requiresAuth: true }
+      },
+      {
+        path: "wisdom-environment",
+        name: "wisdom-environment",
+        component: SolutionEvnPro,
+        // a meta field
+        meta: { requiresAuth: true }
+      },
+      {
+        path: "wisdom-water",
+        name: "wisdom-water",
+        component: SolutionWater,
+        // a meta field
+        meta: { requiresAuth: true }
+      },
+      {
+        path: "wisdom-park",
+        name: "wisdom-park",
+        component: SolutionPark,
+        // a meta field
+        meta: { requiresAuth: true }
+      }
+    ]
+  },
   {
     path: "/solution-city",
     name: "solution-city",
