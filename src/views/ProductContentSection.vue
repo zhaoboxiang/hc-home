@@ -1,11 +1,9 @@
 <template>
   <div class="product-section">
     <div class="content section-content">
-      <div class="section-title">{{sectitle}}
-        <!--基于模型，形成科学结论，支撑环境污染防治的科学决策和进准施策-->
-      </div>
+      <div class="section-title">{{sectitle}}</div>
       <div class="section-img">
-        <img src="../assets/images/product/img_cpzx_hbxg_1.png" />
+        <img :src="imgurl" />
       </div>
     </div>
   </div>
@@ -14,7 +12,7 @@
 <script>
 export default {
   name: "ProductContentSection",
-  props:['sectitle'],
+  props:['sectitle','imgurl'],
 };
 </script>
 
