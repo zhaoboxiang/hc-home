@@ -10,6 +10,8 @@ const Product = () => import("../views/Product.vue");
 const Careers = () => import("../views/Careers.vue");
 // const ProductDetail = () => import("../views/ProductDetail.vue");
 
+import ProductDetail from "../views/ProductDetail";
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -62,14 +64,19 @@ const routes = [
     // a meta field
     meta: { requiresAuth: true }
   },
-  // 产品中心
+  // 产品中心 --- 主页面
   {
     path: "/product/:name",
     name: "product",
     component: Product
   },
-    // 产品中心 --- 主页面
-
+  // 产品中心 --- 子页面
+  {
+    path: "/product-detail/:name",
+    name: "product-detail",
+    component: ProductDetail,
+    props: true
+  },
   {
     path: "/careers",
     name: "careers",
@@ -80,7 +87,15 @@ const routes = [
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
-  routes
+  routes,
+  scrollBehavior(to) {
+    console.log("to---", to);
+    if (to.hash) {
+      return {
+        selector: to.hash
+      };
+    }
+  }
 });
 
 export default router;

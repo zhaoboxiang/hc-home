@@ -3,17 +3,17 @@
     <product-content-banner></product-content-banner>
     <product-content-nav></product-content-nav>
     <div v-show="this.$route.params.name === 'envpro' ? 'envpro' : ''">
-      <product-content-list></product-content-list>
+      <product-content-list-evn></product-content-list-evn>
       <!--          环保-->
       <product-content-evn-section></product-content-evn-section>
     </div>
     <div v-show="this.$route.params.name === 'water' ? 'water' : ''">
-      <product-content-list></product-content-list>
+      <product-content-list-water></product-content-list-water>
       <!--          水务-->
       <product-content-water-section></product-content-water-section>
     </div>
     <div v-show="this.$route.params.name === 'park' ? 'park' : ''">
-      <product-content-list></product-content-list>
+      <product-content-list-park></product-content-list-park>
       <!--          园区-->
       <product-content-park-section></product-content-park-section>
     </div>
@@ -24,17 +24,25 @@
 import ProductContentBanner from "./ProductContentBanner";
 import ProductContentNav from "./ProductContentNav";
 import ProductContentEvnSection from "./ProductContentEvnSection";
-import ProductContentList from "./ProductContentList";
+// import ProductContentList from "./ProductContentList";
 import ProductContentWaterSection from "./ProductContentWaterSection";
 import ProductContentParkSection from "./ProductContentParkSection";
+
+import ProductContentListEvn from "./ProductContentListEvn";
+import ProductContentListWater from "./ProductContentListWater";
+import ProductContentListPark from "./ProductContentListPark";
 export default {
   components: {
     ProductContentWaterSection,
-    ProductContentList,
+    // ProductContentList,
     ProductContentEvnSection,
     ProductContentNav,
     ProductContentBanner,
-    ProductContentParkSection
+    ProductContentParkSection,
+
+    ProductContentListEvn,
+    ProductContentListWater,
+    ProductContentListPark
   },
   data() {
     return {
