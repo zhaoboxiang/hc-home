@@ -6,9 +6,9 @@ const SolutionCity = () => import("../views/SolutionCity.vue");
 const SolutionWater = () => import("../views/SolutionWater.vue");
 const SolutionPark = () => import("../views/SolutionPark.vue");
 const SolutionEvnPro = () => import("../views/SolutionEvnPro.vue");
-// const Product = () => import("../views/Product.vue");
+const Product = () => import("../views/Product.vue");
 const Careers = () => import("../views/Careers.vue");
-const ProductDetail = () => import("../views/ProductDetail.vue");
+// const ProductDetail = () => import("../views/ProductDetail.vue");
 
 Vue.use(VueRouter);
 
@@ -18,6 +18,7 @@ const routes = [
     name: "home",
     component: Home
   },
+  // 关于虹川
   {
     path: "/about",
     name: "about",
@@ -26,6 +27,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: About
   },
+  // 解决方案
   {
     path: "/solution",
     name: "solution",
@@ -60,11 +62,14 @@ const routes = [
     // a meta field
     meta: { requiresAuth: true }
   },
+  // 产品中心
   {
-    path: "/product",
+    path: "/product/:name",
     name: "product",
-    component: ProductDetail
+    component: Product
   },
+    // 产品中心 --- 主页面
+
   {
     path: "/careers",
     name: "careers",

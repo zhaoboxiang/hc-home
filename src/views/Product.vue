@@ -1,12 +1,22 @@
 <template>
   <div>
-    <h1></h1>
     <product-content-banner></product-content-banner>
     <product-content-nav></product-content-nav>
-    <product-content-list></product-content-list>
-    <product-content-park-section></product-content-park-section>
-    <product-content-water-section></product-content-water-section>
-    <product-content-evn-section></product-content-evn-section>
+    <div v-show="this.$route.params.name === 'envpro' ? 'envpro' : ''">
+      <product-content-list></product-content-list>
+      <!--          环保-->
+      <product-content-evn-section></product-content-evn-section>
+    </div>
+    <div v-show="this.$route.params.name === 'water' ? 'water' : ''">
+      <product-content-list></product-content-list>
+      <!--          水务-->
+      <product-content-water-section></product-content-water-section>
+    </div>
+    <div v-show="this.$route.params.name === 'park' ? 'park' : ''">
+      <product-content-list></product-content-list>
+      <!--          园区-->
+      <product-content-park-section></product-content-park-section>
+    </div>
   </div>
 </template>
 
@@ -25,6 +35,11 @@ export default {
     ProductContentNav,
     ProductContentBanner,
     ProductContentParkSection
+  },
+  data() {
+    return {
+      showContent: ""
+    };
   }
 };
 </script>

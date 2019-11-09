@@ -31,7 +31,7 @@
         ></drop-down-menu>
       </div>
       <div class="nav-link-wrap" @mouseenter="showProductNavBox = true">
-        <router-link class="main-nav-link" :to="{ name: 'product' }"
+        <router-link class="main-nav-link" :to="{ name: 'product', params: {name: 'envpro'} }"
           >产品中心</router-link
         >
       </div>

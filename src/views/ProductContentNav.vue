@@ -4,24 +4,30 @@
       <div class="content banner-nav">
         <div
           :class="['ban-nav-item', { 'ban-nav-cur': currentIsEvnPro }]"
-          @click="navClick(bannerNavType.evnpro)"
+          @click="navClick(bannerNavType.envpro)"
         >
-          <div class="item-icon icon-1"></div>
-          <div class="item-tips">智慧环保产品</div>
+          <router-link :to="{ name: 'product', params: { name: 'envpro' } }">
+            <div class="item-icon icon-1"></div>
+            <div class="item-tips">智慧环保产品</div>
+          </router-link>
         </div>
         <div
           :class="['ban-nav-item', { 'ban-nav-cur': currentIsWater }]"
           @click="navClick(bannerNavType.water)"
         >
-          <div class="item-icon icon-2"></div>
-          <div class="item-tips">智慧水务产品</div>
+          <router-link :to="{ name: 'product', params: { name: 'water' } }">
+            <div class="item-icon icon-2"></div>
+            <div class="item-tips">智慧水务产品</div>
+          </router-link>
         </div>
         <div
           :class="['ban-nav-item', { 'ban-nav-cur': currentIsPark }]"
           @click="navClick(bannerNavType.park)"
         >
-          <div class="item-icon icon-3"></div>
-          <div class="item-tips">智慧园区产品</div>
+          <router-link :to="{ name: 'product', params: { name: 'park' } }">
+            <div class="item-icon icon-3"></div>
+            <div class="item-tips">智慧园区产品</div>
+          </router-link>
         </div>
       </div>
       <!--<div-->
@@ -49,20 +55,20 @@ export default {
     const TYPE_OBJ = {
       water: "water",
       park: "park",
-      evnpro: "evnpro"
+      envpro: "envpro"
     };
     return {
       bannerNavType: {
         water: TYPE_OBJ.water,
         park: TYPE_OBJ.park,
-        evnpro: TYPE_OBJ.evnpro
+        envpro: TYPE_OBJ.envpro
       },
       currentIsEvnPro: true,
       currentIsWater: false,
       currentIsPark: false,
       navListObj: [
         {
-          navType: TYPE_OBJ.evnpro,
+          navType: TYPE_OBJ.envpro,
           isCurrent: true,
           navTitle: "智慧环保产品1"
         },
@@ -81,13 +87,13 @@ export default {
   },
   methods: {
     navClick: function(e) {
-      this.changeCur(e)
+      this.changeCur(e);
     },
-    changeCur: function(e){
-      if (e == this.bannerNavType.water) {
+    changeCur: function(e) {
+      if (e === this.bannerNavType.water) {
         this.clearCur();
         this.currentIsWater = true;
-      } else if (e == this.bannerNavType.park) {
+      } else if (e === this.bannerNavType.park) {
         this.clearCur();
         this.currentIsPark = true;
       } else {
@@ -99,22 +105,6 @@ export default {
       this.currentIsEvnPro = false;
       this.currentIsWater = false;
       this.currentIsPark = false;
-    },
-    navClick1: function(e) {
-      const temp = this.navListObj;
-      temp.forEach(function(item) {
-        if (e == item.navType) {
-          // this.$set(item, item.iscurrent, true);
-          item.iscurrent = true;
-        } else {
-          // this.$set(item, item.iscurrent, false);
-          item.iscurrent = false;
-        }
-      });
-      this.$forceUpdate();
-      this.$set(this.navListObj, this.navListObj, temp);
-      this.$forceUpdate();
-      console.log(this.navListObj);
     }
   }
 };
