@@ -1,34 +1,72 @@
 @import "variables";
-HTML, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote,
-pre, form, fieldset, table, th, td {
-  border:none;
-  font-family:"微软雅黑","黑体","宋体";
-  font-size:14px;
-  margin:0px;
-  padding:0px;
-
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+p,
+blockquote,
+pre,
+form,
+fieldset,
+table,
+th,
+td {
+  border: none;
+  font-family: "微软雅黑", "黑体", "宋体";
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
 }
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   //font-weight: 500;
 }
-html,body{
+html,
+body {
   height: 100%;
   width: 100%;
   color: @font-color-default;
   background: #fff;
   font-size: 14px;
-  line-height: normal!important;
+  line-height: normal !important;
 }
-address, caption, cite, code, dfn, em, strong, th, var {
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
   font-style: normal;
   font-weight: normal;
 }
-a{
-  text-decoration:none;
-  out-line: none;
-  color:@font-color-default;
+a {
+  text-decoration: none;
+  color: @font-color-default;
 }
-*, *::before, *::after {
+a:hover {
+  text-decoration: none;
+}
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 //
@@ -45,81 +83,84 @@ a{
 //  color: #fff;
 //}
 
-button[disabled], input[disabled] {
+button[disabled],
+input[disabled] {
   cursor: default;
 }
-img{
-  border:none;
+img {
+  border: none;
 }
-ul,ol,li{
-  list-style-type:none;
+ul,
+ol,
+li {
+  list-style-type: none;
 }
 
-.content{
+.content {
   width: @container-width-default;
   margin: 0 auto;
 }
 
-.tec-box{
+.tec-box {
   display: flex;
   justify-content: space-between;
-  .tec-item{
+  .tec-item {
     width: 320px;
     height: 180px;
     background: bisque;
     text-align: left;
-    .tips-en{
+    .tips-en {
       padding: 20px 0 3px 20px;
-      color:rgba(149,171,216,1);
+      color: rgba(149, 171, 216, 1);
       font-size: 16px;
     }
-    .tips-ch{
+    .tips-ch {
       padding-left: 20px;
       font-size: 24px;
       color: @font-color-active;
     }
   }
-  .tec-item-1{
+  .tec-item-1 {
     background: url("../images/img_index__technology_1.png") center no-repeat;
     background-size: 100% 100%;
   }
-  .tec-item-2{
+  .tec-item-2 {
     background: url("../images/img_index__technology_2.png") center no-repeat;
     background-size: 100% 100%;
   }
-  .tec-item-3{
+  .tec-item-3 {
     background: url("../images/img_index__technology_3.png") center no-repeat;
     background-size: 100% 100%;
   }
 }
 
-.bg-light-purple{
-  background: #F7F9FF;
+.bg-light-purple {
+  background: #f7f9ff;
 }
 
-.hc-grid{
+.hc-grid {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  ul{
+  ul {
     width: 100%;
-    li{
+    li {
       display: flex;
       align-items: center;
       justify-content: space-between;
       margin-top: 80px;
-      &:first-child{
+      &:first-child {
         margin-top: 0;
       }
-      &>span{
+      & > span {
         display: inline-block;
         width: 200px;
         height: 80px;
         line-height: 80px;
         font-size: 18px;
         text-align: center;
-        background:rgba(13,25,136,0.3);
-        border-radius:4px;
+        background: rgba(13, 25, 136, 0.3);
+        border-radius: 4px;
       }
     }
   }

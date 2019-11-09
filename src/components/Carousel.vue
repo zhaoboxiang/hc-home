@@ -54,7 +54,7 @@ export default {
   }
 
   &.slide-2 {
-    background-image: url("../assets/images/img_about_company_photo.png");
+    /*background-image: url("../assets/images/img_about_company_photo.png");*/
   }
 }
 </style>

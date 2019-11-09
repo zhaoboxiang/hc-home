@@ -1,4 +1,4 @@
-HTML,
+html,
 body,
 div,
 h1,
@@ -34,6 +34,7 @@ body {
   color: #444;
   background: #fff;
   font-size: 14px;
+  line-height: normal !important;
 }
 address,
 caption,
@@ -49,8 +50,10 @@ var {
 }
 a {
   text-decoration: none;
-  out-line: none;
   color: #444;
+}
+a:hover {
+  text-decoration: none;
 }
 *,
 *::before,
@@ -106,7 +109,7 @@ li {
   background-size: 100% 100%;
 }
 .bg-light-purple {
-  background: #F7F9FF;
+  background: #f7f9ff;
 }
 .hc-grid {
   width: 100%;
@@ -447,7 +450,6 @@ li {
 .solution .section-a-hc-park .section-content .section-flex > .flex-item .item-icon {
   width: 68px;
   height: 68px;
-  background: red;
   margin: 0 auto;
   color: #101010;
 }

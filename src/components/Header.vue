@@ -7,40 +7,57 @@
     </div>
     <div class="hc-nav">
       <div class="nav-link-wrap">
-        <router-link exact :to="{ name: 'home' }">首页</router-link>
+        <router-link class="main-nav-link" exact :to="{ name: 'home' }"
+          >首页</router-link
+        >
       </div>
       <div class="nav-link-wrap">
-        <router-link :to="{ name: 'about' }">关于虹川</router-link>
+        <router-link class="main-nav-link" :to="{ name: 'about' }"
+          >关于虹川</router-link
+        >
       </div>
       <div
         class="nav-link-wrap"
-        @mouseenter="showSubNav"
-        @mouseleave="hideSubNav"
+        @mouseenter="showSolutionNav = true"
+        @mouseleave="showSolutionNav = false"
       >
-        <router-link :to="{ name: 'solution' }">解决方案</router-link>
+        <router-link class="main-nav-link" :to="{ name: 'solution' }"
+          >解决方案</router-link
+        >
         <drop-down-menu
-          v-show="hasSubNav"
+          v-show="showSolutionNav"
           :menu-items="solutionMenuItems"
-          @hideMenu="hideMenu"
+          @hideOnClick="hideOnClick"
         ></drop-down-menu>
       </div>
-      <div class="nav-link-wrap">
-        <router-link :to="{ name: 'product' }">产品中心</router-link>
+      <div class="nav-link-wrap" @mouseenter="showProductNavBox = true">
+        <router-link class="main-nav-link" :to="{ name: 'product' }"
+          >产品中心</router-link
+        >
       </div>
       <div class="nav-link-wrap">
-        <router-link :to="{ name: 'careers' }">广纳人才</router-link>
+        <router-link class="main-nav-link" :to="{ name: 'careers' }"
+          >广纳人才</router-link
+        >
       </div>
     </div>
+    <product-navigation-box v-show="showProductNavBox" @hideProductNavBox="hideProductNavBox"></product-navigation-box>
   </div>
 </template>
 
 <script>
 import DropDownMenu from "./DropDownMenu";
+import ProductNavigationBox from "../views/ProductNavigationBox";
 export default {
   name: "Header",
+  components: {
+    DropDownMenu,
+    ProductNavigationBox
+  },
   data() {
     return {
-      hasSubNav: false,
+      showSolutionNav: false,
+      showProductNavBox: false,
       solutionMenuItems: [
         { name: "wisdom-city", title: "智慧城市" },
         { name: "wisdom-environment", title: "智慧环保" },
@@ -49,19 +66,12 @@ export default {
       ]
     };
   },
-  components: {
-    DropDownMenu
-  },
   methods: {
-    showSubNav() {
-      this.hasSubNav = true;
+    hideOnClick(isVisible) {
+      this.showSolutionNav = isVisible;
     },
-    hideSubNav() {
-      this.hasSubNav = false;
-    },
-    hideMenu(value) {
-      console.log(value)
-      this.hasSubNav = value
+    hideProductNavBox(isVisible) {
+      this.showProductNavBox = isVisible;
     }
   }
 };
@@ -70,5 +80,6 @@ export default {
 <style scoped>
 .nav-link-wrap {
   display: inline-block;
+  position: relative;
 }
 </style>

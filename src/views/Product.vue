@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Product</h1>
+    <h1></h1>
   </div>
 </template>
 
@@ -8,9 +8,4 @@
 export default {};
 </script>
 
-<style lang="less" scoped>
-h1 {
-  height: 10px;
-  color: green;
-}
-</style>
+<style lang="less" scoped></style>

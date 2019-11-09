@@ -6,8 +6,9 @@ const SolutionCity = () => import("../views/SolutionCity.vue");
 const SolutionWater = () => import("../views/SolutionWater.vue");
 const SolutionPark = () => import("../views/SolutionPark.vue");
 const SolutionEvnPro = () => import("../views/SolutionEvnPro.vue");
-const Product = () => import("../views/Product.vue");
+// const Product = () => import("../views/Product.vue");
 const Careers = () => import("../views/Careers.vue");
+const ProductDetail = () => import("../views/ProductDetail.vue");
 
 Vue.use(VueRouter);
 
@@ -29,62 +30,40 @@ const routes = [
     path: "/solution",
     name: "solution",
     redirect: "/solution/wisdom-city",
-    component: SolutionCity,
-    children: [
-      {
-        path: "wisdom-city",
-        name: "wisdom-city",
-        component: SolutionCity,
-        // a meta field
-        meta: { requiresAuth: true }
-      },
-      {
-        path: "wisdom-environment",
-        name: "wisdom-environment",
-        component: SolutionEvnPro,
-        // a meta field
-        meta: { requiresAuth: true }
-      },
-      {
-        path: "wisdom-water",
-        name: "wisdom-water",
-        component: SolutionWater,
-        // a meta field
-        meta: { requiresAuth: true }
-      },
-      {
-        path: "wisdom-park",
-        name: "wisdom-park",
-        component: SolutionPark,
-        // a meta field
-        meta: { requiresAuth: true }
-      }
-    ]
-  },
-  {
-    path: "/solution-city",
-    name: "solution-city",
     component: SolutionCity
   },
   {
-    path: "/solution-evn-pro",
-    name: "solution-evn-pro",
-    component: SolutionEvnPro
+    path: "/solution/wisdom-city", // 智慧城市
+    name: "wisdom-city",
+    component: SolutionCity,
+    // a meta field
+    meta: { requiresAuth: true }
   },
   {
-    path: "/solution-water",
-    name: "solution-water",
-    component: SolutionWater
+    path: "/solution/wisdom-environment", // 智慧环保
+    name: "wisdom-environment",
+    component: SolutionEvnPro,
+    // a meta field
+    meta: { requiresAuth: true }
   },
   {
-    path: "/solution-park",
-    name: "solution-park",
-    component: SolutionPark
+    path: "/solution/wisdom-water", // 智慧水务
+    name: "wisdom-water",
+    component: SolutionWater,
+    // a meta field
+    meta: { requiresAuth: true }
+  },
+  {
+    path: "/solution/wisdom-park", // 智慧园区
+    name: "wisdom-park",
+    component: SolutionPark,
+    // a meta field
+    meta: { requiresAuth: true }
   },
   {
     path: "/product",
     name: "product",
-    component: Product
+    component: ProductDetail
   },
   {
     path: "/careers",

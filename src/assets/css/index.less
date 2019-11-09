@@ -10,22 +10,22 @@ body {
   flex-flow: row wrap;
   .hc-nav {
     align-self: center;
-    a {
+    .nav-link-wrap a.main-nav-link  {
       display: inline-block;
       height: 68px;
       line-height: 68px;
       font-size: 14px;
       font-weight: 500;
-      color: rgba(48, 60, 168, 1);
+      color: #000;
       padding: 0 10px;
       margin: 0 16px;
       text-underline: none;
-    }
-
-      a:hover {
+      &:hover {
         text-decoration: none;
+        color: rgba(48, 60, 168, 1);
+      }
     }
-    a.router-link-exact-active, .router-link-active {
+    .nav-link-wrap a.router-link-exact-active, .nav-link-wrap a.router-link-active {
       border-bottom: 2px solid rgba(48, 60, 168, 1);
       color: #373ea4;
     }
