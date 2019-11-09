@@ -12,7 +12,7 @@
         <h6>虹川科技期待您的加入</h6>
         <p>
           虹川科技为员工提供良好的工作环境，具有竞争力的薪资待遇，完善的福利体系，为员工实现自身价值提供富有挑战性的职业发展机会，追求员工与企业共同成长。
-          应聘人员请将个人简历发送至<a href="hr@hcttop.com">hr@hcttop.com</a
+          应聘人员请将个人简历发送至<span>hr@hcttop.com</span
           >邮箱，合则约见，勿访。
         </p>
       </div>
@@ -277,8 +277,9 @@ export default {
     }
     & > p {
       line-height: 24px;
-      & > a {
+      & > a,span {
         color: @font-color-active;
+        cursor: pointer;
       }
     }
   }
