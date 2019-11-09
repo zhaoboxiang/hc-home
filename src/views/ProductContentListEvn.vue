@@ -18,7 +18,7 @@
 export default {
   name: "ProductContentListEvn",
   data() {
-      // wzjc-sys zhjc-sys spjksb-sys qydljk-sys kqzlybbj-sys yyyd-sys wghjg-sys ztcznjg-sys zwrtqyjxy-sys hjzhfx-sys dqwrfzzhjczc-sys
+    // wzjc-sys zhjc-sys spjksb-sys qydljk-sys kqzlybbj-sys yyyd-sys wghjg-sys ztcznjg-sys zwrtqyjxy-sys hjzhfx-sys
     return {
       navList: [
         {

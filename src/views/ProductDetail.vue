@@ -18,7 +18,7 @@
         v-for="(item, index) in productDetailList"
         :key="index"
       >
-        <div class="detail-content" :id="item.title">
+        <div class="detail-content" :id="item.anchor">
           <h1>{{ item.title }}</h1>
           <p v-show="true">
             {{ item.description }}
@@ -31,7 +31,11 @@
       </div>
     </div>
     <div class="anchor-nav">
-      <div v-for="(item, index) in productDetailList" :key="index">
+      <div
+        v-for="(item, index) in productDetailList"
+        :key="index"
+        v-scroll-to="`#${item.anchor}`"
+      >
         <p>{{ item.title }}</p>
       </div>
     </div>
@@ -153,7 +157,7 @@ export default {
         description:
           "本系统由减排措施与减排潜力动态评估系统、社会经济成本系统、减排与空气质量快速响应系统、达标评估系统、效益评估系统和数据融合及可视化分析工具等6个独立的工具组成的集成化工具。它为科学家和决策者们提供了一个用户友好的系统化框架，能实现“经济发展-能源消耗-防控措施-污染排放-空气质量-人群健康”的系统化评估，为决策者提供快速辅助决策支持。",
         img: "product-sub-dqwrfzzhjczc.png",
-        anchor: "dqwrfzzhjczc-sys"
+        anchor: `dqwrfzzhjczc`
       }
     ];
     next(vm => {

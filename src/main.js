@@ -9,6 +9,8 @@ import "aos/dist/aos.css";
 import "./assets/css/index.less";
 import VueMaterial from "vue-material";
 import "vue-material/dist/vue-material.min.css";
+import VueScrollTo from "vue-scrollto";
+Vue.use(VueScrollTo);
 
 Vue.use(VueMaterial);
 
