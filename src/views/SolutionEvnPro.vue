@@ -18,8 +18,8 @@
     </div>
     <div class="section section-1">
       <div class="content section-content">
-        <h3 class="section-h3">顶层架构</h3>
-        <h6 class="section-h6">TOP ARCHITECTURE</h6>
+        <h3 class="section-h3">产品应用</h3>
+        <h6 class="section-h6">PRODUCT APPLICATION</h6>
         <div class="hc-grid">
           <ul>
             <li>

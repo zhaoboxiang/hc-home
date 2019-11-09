@@ -20,15 +20,12 @@
         <div class="intro-info">
           <div class="info">
             <h3 class="section-h3">公司介绍</h3>
-            <h6 class="section-h6">Company introduction</h6>
+            <h6 class="section-h6">COMPANY INTRODUCTION</h6>
             <p>
-              深圳虹川科技有限公司成立于2015年，2019年完成首轮5000万元融资。是国内先进的智慧城市整体解决方案提供商，
-              在智慧环保、智慧水务和智慧园区等领域深耕多年，致力于大数据的智能算法与Iot在行业的落地应用。
-              作为国内较早进入绿色智慧城市领域的企业，秉承“让虹霞渲染祖国山川”的初心，以客户需求为己任，持续为客户创造价值。
+              深圳虹川科技有限公司是中国领先的绿色智慧城市解决方案提供商，在智慧城市、环保和水利水务等领域深耕多年。核心人员均来自中兴、华为和平安等大型企业，成功实施过深圳、上海、济南、济宁等多个智慧城市标杆项目。
             </p>
             <p>
-              公司坐落于深圳科技园中区国人通信大厦，公司80%以上为研发人员，50%以上拥有八年以上智慧城市建设专业经验，
-              核心技术人员均来自中兴、华为和平安等大型企业。传承先进的公司管理经验和标准化的研发流程。
+              虹川依托中科院、清华大学、深圳环科院、成都环科院、等科研院所的科研力量，综合应用物联网、大数据、人工智能和5G等先进技术，向客户提供以改善环境质量为目标的整体解决方案。特别在环保领域的空气算法模型，污染源溯源分析等技术领先于业界同行，是国内五家具备此技术能力公司其中之一。
             </p>
           </div>
           <div class="img"></div>
@@ -69,7 +66,7 @@
     <div class="culture-box bg-light-purple">
       <div class="content cul-content">
         <h3 class="section-h3">企业文化</h3>
-        <h6 class="section-h6">enterprise culture</h6>
+        <h6 class="section-h6">ENTERPRISE CULTURE</h6>
         <div class="cul-box">
           <div class="cul-item">
             <div class="keyword">使命</div>
@@ -137,6 +134,7 @@ export default {
 .section-h3 {
   font-size: 32px;
   color: @font-color-active;
+  font-weight: bold;
 }
 .section-h6 {
   font-size: 18px;
@@ -163,6 +161,7 @@ export default {
     align-items: center;
     .caption-cn {
       font-size: 40px;
+      font-weight: bold;
     }
     .caption-en {
       font-size: 18px;
@@ -179,7 +178,7 @@ export default {
       align-items: center;
       justify-content: space-between;
       .info {
-        max-width: 660px;
+        max-width: 600px;
         /*&>h6{*/
         /*margin-top: 10px;*/
         /*}*/

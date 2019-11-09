@@ -341,6 +341,10 @@ export default {
 .btn-white {
   border: 1px solid #fff;
   color: #fff;
+  &:hover{
+    background: #fff;
+    color: @font-color-active;
+  }
 }
 .btn-blue {
   border: 1px solid @font-color-active;
