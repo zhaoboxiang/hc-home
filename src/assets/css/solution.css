@@ -131,20 +131,49 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 80px;
+  position: relative;
+}
+.hc-grid ul li:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(270deg, rgba(149, 171, 216, 0) 0%, #95abd8 50%, rgba(149, 171, 216, 0) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .hc-grid ul li:first-child {
   margin-top: 0;
 }
+.hc-grid ul li:first-child:before {
+  display: none;
+}
 .hc-grid ul li > span {
   display: inline-block;
-  width: 200px;
-  height: 80px;
+  flex: 1;
+  height: 100px;
   line-height: 80px;
+  color: #303CA8;
   font-size: 18px;
   text-align: center;
-  background: rgba(13, 25, 136, 0.3);
-  border-radius: 4px;
+  position: relative;
+}
+.hc-grid ul li > span:before {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(149, 171, 216, 0) 0%, #95abd8 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.hc-grid ul li > span:first-child:before {
+  display: none;
+}
+.hc-grid ul li:nth-child(2n) > span:before {
+  background: linear-gradient(0, rgba(149, 171, 216, 0) 0%, #95abd8 100%);
 }
 .section-h3,
 .section-h6 {
@@ -162,11 +191,6 @@ li {
 .hc-grid {
   padding: 90px 0 208px;
 }
-.hc-grid ul li > span {
-  color: #303CA8;
-  border: 1px solid #303CA8;
-  background: none;
-}
 .solution .solution-banner-box {
   background: #303CA8;
   padding: 120px 0 130px;
@@ -182,6 +206,7 @@ li {
 }
 .solution .solution-banner-box > .banner-content .ban-left .ban-h3 {
   font-size: 48px;
+  font-weight: bold;
 }
 .solution .solution-banner-box > .banner-content .ban-left .ban-h6 {
   font-size: 32px;
