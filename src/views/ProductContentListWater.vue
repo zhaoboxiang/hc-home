@@ -32,57 +32,57 @@ export default {
         "hmcszxjc-sys"*/
       navList: [
         {
-          url: "product-detail",
+          url: "product-detail-water",
           params: "dbsjc-sys",
           name: "地表水监测系统"
         },
         {
-          url: "product-detail",
+          url: "product-detail-water",
           params: "dxsjc-sys",
           name: "地下水监测系统"
         },
         {
-          url: "product-detail",
+          url: "product-detail-water",
           params: "skhbyqjc-sys",
           name: "水库湖泊雨情监测系统"
         },
         {
-          url: "product-detail",
+          url: "product-detail-water",
           params: "hhczglxx-sys",
           name: "河湖长制管理信息系统"
         },
         {
-          url: "product-detail",
+          url: "product-detail-water",
           params: "qsbycjk-sys",
           name: "取水泵远程监控系统"
         },
         {
-          url: "product-detail",
+          url: "product-detail-water",
           params: "scycjk-sys",
           name: "水厂远程监控系统"
         },
         {
-          url: "product-detail",
+          url: "product-detail-water",
           params: "gwjc-sys",
           name: "管网监测系统"
         },
         {
-          url: "product-detail",
+          url: "product-detail-water",
           params: "zyssszxjc-sys",
           name: "直饮水实时在线监测系统"
         },
         {
-          url: "product-detail",
+          url: "product-detail-water",
           params: "csdljsjcyj-sys",
           name: "城市道路积水监测预警系统"
         },
         {
-          url: "product-detail",
+          url: "product-detail-water",
           params: "wsclsszxjc-sys",
           name: "污水处理实时在线监测系统"
         },
         {
-          url: "product-detail",
+          url: "product-detail-water",
           params: "hmcszxjc-sys",
           name: "海绵城市在线监测系统"
         }

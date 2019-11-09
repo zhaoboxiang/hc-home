@@ -3,7 +3,7 @@
     <md-card-media>
       <!-- swiper -->
       <swiper :options="swiperOption">
-        <swiper-slide class="slide-1"></swiper-slide>
+        <swiper-slide class="slide-1"> </swiper-slide>
         <swiper-slide class="slide-2"></swiper-slide>
         <div
           class="swiper-pagination swiper-pagination-white"

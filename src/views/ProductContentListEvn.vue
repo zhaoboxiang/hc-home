@@ -22,57 +22,57 @@ export default {
     return {
       navList: [
         {
-          url: "product-detail",
+          url: "product-detail-env",
           params: "wzjc-sys",
           name: "微站监测系统"
         },
         {
-          url: "product-detail",
+          url: "product-detail-env",
           params: "zhjc-sys",
           name: "走航监测系统"
         },
         {
-          url: "product-detail",
+          url: "product-detail-env",
           params: "spjksb-sys",
           name: "视频监控识别系统"
         },
         {
-          url: "product-detail",
+          url: "product-detail-env",
           params: "qydljk-sys",
           name: "企业电量监控系统"
         },
         {
-          url: "product-detail",
-          params: "kqzlybbj-sys",
+          url: "product-detail-env",
+          params: "kqzlybyj-sys",
           name: "空气质量预报预警系统"
         },
         {
-          url: "product-detail",
+          url: "product-detail-env",
           params: "yyyd-sys",
           name: "一源一档系统"
         },
         {
-          url: "product-detail",
+          url: "product-detail-env",
           params: "wghjg-sys",
           name: "网格化监管系统"
         },
         {
-          url: "product-detail",
+          url: "product-detail-env",
           params: "ztcznjg-sys",
           name: "渣土车智能监管系统"
         },
         {
-          url: "product-detail",
+          url: "product-detail-env",
           params: "zwrtqyjxy-sys",
           name: "重污染天气应急响应系统"
         },
         {
-          url: "product-detail",
+          url: "product-detail-env",
           params: "hjzhfx-sys",
           name: "环境综合分析系统"
         },
         {
-          url: "product-detail",
+          url: "product-detail-env",
           params: "dqwrfzzhjczc-sys",
           name: "大气污染防治综合决策支持系统"
         }

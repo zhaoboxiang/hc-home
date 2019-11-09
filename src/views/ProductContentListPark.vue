@@ -22,22 +22,22 @@ export default {
       //"qydahx-sys", "wyglyfw-sys", "qyfwpt-sys", "yft-sys"
       navList: [
         {
-          url: "product-detail",
+          url: "product-detail-park",
           params: "qydahx-sys",
           name: "企业档案画像"
         },
         {
-          url: "product-detail",
+          url: "product-detail-park",
           params: "wyglyfw-sys",
           name: "物业管理与服务"
         },
         {
-          url: "product-detail",
+          url: "product-detail-park",
           params: "qyfwpt-sys",
           name: "企业服务平台"
         },
         {
-          url: "product-detail",
+          url: "product-detail-park",
           params: "yft-sys",
           name: "园付通"
         }

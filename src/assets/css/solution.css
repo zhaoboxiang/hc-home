@@ -189,7 +189,7 @@ li {
   margin-top: 10px;
 }
 .hc-grid {
-  padding: 90px 0 208px;
+  padding: 90px 0 0;
 }
 .solution .solution-banner-box {
   background: #303CA8;
@@ -225,6 +225,9 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.solution .section-1 {
+  padding-bottom: 158px;
 }
 .solution .section-1 .section-content .section-flex {
   margin-top: 60px;

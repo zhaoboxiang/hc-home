@@ -72,8 +72,20 @@ const routes = [
   },
   // 产品中心 --- 子页面
   {
-    path: "/product-detail/:name",
-    name: "product-detail",
+    path: "/product-detail-env/:name",
+    name: "product-detail-env",
+    component: ProductDetail,
+    props: true
+  },
+  {
+    path: "/product-detail-water/:name",
+    name: "product-detail-water",
+    component: ProductDetail,
+    props: true
+  },
+  {
+    path: "/product-detail-water/:name",
+    name: "product-detail-park",
     component: ProductDetail,
     props: true
   },
