@@ -5,10 +5,27 @@
       :imgurl="section_1.imgUrl"
     ></product-content-section>
     <cut-line-content></cut-line-content>
-    <product-content-section
-      :sectitle="section_2.title"
-      :imgurl="section_2.imgUrl"
-    ></product-content-section>
+    <div class="product-section">
+      <div class="content section-content">
+        <div class="section-title">
+          一图感知、数据模拟、多维呈现，随时随地掌握环境动态趋势，从容面对各类预警事件
+        </div>
+        <div class="sec-box">
+          <div class="sec-item">
+            <div class="item-icon icon-1"></div>
+            <div class="item-tips">一图感知</div>
+          </div>
+          <div class="sec-item">
+            <div class="item-icon icon-2"></div>
+            <div class="item-tips">数据模拟</div>
+          </div>
+          <div class="sec-item">
+            <div class="item-icon icon-3"></div>
+            <div class="item-tips">多维呈现</div>
+          </div>
+        </div>
+      </div>
+    </div>
     <cut-line-content></cut-line-content>
     <product-content-section
       :sectitle="section_3.title"
@@ -32,12 +49,8 @@ export default {
     return {
       section_1: {
         imgUrl: require("../assets/images/product/img_cpzx_hbxg_1.png"),
-        title: "支持各类设备、各类网络、各类协议数据接入，实现多维感知数据无缝衔接"
-      },
-      section_2: {
-        imgUrl: require("../assets/images/product/img_cpzx_hbxg_2.png"),
         title:
-                "一图感知、数据模拟、多维呈现，随时随地掌握环境动态趋势，从容面对各类预警事件"
+          "支持各类设备、各类网络、各类协议数据接入，实现多维感知数据无缝衔接"
       },
       section_3: {
         imgUrl: require("../assets/images/product/img_cpzx_hbxg_3.png"),
@@ -46,11 +59,74 @@ export default {
       section_4: {
         imgUrl: require("../assets/images/product/img_cpzx_hbxg_4.png"),
         title:
-                "平战结合，环境监管全覆盖，环境问题无处遁形，为人民群众环境安全保驾护航"
+          "平战结合，环境监管全覆盖，环境问题无处遁形，为人民群众环境安全保驾护航"
       }
     };
   }
 };
 </script>
 
-<style scoped></style>
+<style lang="less" scoped>
+@import "../assets/css/global";
+.product-section {
+  .section-content {
+    padding: 120px 0;
+    .section-title {
+      font-size: 24px;
+      color: @font-color;
+      text-align: center;
+      margin-bottom: 80px;
+    }
+    .sec-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+      .sec-item {
+        flex: 1;
+        position: relative;
+        &:after {
+          content: "";
+          display: block;
+          width: 1px;
+          height: 100%;
+          background: linear-gradient(
+            0,
+            rgba(149, 171, 216, 0) 0%,
+            rgba(149, 171, 216, 1) 50%,
+            rgba(149, 171, 216, 0) 100%
+          );
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .item-icon {
+          width: 68px;
+          height: 68px;
+          margin: 0 auto;
+        }
+        .icon-1 {
+          background: url("../assets/images/product/icon_cpzx_hbxg_1.png")
+            center no-repeat;
+          background-size: 100% 100%;
+        }
+        .icon-2 {
+          background: url("../assets/images/product/icon_cpzx_hbxg_2.png")
+            center no-repeat;
+          background-size: 100% 100%;
+        }
+        .icon-3 {
+          background: url("../assets/images/product/icon_cpzx_hbxg_3.png")
+            center no-repeat;
+          background-size: 100% 100%;
+        }
+        .item-tips {
+          margin-top: 10px;
+          font-size: 16px;
+          color: @font-color;
+        }
+      }
+    }
+  }
+}
+</style>
