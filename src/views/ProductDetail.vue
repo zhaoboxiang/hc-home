@@ -64,15 +64,135 @@ export default {
         "hjzhfx-sys",
         "dqwrfzzhjczc-sys"
       ],
-      productWater: [],
-      productPark: []
+      productWater: [
+        "dbsjc-sys",
+        "dxsjc-sys",
+        "skhbyqjc-sys",
+        "hhczglxx-sys",
+        "qsbycjk-sys",
+        "scycjk-sys",
+        "gwjc-sys",
+        "zyssszxjc-sys",
+        "csdljsjcyj-sys",
+        "wsclsszxjc-sys",
+        "hmcszxjc-sys"
+      ],
+      productPark: ["qydahx-sys", "wyglyfw-sys", "qyfwpt-sys", "yft-sys"]
     };
   },
   computed: {},
   beforeRouteEnter(to, from, next) {
     console.log(to, from, next);
     const paramsName = to.params.name;
-    const envData = [
+    const waterData = [
+      {
+        title: "地表水监测系统",
+        description:
+                "水质监测预警系统是一套以在线自动分析仪器为核心，运用现代传感器技术、自动测量技术、自动控制技术及相关的专用分析软件所组成的一个综合性自动监测数据的采集系统。该系统可应用于水资源循环利用的各个环节，实现对饮用水及生产、生活污水水质的实时连续监测，并将监测数据和信息传送到主管部门，为监管提供技术支持。 系统支持针对江、河、湖泊、水库等水源地的水温、溶解氧、PH、电导率、盐度、浊度、蓝绿藻，氨氮离子、余氯等参数监测，并可扩展其它监测功能。针对排污口及污水处理厂的浊度、PH、COD、氨氮离子、溶解氧、重金属离子等参数监测，并可扩展其它监测功能。 系统主要由采水单元、配水及预处理、监测分析、自动控制（包括数据采集通讯）、站房及配套设施以及水质自动监测等模块组成。",
+        img: "product-sub-dbsjc.png",
+        anchor: "dbsjc-sys"
+      },
+      {
+        title: "地下水监测系统",
+        description:
+                "地下水监测系统是掌握地下水变化规律、了解地下水开采状况、指导地下水资源保护的重要手段。地下水监测系统可对地下水的水位、水温、水质等参数进行长期监测并自动存储监测数据，可进行图形化展示地下水监测数据，并根据业务需求进行报警、分析和管理，可对地下水的变化规律进行动态分析。 为掌握地下水变化规律、指导地下水资源保护发挥了重要作用。 系统主要由以下功能模块组成： 数据汇聚-实时接收各监测点的上报数据，自动将监测数据存储至数据库。 数据展示-GIS地图展示测点位置、状态和单点数据，并支持列表查询。 智能报警-通过颜色变化、弹窗提示报警，自动向责任人发送报警短信。 统计分析-智能生成区域等水位图，统计分析报表，时段分析曲线。",
+        img: "product-sub-dxsjc.png",
+        anchor: "dxsjc-sys"
+      },
+      {
+        title: "水库湖泊雨情监测系统",
+        description:
+                "水库监测系统适用于水利管理部门远程监测水库的水位、降雨量等实时数据，同时支持远程图像监控，为保障水库的适度蓄水和安全度汛提供了准确、及时的现场信息。 系统通过远程监测水库分布位置、水位、降雨量及现场设备运行状态等实时数据，当水位/降雨量超过阈值或现场设备故障时，系统自动报警向责任人发送短信报警。系统支持自定义水库水位/降雨量的时、日、月、年数据报表，自动生成水位、降雨量等数据过程曲线。",
+        img: "product-sub-skhbyqjc.png",
+        anchor: "skhbyqjc-sys"
+      },
+      {
+        title: "河湖长制管理信息系统",
+        description:
+                "国家河长制建设主要包括加强水资源保护、加强河湖长水域岸线管理保护、加强水污染防治、加强水环境治理、加强水生态修复和加强执法监管六项内容。 围绕以上六项内容，河湖长制管理信息系统是一个跨移动和PC端平台，该系统包括巡检轨迹记录、污染现场情况记录、污染源整改监控记录、工单处理记录等数据结构设计。 在PC端可以清晰看到河长上报的每个污染问题类型、污染源分类、问题等级等，当问题得到及时解决后，可以回放河道整改事件过程。 在移动端可以开启巡河，在巡查过程中能保存河长巡查轨迹，自动保存巡查记录实时上传信息平台。",
+        img: "product-sub-hhczglxx.png",
+        anchor: "hhczglxx-sys"
+      },
+      {
+        title: "取水泵远程监控系统",
+        description:
+                "水厂远程监控系统适用于供水企业远程监控管理水厂。水厂操作人员可以在水厂控制室远程监测厂内水池水位、进厂流量、出厂流量、出厂压力、水质等信息；远程监测加压泵组、配电设备及其它自动化设备的工作情况；远程控制加压泵的启停。水司调度中心工作人员及公司主管领导可以远程监测各水厂的工作情况及水厂操作人员的操作情况。",
+        img: "product-sub-qsbycjk.png",
+        anchor: "qsbycjk-sys"
+      },
+      {
+        title: "水厂远程监控系统",
+        description:
+                "水厂远程监控系统适用于供水企业远程监控管理水厂。 水厂操作人员可以在水厂控制室远程监测厂内水池水位、进厂流量、出厂流量、出厂压力、水质等信息；远程监测加压泵组、配电设备及其它自动化设备的工作情况；远程控制加压泵的启停。 水司调度中心工作人员及公司主管领导可以远程监测各水厂的工作情况及水厂操作人员的操作情况。",
+        img: "product-sub-scycjk.png",
+        anchor: "scycjk-sys"
+      },
+      {
+        title: "管网监测系统",
+        description:
+                "管网监测系统适用于供水企业远程监测供水管网。供水调度人员在管网监测中心即可远程监测全市供水管网的压力及流量情况，以科学指挥各水厂启停供水设备、保障供水压力平衡和流量稳定、并及时发现和预测爆管事故。 并支持管网末梢水质监测和阀门远程控制功能。 管网监测系统采用GIS方式实现对供水排水体系中所有的管线、设备、构筑物空间位置信息、属性信息进行统一的数据和业务管理。主要包括管网数据查询、信息统计以及管网设备日常维护管理、管网的纵断面分析、设备预警分析、爆管分析、关阀分析、二次关阀分析等功能，为管网建模与供水调度、设备管理、维修维护、爆管处理、工程建设及水质管理等业务应用提供科学合理的基础数据和辅助决策功能。",
+        img: "product-sub-gwjc.png",
+        anchor: "gwjc-sys"
+      },
+      {
+        title: "直饮水实时在线监测系统",
+        description:
+                "在饮用水终端，设置直饮水制水设备，实时显示水质指标，当检测指标超标时，即时显示在屏幕上，提醒公众勿饮用; 同时向信息管理平台告警，启动突发事件应急反应机制。系统通过互联网和移动互联网架构的物感网络，监测直饮水设备 内的设备的工作状态，环境参数和水质情况(温度、余氯、浊度、PH值等)。可感知直饮水设备的实时工作情况;根据设 备的工作状态和环境参数，采用大数据分析技术，在故障发生前就捕获到事件，并分配给相应的支持人员进行处理，并可 根据人工智能算法模型，实现直饮水设备的最佳节能自动运营模式。",
+        img: "product-sub-zyssszxjc.png",
+        anchor: "zyssszxjc-sys"
+      },
+      {
+        title: "城市道路积水监测预警系统",
+        description:
+                "城市道路积水监测预警系统可实时监测城区各低洼路段的积水水位并实现自动预警。市政管理部门借助该系统可整体把握整个城区内涝状况，及时进行排水调度。交通管理部门通过该系统可获取各路段的实时积水水位，并借助广播、电视等媒体为广大群众提供出行指南，避免人员、车辆误入深水路段造成重大损失。 系统支持实时监测道路低洼处、下穿式立交桥和隧道的积水水位，并通过GPRS/CDMA/4G网络或光纤网络远程传送至城市内涝监测预警中心。立交桥、隧道监测点可通过情报板自动提示（或监测中心远程手动提示）当前积水水位值或“允许通行”、“谨慎通行”、“禁止通行”等警示信息。",
+        img: "product-sub-csdljsjcyj.png",
+        anchor: "csdljsjcyj-sys"
+      },
+      {
+        title: "污水处理实时在线监测系统",
+        description:
+                "污水处理实时在线监测系统将污水处理厂生产监控与企业管理有机地结合起来，系统在企业管理层和现场自动化控制层之间起到了承上启下的作用。通过从数据库层面将实时运行数据和设备资产数据统一起来，使得管理层可以及时的获得任何一个运行单位的实时数据，同时又可以调阅各类设备、设施的管理数据。通过生产运行管理数据库使控制层采集数据直接应用到管理层的日常工作中，减少信息传输过程中不必要的滞后与可能发生的人为错误。使管理和控制，计划与生产紧密结合，达到管控一体化的目标。 系统在业务管理方面侧重3条主线： 对设备和备件等资产实现全面的维修、养护、库存管理，对资产变动过程进行跟踪和记录。提供完善的维护/维修、备件需求/消耗、资产档案等报表。 对安全生产，文明厂区，质量管理进行考核并生成完整的报表。 对动态的生产运行情况进行监视和记录，并提供多种分析工具（无故障运行时间、运行历史比较等等）。",
+        img: "product-sub-wsclsszxjc.png",
+        anchor: "wsclsszxjc-sys"
+      },
+      {
+        title: "海绵城市在线监测系统",
+        description:
+                "“海绵城市”是指城市能够像海绵一样，在适应环境变化和应对自然灾害等方面具有良好的弹性，下雨时吸水、蓄水、渗水、净水，需要时将蓄存的水“释放”并加以利用。 海绵城市监测评价系统基于“物联网” 理念，利用先进的传感技术，实时监测城市水文信息，结合住建部颁布执行的《海绵城市建设绩效评价与考核办法》，综合运用在线监测数据、填报数据、系统集成数据，逐项细化分解考核指标，建立考核评估指标体系，支持海绵城市建设效果6个方面、18项指标的全方位、可视化、精细化评估，实现海绵建设效果（各项指标）的逐级追溯、实时更新，并通过多种展示方式进行考核评估指标的综合展示、对比分析等。 海绵城市监测评价系统主要功能有：GIS地图可视化管理、项目管理、在线监测、模型分析和专项考核等。",
+        img: "product-sub-hmcszxjc.png",
+        anchor: "hmcszxjc-sys"
+      }
+    ];
+
+    console.log(waterData);
+    const parkData = [
+      {
+        title: "企业档案画像",
+        description: "",
+        img: "product-sub-qydahx.png",
+        anchor: "qydahx-sys"
+      },
+      {
+        title: "物业管理与服务",
+        description: "",
+        img: "product-sub-wyglyfw.png",
+        anchor: "wyglyfw-sys"
+      },
+      {
+        title: "企业服务平台",
+        description: "",
+        img: "product-sub-qyfwpt.png",
+        anchor: "qyfwpt-sys"
+      },
+      {
+        title: "园付通",
+        description: "",
+        img: "product-sub-yft.png",
+        anchor: "yft-sys"
+      }
+    ];
+
+    console.log(parkData);const envData = [
       {
         title: "微站监测系统",
         description:
@@ -160,15 +280,27 @@ export default {
         anchor: `dqwrfzzhjczc`
       }
     ];
+
     next(vm => {
       console.log("vm---", vm);
       if (vm.productEnv.indexOf(paramsName) !== -1) {
         vm.productDetailList = envData;
         vm.productDetailTitle = "智慧环保产品";
         vm.productDetailTitleIcon = "icon-env";
+      }else if(vm.productPark.indexOf(paramsName) !== -1){
+        vm.productDetailList = parkData;
+        vm.productDetailTitle = "智慧园区产品";
+        vm.productDetailTitleIcon = "icon-park";
+      }else if(vm.productWater.indexOf(paramsName) !== -1){
+        vm.productDetailList = waterData;
+        vm.productDetailTitle = "智慧水务产品";
+        vm.productDetailTitleIcon = "icon-water";
+      }else{
+        next();
       }
       next();
     });
+
   }
 };
 </script>

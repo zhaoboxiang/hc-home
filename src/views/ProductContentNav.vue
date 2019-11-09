@@ -152,6 +152,7 @@ export default {
         }
         .item-tips {
           font-size: 20px;
+          color: #fff;
         }
       }
       .ban-nav-cur,
