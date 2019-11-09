@@ -24,7 +24,7 @@
           <div class="section-flex">
             <div class="flex-item">
               <div class="item-icon icon-1"></div>
-              <div class="item-tips">人·幸福</div>
+              <div class="item-tips">人·</div>
               <div class="item-h">
                 民生及管理智慧化<br />社会治理 · 人文智慧
               </div>

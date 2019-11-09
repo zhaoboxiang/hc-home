@@ -35,7 +35,7 @@
         </div>
         <div class="business-content">
           <div class="item">
-            <div class="tips"><b>人</b>·幸福</div>
+            <div class="tips"><span>人</span>·幸福</div>
             <div class="cont">
               <div class="cont-icon cont-icon-one"></div>
               <div class="cont-intro">
@@ -49,7 +49,7 @@
             </div>
           </div>
           <div class="item">
-            <div class="tips"><b>城</b>·智能</div>
+            <div class="tips"><span>城</span>·智能</div>
             <div class="cont">
               <div class="cont-icon cont-icon-two"></div>
               <div class="cont-intro">
@@ -64,7 +64,7 @@
             </div>
           </div>
           <div class="item">
-            <div class="tips"><b>市</b>·繁华</div>
+            <div class="tips"><span>市</span>·繁华</div>
             <div class="cont">
               <div class="cont-icon cont-icon-three"></div>
               <div class="cont-intro">
@@ -91,14 +91,14 @@
         <div class="business-content">
           <ul>
             <li>
-              <span>大气环境监控</span>
+              <span>大气环境监测</span>
               <span>企业电量监控</span>
               <span>AI图像识别</span>
               <span>污染源特征分析</span>
-              <span>臭氧动态溯源</span>
+              <span>空气质量预报</span>
             </li>
             <li>
-              <span>环境综合分析报告</span>
+              <span>环境综合分析</span>
               <span>网格监管</span>
               <span>重污染天气应对</span>
               <span>空气质量评估</span>
@@ -397,6 +397,7 @@ export default {
           font-size: 32px;
           padding-right: 20px;
           border-right: 1px solid rgba(255, 255, 255, 0.16);
+          font-weight: normal;
         }
         & > span {
           padding-left: 20px;
@@ -428,7 +429,7 @@ export default {
             right: 0;
             top: -38px;
             margin: auto;
-            border-radius: 100%;
+            border-radius: 28px;
           }
           .cont-icon-one {
             background: url("../assets/images/icon_zhcs_1.png") center no-repeat;
@@ -546,6 +547,10 @@ export default {
 .btn-white {
   border: 1px solid #fff;
   color: #fff;
+  &:hover{
+    background: #fff;
+    color: @font-color-active;
+  }
 }
 .btn-blue {
   border: 1px solid @font-color-active;

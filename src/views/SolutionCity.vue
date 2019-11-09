@@ -18,8 +18,8 @@
     </div>
     <div class="section section-1">
       <div class="content section-content">
-        <h3 class="section-h3">顶层架构</h3>
-        <h6 class="section-h6">TOP ARCHITECTURE</h6>
+        <h3 class="section-h3">方案理念</h3>
+        <h6 class="section-h6">SOLUTION CONCEPT</h6>
         <div class="section-flex">
           <div class="flex-item">
             <div class="item-icon icon-1"></div>
