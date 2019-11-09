@@ -13,6 +13,7 @@
 #nav a.router-link-exact-active {
   color: #373ea4;
 }
+
 </style>
 <script>
 import Header from "./components/Header";

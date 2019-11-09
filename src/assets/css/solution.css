@@ -22,10 +22,18 @@ table,
 th,
 td {
   border: none;
-  font-family: "微软雅黑", "黑体", "宋体";
+  font-family: PingFangSC-Medium, PingFang SC, Microsoft Yahei, sans-serif;
   font-size: 14px;
   margin: 0px;
   padding: 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
 }
 html,
 body {
