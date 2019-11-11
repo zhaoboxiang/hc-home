@@ -67,25 +67,7 @@
       <div class="content cul-content">
         <h3 class="section-h3">企业文化</h3>
         <h6 class="section-h6">ENTERPRISE CULTURE</h6>
-        <div class="cul-box">
-          <div class="cul-item">
-            <div class="keyword">使命</div>
-            <div class="keyword-en">MISSION</div>
-            <p>科技赋能<br />助力客户实现社会价值</p>
-          </div>
-          <div class="line"></div>
-          <div class="cul-item">
-            <div class="keyword">愿景</div>
-            <div class="keyword-en">ASPIRATION</div>
-            <p>虹霓映山川<br />绿色智慧城市理念倡行者</p>
-          </div>
-          <div class="line"></div>
-          <div class="cul-item">
-            <div class="keyword">行为准则</div>
-            <div class="keyword-en">STANDARD OF BEHAVIOR</div>
-            <p>诚信为本，精益求精<br />团队协同，敢担重任</p>
-          </div>
-        </div>
+        <company-culture style="margin-top: 80px"></company-culture>
       </div>
       <div class="cul-split"></div>
       <div class="content cul-content">
@@ -124,13 +106,14 @@
   </div>
 </template>
 <script>
+  import CompanyCulture from "./CompanyCulture";
 export default {
-  name: "about"
+  name: "about",
+  components: { CompanyCulture }
 };
 </script>
 <style scoped lang="less">
 @import "../assets/css/global";
-
 .section-h3 {
   font-size: 32px;
   color: @font-color-active;
@@ -179,9 +162,6 @@ export default {
       justify-content: space-between;
       .info {
         max-width: 600px;
-        /*&>h6{*/
-        /*margin-top: 10px;*/
-        /*}*/
         & > p {
           margin-top: 22px;
         }
@@ -264,50 +244,6 @@ export default {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      .cul-item {
-        width: 220px;
-        height: 220px;
-        background: @font-color-active;
-        color: #fff;
-        border-radius: 100%;
-        position: relative;
-        .keyword {
-          font-size: 24px;
-          margin-top: 46px;
-        }
-        .keyword-en {
-          font-size: 12px;
-          margin: 6px 0 16px;
-        }
-        & > p {
-          line-height: 24px;
-        }
-      }
-      .line {
-        width: 218px;
-        height: 4px;
-        background: url("../assets/images/img_about_culture_line.png") center
-          repeat-x;
-        position: relative;
-        &:before,
-        &:after {
-          content: "";
-          display: block;
-          width: 12px;
-          height: 12px;
-          background: #95abd8;
-          border-radius: 100%;
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-        }
-        &:before {
-          left: -16px;
-        }
-        &:after {
-          right: -16px;
-        }
-      }
       .cul-left {
         text-align: left;
         line-height: 36px;

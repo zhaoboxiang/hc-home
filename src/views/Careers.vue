@@ -11,7 +11,8 @@
       <div class="cont-head">
         <h6>虹川科技期待您的加入</h6>
         <p>
-          虹川科技为员工提供良好的工作环境，具有竞争力的薪资待遇，完善的福利体系，为员工实现自身价值提供富有挑战性的职业发展机会，追求员工与企业共同成长。
+          虹川科技高度重视人才和团队建设，全面设立和实施“优秀合伙人”和“优秀人才”计划，以价值创造为根本，成就共同理想为目标，欢迎各类优秀贤士加入。
+          <br/>
           应聘人员请将个人简历发送至<span>hr@hcttop.com</span
           >邮箱，合则约见，勿访。
         </p>
@@ -265,7 +266,7 @@ export default {
   padding: 60px 0 120px;
   .cont-head {
     text-align: center;
-    width: 505px;
+    /*width: 505px;*/
     margin: 30px auto 60px;
     & > h6 {
       color: @font-color-active;
