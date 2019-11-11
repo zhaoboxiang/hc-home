@@ -210,6 +210,7 @@ li {
 }
 .solution .solution-banner-box > .banner-content .ban-left .ban-h6 {
   font-size: 32px;
+  font-family: PingFangSC-Regular, PingFang SC, Microsoft Yahei, sans-serif;
 }
 .solution .solution-banner-box > .banner-content .ban-left .ban-p {
   line-height: 24px;
