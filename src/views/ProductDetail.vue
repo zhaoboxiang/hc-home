@@ -96,7 +96,6 @@ export default {
 
   },
   beforeRouteEnter(to, from, next) {
-    console.log(to, from, next);
     const paramsName = to.params.name;
     const waterData = [
       {
@@ -293,7 +292,6 @@ export default {
     ];
 
     next(vm => {
-      console.log("vm---", vm);
       if (vm.productEnv.indexOf(paramsName) !== -1) {
         vm.productDetailList = envData;
         vm.productDetailTitle = "智慧环保产品";
