@@ -23,14 +23,14 @@
         <div class="hc-grid">
           <ul>
             <li>
-              <span>大气环境监控</span>
+              <span>大气环境监测</span>
               <span>企业电量监控</span>
               <span>AI图像识别</span>
               <span>污染源特征分析</span>
-              <span>臭氧动态溯源</span>
+              <span>空气质量预报</span>
             </li>
             <li>
-              <span>环境综合分析报告</span>
+              <span>环境综合分析</span>
               <span>网格监管</span>
               <span>重污染天气应对</span>
               <span>空气质量评估</span>

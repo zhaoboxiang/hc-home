@@ -374,6 +374,7 @@ export default {
         font-weight: 400;
         color: rgba(68, 68, 68, 1);
         line-height: 24px;
+        text-align: left;
       }
     }
   }

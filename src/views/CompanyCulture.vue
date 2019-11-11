@@ -5,19 +5,19 @@
           <div class="cul-item">
               <div class="keyword">使命</div>
               <div class="keyword-en">MISSION</div>
-              <p>科技赋能<br />助力客户实现社会价值</p>
+              <p>科技赋能、产业报国</p>
           </div>
           <div class="line"></div>
           <div class="cul-item">
               <div class="keyword">愿景</div>
               <div class="keyword-en">ASPIRATION</div>
-              <p>虹霓映山川<br />绿色智慧城市理念倡行者</p>
+              <p>绿色智慧城市理念倡行者</p>
           </div>
           <div class="line"></div>
           <div class="cul-item">
-              <div class="keyword">行为准则</div>
-              <div class="keyword-en">STANDARD OF BEHAVIOR</div>
-              <p>诚信为本，精益求精<br />团队协同，敢担重任</p>
+              <div class="keyword">价值观</div>
+              <div class="keyword-en">SENSE OF WORTH</div>
+              <p>品质、责任、创新、协作</p>
           </div>
       </div>
     </div>
