@@ -35,46 +35,40 @@
         </div>
         <div class="business-content">
           <div class="item">
-            <div class="tips"><span>人</span>·幸福</div>
-            <div class="cont">
-              <div class="cont-icon cont-icon-one"></div>
-              <div class="cont-intro">
-                <h6>民生及管理智慧化</h6>
-                <p>社会治理 · 人文智慧</p>
-                <div>
-                  促进民生服务和社会管理智慧化 智慧教育、智慧医疗、智慧政务
-                  <br />…
-                </div>
+            <div class="cont-icon cont-icon-one"></div>
+            <div class="tips"><span>人1</span>·幸福</div>
+            <div class="cont-intro">
+              <p>民生及管理智慧化<br/>社会治理 · 人文智慧</p>
+              <div>
+                促进民生服务和社会管理智慧化 智慧教育、智慧医疗、智慧政务
+                <br />…
               </div>
             </div>
+            <div class="cont"></div>
           </div>
           <div class="item">
+            <div class="cont-icon cont-icon-two"></div>
             <div class="tips"><span>城</span>·智能</div>
-            <div class="cont">
-              <div class="cont-icon cont-icon-two"></div>
-              <div class="cont-intro">
-                <h6>基础设施智慧化</h6>
-                <p>基础设施 · 物联智慧</p>
-                <div>
-                  建设智慧化的城市基础设施
-                  智慧楼宇、智慧照明、智慧交通、智慧能源
-                  <br />…
-                </div>
+            <div class="cont-intro">
+              <p>基础设施智慧化<br/>基础设施 · 物联智慧</p>
+              <div>
+                建设智慧化的城市基础设施
+                智慧楼宇、智慧照明、智慧交通、智慧能源
+                <br />…
               </div>
             </div>
+            <div class="cont"></div>
           </div>
           <div class="item">
+            <div class="cont-icon cont-icon-three"></div>
             <div class="tips"><span>市</span>·繁华</div>
-            <div class="cont">
-              <div class="cont-icon cont-icon-three"></div>
-              <div class="cont-intro">
-                <h6>经济产业智慧化</h6>
-                <p>经济生产 · 产业智慧</p>
-                <div>
-                  促进工农业生产、市场经济智慧化 智慧产业、智慧农业、电子商务<br />…
-                </div>
+            <div class="cont-intro">
+              <p>经济产业智慧化<br/>经济生产 · 产业智慧</p>
+              <div>
+                促进工农业生产、市场经济智慧化 智慧产业、智慧农业、电子商务<br />…
               </div>
             </div>
+            <div class="cont"></div>
           </div>
         </div>
       </div>
@@ -393,6 +387,8 @@ export default {
       border-bottom: 1px solid rgba(255, 255, 255, 0.16);
       .business-title {
         font-size: 20px;
+        display: flex;
+        align-items: center;
         & > b {
           font-size: 32px;
           padding-right: 20px;
@@ -410,49 +406,42 @@ export default {
       & > .item {
         text-align: center;
         width: 320px;
-        padding-top: 60px;
+        border-radius: 4px;
 
         .tips {
-          font-size: 36px;
-          font-weight: 100;
+          font-size: 24px;
         }
-        .cont {
-          position: relative;
-          padding: 58px 40px 47px;
-          background: rgba(13, 25, 136, 0.3);
-          margin-top: 78px;
-          .cont-icon {
-            position: absolute;
-            width: 76px;
-            height: 76px;
-            left: 0;
-            right: 0;
-            top: -38px;
-            margin: auto;
-            border-radius: 28px;
-          }
-          .cont-icon-one {
-            background: url("../assets/images/icon_zhcs_1.png") center no-repeat;
-            background-size: 100% 100%;
-          }
-          .cont-icon-two {
-            background: url("../assets/images/icon_zhcs_2.png") center no-repeat;
-            background-size: 100% 100%;
-          }
-          .cont-icon-three {
-            background: url("../assets/images/icon_zhcs_3.png") center no-repeat;
-            background-size: 100% 100%;
-          }
+        width: 320px;
+        height: 400px;
+        padding: 0 40px 47px;
+        background: rgba(13, 25, 136, 0.3);
+        margin-top: 50px;
+        .cont-icon {
+          width: 90px;
+          height: 90px;
+          margin: 43px auto 27px;
+          border-radius: 28px;
+        }
+        .cont-icon-one {
+          background: url("../assets/images/icon_zhcs_1.png") center no-repeat;
+          background-size: 100% 100%;
+        }
+        .cont-icon-two {
+          background: url("../assets/images/icon_zhcs_2.png") center no-repeat;
+          background-size: 100% 100%;
+        }
+        .cont-icon-three {
+          background: url("../assets/images/icon_zhcs_3.png") center no-repeat;
+          background-size: 100% 100%;
         }
         .cont-intro {
-          h6 {
-            font-size: 20px;
-            font-weight: normal;
-            margin-bottom: 14px;
+          & > p{
+            font-size: 18px;
+            line-height: 24px;
+            margin: 22px 0 20px;
           }
           & > div {
             line-height: 22px;
-            margin-top: 20px;
             padding-top: 20px;
             border-top: 1px solid rgba(255, 255, 255, 0.16);
           }

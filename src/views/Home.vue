@@ -175,84 +175,84 @@ export default {
         }
       }
     }
-    .business-content {
-      display: flex;
-      justify-content: space-between;
-      & > .item {
-        text-align: center;
-        width: 320px;
-        padding-top: 60px;
+    /*.business-content {*/
+      /*display: flex;*/
+      /*justify-content: space-between;*/
+      /*& > .item {*/
+        /*text-align: center;*/
+        /*width: 320px;*/
+        /*padding-top: 60px;*/
 
-        .tips {
-          font-size: 36px;
-          font-weight: 100;
-        }
-        .cont {
-          position: relative;
-          padding: 58px 40px 47px;
-          background: rgba(13, 25, 136, 0.3);
-          margin-top: 78px;
-          .cont-icon {
-            position: absolute;
-            width: 76px;
-            height: 76px;
-            left: 0;
-            right: 0;
-            top: -38px;
-            margin: auto;
-            border-radius: 100%;
-          }
-          .cont-icon-one {
-            background: url("../assets/images/icon_zhcs_1.png") center no-repeat;
-            background-size: 100% 100%;
-          }
-          .cont-icon-two {
-            background: url("../assets/images/icon_zhcs_2.png") center no-repeat;
-            background-size: 100% 100%;
-          }
-          .cont-icon-three {
-            background: url("../assets/images/icon_zhcs_3.png") center no-repeat;
-            background-size: 100% 100%;
-          }
-        }
-        .cont-intro {
-          h6 {
-            font-size: 20px;
-            font-weight: normal;
-            margin-bottom: 14px;
-          }
-          & > div {
-            line-height: 22px;
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.16);
-          }
-        }
-      }
-      & > ul {
-        width: 100%;
-        padding: 120px 0 180px;
-        li {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          margin-top: 80px;
-          &:first-child {
-            margin-top: 0;
-          }
-          & > span {
-            display: inline-block;
-            width: 200px;
-            height: 80px;
-            line-height: 80px;
-            font-size: 18px;
-            text-align: center;
-            background: rgba(13, 25, 136, 0.3);
-            border-radius: 4px;
-          }
-        }
-      }
-    }
+        /*.tips {*/
+          /*font-size: 36px;*/
+          /*font-weight: 100;*/
+        /*}*/
+        /*.cont {*/
+          /*position: relative;*/
+          /*padding: 58px 40px 47px;*/
+          /*background: rgba(13, 25, 136, 0.3);*/
+          /*margin-top: 78px;*/
+          /*.cont-icon {*/
+            /*position: absolute;*/
+            /*width: 76px;*/
+            /*height: 76px;*/
+            /*left: 0;*/
+            /*right: 0;*/
+            /*top: -38px;*/
+            /*margin: auto;*/
+            /*border-radius: 100%;*/
+          /*}*/
+          /*.cont-icon-one {*/
+            /*background: url("../assets/images/icon_zhcs_1.png") center no-repeat;*/
+            /*background-size: 100% 100%;*/
+          /*}*/
+          /*.cont-icon-two {*/
+            /*background: url("../assets/images/icon_zhcs_2.png") center no-repeat;*/
+            /*background-size: 100% 100%;*/
+          /*}*/
+          /*.cont-icon-three {*/
+            /*background: url("../assets/images/icon_zhcs_3.png") center no-repeat;*/
+            /*background-size: 100% 100%;*/
+          /*}*/
+        /*}*/
+        /*.cont-intro {*/
+          /*h6 {*/
+            /*font-size: 20px;*/
+            /*font-weight: normal;*/
+            /*margin-bottom: 14px;*/
+          /*}*/
+          /*& > div {*/
+            /*line-height: 22px;*/
+            /*margin-top: 20px;*/
+            /*padding-top: 20px;*/
+            /*border-top: 1px solid rgba(255, 255, 255, 0.16);*/
+          /*}*/
+        /*}*/
+      /*}*/
+      /*& > ul {*/
+        /*width: 100%;*/
+        /*padding: 120px 0 180px;*/
+        /*li {*/
+          /*display: flex;*/
+          /*align-items: center;*/
+          /*justify-content: space-between;*/
+          /*margin-top: 80px;*/
+          /*&:first-child {*/
+            /*margin-top: 0;*/
+          /*}*/
+          /*& > span {*/
+            /*display: inline-block;*/
+            /*width: 200px;*/
+            /*height: 80px;*/
+            /*line-height: 80px;*/
+            /*font-size: 18px;*/
+            /*text-align: center;*/
+            /*background: rgba(13, 25, 136, 0.3);*/
+            /*border-radius: 4px;*/
+          /*}*/
+        /*}*/
+      /*}*/
+    /*}*/
   }
 }
 
