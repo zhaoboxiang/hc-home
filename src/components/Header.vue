@@ -9,25 +9,29 @@
       <div
         :class="[
           'nav-link-wrap',
-          nav.path.indexOf('product') === -1 ? 'relative-pos' : ''
+          nav.pathName !== 'product' ? 'relative-pos' : ''
         ]"
         v-for="(nav, index) in headerNav"
         :key="index"
         @mouseover="toggle(index)"
         @mouseleave="active = -1"
       >
-        <router-link class="main-nav-link" exact :to="{ path: nav.path }">{{
-          nav.title
-        }}</router-link>
+        <!-- 其他 -->
+        <router-link
+          :exact="index === 0"
+          class="main-nav-link"
+          :to="{ name: nav.pathName }"
+          >{{ nav.title }}</router-link
+        >
         <!-- 解决方案的下拉菜单 -->
         <drop-down-menu
-          v-if="active === index && nav.path === '/solution'"
+          v-if="active === index && nav.pathName === 'solution'"
           :menu-items="solutionMenuItems"
           @hideOnClick="hideOnClick"
         ></drop-down-menu>
         <!-- 产品中心的下拉菜单 -->
         <product-navigation-box
-          v-if="active === index && nav.path.indexOf('product') !== -1"
+          v-if="active === index && nav.pathName === 'product'"
         ></product-navigation-box>
       </div>
     </div>
@@ -49,11 +53,11 @@ export default {
       showProductNavBox: false,
       active: -1,
       headerNav: [
-        { title: "首页", path: "/" },
-        { title: "关于虹川", path: "/about" },
-        { title: "解决方案", path: "/solution" },
-        { title: "产品中心", path: "/product/envpro" },
-        { title: "广纳贤才", path: "careers" }
+        { title: "首页", pathName: "home" },
+        { title: "关于虹川", pathName: "about" },
+        { title: "解决方案", pathName: "solution" },
+        { title: "产品中心", pathName: "product" },
+        { title: "广纳贤才", pathName: "careers" }
       ],
       solutionMenuItems: [
         { name: "wisdom-city", title: "智慧城市" },
@@ -71,13 +75,8 @@ export default {
       this.showProductNavBox = isVisible;
     },
     toggle(index) {
+      console.log(index, this.active);
       this.active = index;
-    }
-  },
-  computed: {
-    relativePos(nav, index) {
-      console.log("nnn", nav, index);
-      return nav.path.indexOf("product") !== -1 && index !== -1 ? "" : "22";
     }
   }
 };
@@ -89,5 +88,12 @@ export default {
 }
 .nav-link-wrap.relative-pos {
   position: relative;
+}
+.hc-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
 }
 </style>

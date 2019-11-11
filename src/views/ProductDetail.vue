@@ -321,6 +321,7 @@ export default {
 }
 // 外层容器
 .product-env-detail-wrap {
+  padding-top: 68px;
   width: 100%;
   font-family: @font-family;
 }

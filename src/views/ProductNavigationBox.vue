@@ -3,10 +3,8 @@
     <div class="drop-down-box-content">
       <div class="wisdom-environment">
         <div class="content-title">
-          <router-link :to="{ name: 'product', params: { name: 'envpro' } }"
-            >智慧环保产品</router-link
-          >
-          <p>了解更多 ></p>
+          <router-link :to="{ name: 'product-env' }">智慧环保产品</router-link>
+          <router-link :to="{ name: 'product-env' }">了解更多 ></router-link>
         </div>
         <div class="nav-lists-wrap">
           <div class="nav-list-left">
@@ -100,12 +98,10 @@
       </div>
       <div class="wisdom-water">
         <div class="content-title">
-          <router-link
-            :to="{ name: 'product', params: { name: 'water' } }"
-            class="title"
+          <router-link :to="{ name: 'product-water' }" class="title"
             >智慧水务产品</router-link
           >
-          <p>了解更多 ></p>
+          <router-link :to="{ name: 'product-water' }">了解更多 ></router-link>
         </div>
         <div class="nav-lists-wrap">
           <div class="nav-list-left">
@@ -204,12 +200,10 @@
       </div>
       <div class="wisdom-park">
         <div class="content-title">
-          <router-link
-            class="title"
-            :to="{ name: 'product', params: { name: 'park' } }"
+          <router-link class="title" :to="{ name: 'product-park' }"
             >智慧园区产品</router-link
           >
-          <p>了解更多 ></p>
+          <router-link :to="{ name: 'product-park' }">了解更多 ></router-link>
         </div>
         <div class="nav-lists-wrap">
           <div class="nav-list-left">
@@ -291,21 +285,21 @@ export default {
     box-sizing: border-box;
     height: 50px;
     line-height: 50px;
-    p, a {
+    a {
       color: rgba(48, 60, 168, 1);
-    }
-    a:first-child {
-      font-size: 16px;
-      font-family: PingFangSC-Medium, PingFang SC, Microsoft Yahei, sans-serif;
-      font-weight: 500;
-      float: left;
       &:hover {
         text-decoration: none;
         color: rgba(48, 60, 168, 1);
       }
-    }
-    p:last-child {
-      float: right;
+      &:first-child {
+        font-size: 16px;
+        font-family: PingFangSC-Medium, PingFang SC, Microsoft Yahei, sans-serif;
+        font-weight: 500;
+        float: left;
+      }
+      &:last-child {
+        float: right;
+      }
     }
   }
   .nav-lists-wrap {
@@ -320,6 +314,7 @@ export default {
       a {
         display: block;
         padding: 5px 0;
+        border: none !important;
         &:hover {
           text-decoration: none;
           color: rgba(48, 60, 168, 1);
