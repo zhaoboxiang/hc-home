@@ -40,23 +40,23 @@
           </div>
           <div class="adv-item">
             <div class="adv-icon icon-two"></div>
-            <div class="adv-tips">规模化的技术团队</div>
+            <div class="adv-tips">成熟的研发技术</div>
             <div class="adv-p">
-              规模的学习型技术团队，技术研发实力雄厚，保证了技术应用的可持续反正和行业领先，为客户提供高品质的整体解决方案。
+              从底层到应用层，拥有成熟的技术架构，保障多行业系统应用，在安全、性能、UE多维度领先业界。
             </div>
           </div>
           <div class="adv-item">
             <div class="adv-icon icon-three"></div>
-            <div class="adv-tips">规模化的技术团队</div>
+            <div class="adv-tips">丰富的实战经验</div>
             <div class="adv-p">
-              规模的学习型技术团队，技术研发实力雄厚，保证了技术应用的可持续反正和行业领先，为客户提供高品质的整体解决方案。
+              多年基于实战经验培养的团队技术优势，大量大型项目的实战经验，保障项目完美的落地。
             </div>
           </div>
           <div class="adv-item">
             <div class="adv-icon icon-four"></div>
-            <div class="adv-tips">规模化的技术团队</div>
+            <div class="adv-tips">系统集成优势</div>
             <div class="adv-p">
-              规模的学习型技术团队，技术研发实力雄厚，保证了技术应用的可持续反正和行业领先，为客户提供高品质的整体解决方案。
+              多行业大型系统应用经验造就了高效的，高融合的数据平台，保障了集成系统和硬件稳定高效的运行。
             </div>
           </div>
         </div>
