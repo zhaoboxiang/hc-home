@@ -31,26 +31,28 @@ body {
   border-bottom: 2px solid #303ca8;
   color: #373ea4;
 }
-.hc-introduction {
+.hc-introduction .hc-introduction-content {
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
   align-items: center;
-  background: #f7f9ff;
   height: 420px;
 }
-.hc-introduction h1 {
+.hc-introduction .hc-introduction-content .hc-intro-detail {
+  width: 600px;
+}
+.hc-introduction .hc-introduction-content .hc-intro-detail h1 {
   height: 32px;
   font-size: 32px;
   color: #00359d;
 }
-.hc-introduction .intro-title {
+.hc-introduction .hc-introduction-content .hc-intro-detail .intro-title {
   padding: 16px 0 30px;
   font-size: 20px;
   font-weight: 400;
   color: #101010;
 }
-.hc-introduction .btn-more {
+.hc-introduction .hc-introduction-content .hc-intro-detail .btn-more {
   margin-top: 60px;
   width: 144px;
   height: 40px;
@@ -62,8 +64,11 @@ body {
   color: #303ca8;
   cursor: pointer;
 }
-.hc-introduction .btn-more:hover {
+.hc-introduction .hc-introduction-content .hc-intro-detail .btn-more:hover {
   background: #303CA8;
   color: #fff;
+}
+.md-card {
+  box-shadow: none!important;
 }
 /*# sourceMappingURL=index.css.map */

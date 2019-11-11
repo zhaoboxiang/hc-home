@@ -271,6 +271,7 @@ export default {
   width: 100%;
   position: absolute;
   top: 68px;
+  left: 0;
   overflow: hidden;
   background: rgba(255, 255, 255, 1);
   border-radius: 0 0 2px 2px;

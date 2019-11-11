@@ -50,7 +50,7 @@ export default {
   props: ["name"],
   data() {
     return {
-      active: "",
+      active: -1,
       productDetailTitle: "",
       productDetailTitleIcon: "icon-env",
       productDetailList: [],
@@ -88,9 +88,7 @@ export default {
       this.active = index;
     }
   },
-  mounted() {
-
-  },
+  mounted() {},
   beforeRouteEnter(to, from, next) {
     const paramsName = to.params.name;
     const waterData = [

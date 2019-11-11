@@ -22,7 +22,7 @@ export default {
   },
   data() {
     return {
-      isVisible: false
+      isVisible: -1
     };
   },
   methods: {

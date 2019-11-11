@@ -6,42 +6,31 @@
       /></router-link>
     </div>
     <div class="hc-nav">
-      <div class="nav-link-wrap">
-        <router-link class="main-nav-link" exact :to="{ name: 'home' }"
-          >首页</router-link
-        >
-      </div>
-      <div class="nav-link-wrap">
-        <router-link class="main-nav-link" :to="{ name: 'about' }"
-          >关于虹川</router-link
-        >
-      </div>
       <div
-        class="nav-link-wrap"
-        @mouseenter="showSolutionNav = true"
-        @mouseleave="showSolutionNav = false"
+        :class="[
+          'nav-link-wrap',
+          nav.path.indexOf('product') === -1 ? 'relative-pos' : ''
+        ]"
+        v-for="(nav, index) in headerNav"
+        :key="index"
+        @mouseover="toggle(index)"
+        @mouseleave="active = -1"
       >
-        <router-link class="main-nav-link" :to="{ name: 'solution' }"
-          >解决方案</router-link
-        >
+        <router-link class="main-nav-link" exact :to="{ path: nav.path }">{{
+          nav.title
+        }}</router-link>
+        <!-- 解决方案的下拉菜单 -->
         <drop-down-menu
-          v-show="showSolutionNav"
+          v-if="active === index && nav.path === '/solution'"
           :menu-items="solutionMenuItems"
           @hideOnClick="hideOnClick"
         ></drop-down-menu>
-      </div>
-      <div class="nav-link-wrap" @mouseenter="showProductNavBox = true">
-        <router-link class="main-nav-link" :to="{ name: 'product', params: {name: 'envpro'} }"
-          >产品中心</router-link
-        >
-      </div>
-      <div class="nav-link-wrap">
-        <router-link class="main-nav-link" :to="{ name: 'careers' }"
-          >广纳人才</router-link
-        >
+        <!-- 产品中心的下拉菜单 -->
+        <product-navigation-box
+          v-if="active === index && nav.path.indexOf('product') !== -1"
+        ></product-navigation-box>
       </div>
     </div>
-    <product-navigation-box v-show="showProductNavBox" @hideProductNavBox="hideProductNavBox"></product-navigation-box>
   </div>
 </template>
 
@@ -58,6 +47,14 @@ export default {
     return {
       showSolutionNav: false,
       showProductNavBox: false,
+      active: -1,
+      headerNav: [
+        { title: "首页", path: "/" },
+        { title: "关于虹川", path: "/about" },
+        { title: "解决方案", path: "/solution" },
+        { title: "产品中心", path: "/product/envpro" },
+        { title: "广纳贤才", path: "careers" }
+      ],
       solutionMenuItems: [
         { name: "wisdom-city", title: "智慧城市" },
         { name: "wisdom-environment", title: "智慧环保" },
@@ -67,11 +64,20 @@ export default {
     };
   },
   methods: {
-    hideOnClick(isVisible) {
-      this.showSolutionNav = isVisible;
+    hideOnClick() {
+      this.active = -1;
     },
     hideProductNavBox(isVisible) {
       this.showProductNavBox = isVisible;
+    },
+    toggle(index) {
+      this.active = index;
+    }
+  },
+  computed: {
+    relativePos(nav, index) {
+      console.log("nnn", nav, index);
+      return nav.path.indexOf("product") !== -1 && index !== -1 ? "" : "22";
     }
   }
 };
@@ -80,6 +86,8 @@ export default {
 <style scoped>
 .nav-link-wrap {
   display: inline-block;
+}
+.nav-link-wrap.relative-pos {
   position: relative;
 }
 </style>
