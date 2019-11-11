@@ -36,7 +36,7 @@
         <div class="business-content">
           <div class="item">
             <div class="cont-icon cont-icon-one"></div>
-            <div class="tips"><span>人1</span>·幸福</div>
+            <div class="tips"><span>人</span>·幸福</div>
             <div class="cont-intro">
               <p>民生及管理智慧化<br/>社会治理 · 人文智慧</p>
               <div>
