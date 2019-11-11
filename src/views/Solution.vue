@@ -316,4 +316,7 @@ export default {
 
 <style lang="less" scoped>
 @import "../assets/css/solution";
+.solution .solution-banner-box > .banner-content .ban-left .ban-h6{
+  font-family: PingFangSC-Regular, PingFang SC, Microsoft Yahei, sans-serif;
+}
 </style>
