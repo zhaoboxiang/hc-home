@@ -47,7 +47,7 @@
         <div class="info-container">
           <div class="info-title">
             <span>1</span
-            >个数据中心<span>3</span>大保障体系<span>5</span>层技术支撑<span>N</span>个应用服务
+            >个数据中心<span>3</span>大保障体系<span>5</span>大技术支撑<span>N</span>个应用服务
           </div>
           <img src="../assets/images/solution/img_jjfa_zhhb_dcjg.png" />
         </div>

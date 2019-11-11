@@ -28,7 +28,9 @@
             alt=""
           />
         </div>
+        <cut-line-content :class="[{'hide': index == productDetailList.length-1}]"></cut-line-content>
       </div>
+
     </div>
     <div class="anchor-nav">
       <div
@@ -45,8 +47,10 @@
 </template>
 
 <script>
+  import CutLineContent from './CutLineContent'
 export default {
   name: "ProductEnvironmentDetail",
+  components: { CutLineContent },
   props: ["name"],
   data() {
     return {
@@ -316,6 +320,9 @@ export default {
 
 <style lang="less" scoped>
 @import "../assets/css/variables";
+.hide{
+  display: none;
+}
 // 外层容器
 .product-env-detail-wrap {
   width: 100%;
