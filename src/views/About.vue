@@ -8,10 +8,6 @@
             HCTTOP TECHNOLOGY-GREEN SMART CITY COMMEMORATE ADVOCATE
           </div>
         </div>
-        <!--<div class="caption-cn">虹川科技，绿色智慧城市理念倡行者</div>-->
-        <!--<div class="caption-en">-->
-        <!--HCTTOP TECHNOLOGY-GREEN SMART CITY COMMEMORATE ADVOCATE-->
-        <!--</div>-->
       </div>
     </div>
     <!--公司介绍-->
@@ -129,6 +125,7 @@ export default {
 .about-banner-box {
   height: 240px;
   width: 100%;
+  padding-top: 68px;
   background: linear-gradient(
     135deg,
     rgba(226, 242, 249, 1) 0%,

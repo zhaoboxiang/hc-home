@@ -2,48 +2,25 @@
   <div class="product-nav">
     <div class="nav-box">
       <div class="content banner-nav">
-        <div
-          :class="['ban-nav-item']"
-
-        >
+        <div :class="['ban-nav-item']">
           <router-link :to="{ name: 'product-env' }">
             <div class="item-icon icon-1"></div>
             <div class="item-tips">智慧环保产品</div>
           </router-link>
         </div>
-        <div
-          :class="['ban-nav-item']"
-
-        >
-          <router-link :to="{ name: 'product-water'}">
+        <div :class="['ban-nav-item']">
+          <router-link :to="{ name: 'product-water' }">
             <div class="item-icon icon-2"></div>
             <div class="item-tips">智慧水务产品</div>
           </router-link>
         </div>
-        <div
-          :class="['ban-nav-item']"
-
-        >
+        <div :class="['ban-nav-item']">
           <router-link :to="{ name: 'product-park' }">
             <div class="item-icon icon-3"></div>
             <div class="item-tips">智慧园区产品</div>
           </router-link>
         </div>
       </div>
-      <!--<div-->
-      <!--v-if="navListObj && navListObj.length > 0"-->
-      <!--class="content banner-nav"-->
-      <!--&gt;-->
-      <!--<div-->
-      <!--v-for="(item, index) in navListObj"-->
-      <!--:key="index"-->
-      <!--:class="['ban-nav-item', {'ban-nav-cur':item.isCurrent}]"-->
-      <!--@click="navClick1(item.navType)"-->
-      <!--&gt;-->
-      <!--<div :class="['item-icon', 'icon-' + (index + 1)]"></div>-->
-      <!--<div class="item-tips">{{ item.navTitle }}</div>-->
-      <!--</div>-->
-      <!--</div>-->
     </div>
   </div>
 </template>
@@ -63,9 +40,6 @@ export default {
         park: TYPE_OBJ.park,
         envpro: TYPE_OBJ.envpro
       },
-      // currentIsEvnPro: true,
-      // currentIsWater: false,
-      // currentIsPark: false,
       navListObj: [
         {
           navType: TYPE_OBJ.envpro,
@@ -84,28 +58,6 @@ export default {
         }
       ]
     };
-  },
-  methods: {
-    // navClick: function() {
-    //   // this.changeCur(e);
-    // },
-    // changeCur: function(e) {
-    //   if (e === this.bannerNavType.water) {
-    //     this.clearCur();
-    //     this.currentIsWater = true;
-    //   } else if (e === this.bannerNavType.park) {
-    //     this.clearCur();
-    //     this.currentIsPark = true;
-    //   } else {
-    //     this.clearCur();
-    //     this.currentIsEvnPro = true;
-    //   }
-    // },
-    // clearCur: function() {
-    //   this.currentIsEvnPro = false;
-    //   this.currentIsWater = false;
-    //   this.currentIsPark = false;
-    // }
   }
 };
 </script>

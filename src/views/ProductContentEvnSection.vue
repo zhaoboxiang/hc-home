@@ -100,6 +100,9 @@ export default {
           right: 0;
           top: 0;
         }
+        &:last-child:after{
+          display: none;
+        }
         .item-icon {
           width: 68px;
           height: 68px;

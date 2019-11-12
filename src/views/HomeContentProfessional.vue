@@ -31,7 +31,7 @@
           <div class="business-title">
             <b>智慧城市</b><span>信息技术与城市现代化深度融合、迭代演进</span>
           </div>
-          <div class="btn btn-white">了解更多</div>
+          <div class="btn btn-white"><span>了解更多</span><i></i></div>
         </div>
         <div class="business-content">
           <div class="item">
@@ -79,7 +79,7 @@
           <div class="business-title">
             <b>智慧环保</b><span>覆盖生态环境全数据，为中国生态保驾护航</span>
           </div>
-          <div class="btn btn-white">了解更多</div>
+          <div class="btn btn-white"><span>了解更多</span><i></i></div>
         </div>
         <div class="business-content">
           <ul>
@@ -108,7 +108,7 @@
           <div class="business-title">
             <b>智慧水务</b><span>供水排水水务全流程管理，为城市生活供给生</span>
           </div>
-          <div class="btn btn-white">了解更多</div>
+          <div class="btn btn-white"><span>了解更多</span><i></i></div>
         </div>
         <div class="business-content">
           <ul>
@@ -137,7 +137,7 @@
           <div class="business-title">
             <b>智慧园区</b><span>让园区管理像操作APP一样简单</span>
           </div>
-          <div class="btn btn-white">了解更多</div>
+          <div class="btn btn-white"><span>了解更多</span><i></i></div>
         </div>
         <div class="business-content">
           <ul>
@@ -233,54 +233,13 @@ export default {
   width: 100%;
 }
 
-.intro-box {
-  background: rgba(247, 249, 255, 1);
-  .intro {
-    padding: 70px 0 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .text-box {
-      h3 {
-        height: 32px;
-        line-height: 32px;
-        font-size: 32px;
-        color: @font-color-active;
-      }
-      h6 {
-        height: 20px;
-        font-size: 20px;
-        line-height: 20px;
-        color: @font-color;
-        margin-top: 16px;
-      }
-      p {
-        color: @font-color-default;
-        margin-top: 30px;
-        width: 600px;
-        line-height: 24px;
-      }
-      .btn-blue {
-        display: inline-block;
-        margin-top: 60px;
-      }
-    }
-    .img-box {
-      width: 400px;
-      height: 270px;
-      background: url("../assets/images/img_about_company_photo.png") center
-        no-repeat;
-    }
-  }
-}
-
 .core-business {
   text-align: center;
-  /*padding: 80px 0 70px;*/
   height: 420px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+
   h3 {
     color: @font-color-active;
     font-size: 32px;
@@ -473,63 +432,23 @@ export default {
   }
 }
 
-.core-technology-box {
-  text-align: center;
-  padding: 80px 0 160px;
-  h6 {
-    color: @font-color-active;
-    font-size: 32px;
-    padding-bottom: 16px;
-  }
-  b {
-    font-size: 20px;
-  }
-  p {
-    padding: 40px 0 60px;
-    line-height: 24px;
-  }
-  .tec-box {
-    display: flex;
-    justify-content: space-between;
-    .tec-item {
-      width: 320px;
-      height: 180px;
-      background: bisque;
-      text-align: left;
-      .tips-en {
-        padding: 20px 0 3px 20px;
-        color: rgba(149, 171, 216, 1);
-        font-size: 16px;
-      }
-      .tips-ch {
-        padding-left: 20px;
-        font-size: 24px;
-        color: @font-color-active;
-      }
-    }
-    .tec-item-one {
-      background: url("../assets/images/img_index__technology_1.png") center
-        no-repeat;
-      background-size: 100% 100%;
-    }
-    .tec-item-two {
-      background: url("../assets/images/img_index__technology_2.png") center
-        no-repeat;
-      background-size: 100% 100%;
-    }
-    .tec-item-three {
-      background: url("../assets/images/img_index__technology_3.png") center
-        no-repeat;
-      background-size: 100% 100%;
-    }
-  }
-}
-
 .btn {
   padding: 13px 40px;
   border-radius: 30px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
   &:hover {
     cursor: pointer;
+  }
+  & > span,
+  i {
+    display: block;
+  }
+  & > i {
+    width: 14px;
+    height: 14px;
+    margin-left: 3px;
   }
 }
 .btn-white {
@@ -538,11 +457,31 @@ export default {
   &:hover {
     background: #fff;
     color: @font-color-active;
+    & > i {
+      background: url("../assets/images/icon_more_blue.png") center no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+  & > i {
+    background: url("../assets/images/icon_more_white.png") center no-repeat;
+    background-size: 100% 100%;
   }
 }
 .btn-blue {
   border: 1px solid @font-color-active;
   color: @font-color-active;
+  &:hover {
+    background: @font-color-active;
+    color: #fff;
+    & > i {
+      background: url("../assets/images/icon_more_white.png") center no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+  & > i {
+    background: url("../assets/images/icon_more_blue.png") center no-repeat;
+    background-size: 100% 100%;
+  }
 }
 
 // 箭头
