@@ -190,10 +190,14 @@ li {
 .hc-grid {
   padding: 90px 0 0;
 }
+.solution {
+  padding-top: 68px;
+}
 .solution .solution-banner-box {
   background: #303CA8;
   padding: 120px 0 130px;
   color: #fff;
+  height: 480px;
 }
 .solution .solution-banner-box > .banner-content {
   display: flex;

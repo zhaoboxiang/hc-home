@@ -1,7 +1,7 @@
 html,
 body {
   font-family: PingFangSC-Medium, PingFang SC, Microsoft Yahei, sans-serif;
-  line-height: normal!important;
+  line-height: normal !important;
 }
 .home {
   padding-top: 68px;
@@ -66,12 +66,30 @@ body {
   line-height: 40px;
   color: #303ca8;
   cursor: pointer;
+  position: relative;
 }
 .hc-introduction .hc-introduction-content .hc-intro-detail .btn-more:hover {
   background: #303CA8;
   color: #fff;
 }
+.hc-introduction .hc-introduction-content .hc-intro-detail .btn-more:hover:after {
+  background: url("../images/icon_more_white.png") center no-repeat;
+  background-size: 100% 100%;
+}
+.hc-introduction .hc-introduction-content .hc-intro-detail .btn-more:after {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: url("../images/icon_more_blue.png") center no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  right: 26px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
 .md-card {
-  box-shadow: none!important;
+  box-shadow: none !important;
 }
 /*# sourceMappingURL=index.css.map */
