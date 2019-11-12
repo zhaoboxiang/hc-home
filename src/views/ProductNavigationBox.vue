@@ -124,10 +124,10 @@
             <router-link
               :to="{
                 name: 'product-detail-water',
-                params: { name: 'skjc-sys' }
+                params: { name: 'skhbyqjc-sys' }
               }"
-              v-scroll-to="`#skjc-sys`"
-              >水库监测系统</router-link
+              v-scroll-to="`#skhpyqjc-sys`"
+              >水库湖泊雨情监测系统</router-link
             >
             <router-link
               :to="{

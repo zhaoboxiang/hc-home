@@ -10,6 +10,8 @@ import "./assets/css/index.less";
 import VueMaterial from "vue-material";
 import "vue-material/dist/vue-material.min.css";
 import VueScrollTo from "vue-scrollto";
+import VueLodash from "./utilities/lodash";
+Vue.use(VueLodash);
 Vue.use(VueScrollTo);
 
 Vue.use(VueMaterial);
@@ -26,5 +28,6 @@ new Vue({
   },
   router,
   store,
+  VueLodash,
   render: h => h(App)
 }).$mount("#app");

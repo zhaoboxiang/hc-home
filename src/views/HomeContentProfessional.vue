@@ -12,7 +12,11 @@
             :key="index"
             @mouseover="mouseOver(item, items)"
           >
-            <div data-aos="fade-up" :data-aos-delay="item.delay">
+            <div
+              data-aos="fade-up"
+              :data-aos-delay="item.delay"
+              data-aos-duration="800"
+            >
               <div class="img"></div>
               <div class="txt">{{ item.text }}</div>
               <div class="arrow"></div>
@@ -38,7 +42,7 @@
             <div class="cont-icon cont-icon-one"></div>
             <div class="tips"><span>人</span>·幸福</div>
             <div class="cont-intro">
-              <p>民生及管理智慧化<br/>社会治理 · 人文智慧</p>
+              <p>民生及管理智慧化<br />社会治理 · 人文智慧</p>
               <div>
                 促进民生服务和社会管理智慧化 智慧教育、智慧医疗、智慧政务
                 <br />…
@@ -50,10 +54,9 @@
             <div class="cont-icon cont-icon-two"></div>
             <div class="tips"><span>城</span>·智能</div>
             <div class="cont-intro">
-              <p>基础设施智慧化<br/>基础设施 · 物联智慧</p>
+              <p>基础设施智慧化<br />基础设施 · 物联智慧</p>
               <div>
-                建设智慧化的城市基础设施
-                智慧楼宇、智慧照明、智慧交通、智慧能源
+                建设智慧化的城市基础设施 智慧楼宇、智慧照明、智慧交通、智慧能源
                 <br />…
               </div>
             </div>
@@ -63,7 +66,7 @@
             <div class="cont-icon cont-icon-three"></div>
             <div class="tips"><span>市</span>·繁华</div>
             <div class="cont-intro">
-              <p>经济产业智慧化<br/>经济生产 · 产业智慧</p>
+              <p>经济产业智慧化<br />经济生产 · 产业智慧</p>
               <div>
                 促进工农业生产、市场经济智慧化 智慧产业、智慧农业、电子商务<br />…
               </div>
@@ -175,25 +178,25 @@ export default {
           text: "智慧城市",
           className: "core-city",
           isActive: "active",
-          delay: 0
+          delay: 100
         },
         {
           text: "智慧环保",
           className: "core-huanb",
           isActive: "",
-          delay: 100
+          delay: 500
         },
         {
           text: "智慧水务",
           className: "core-water",
           isActive: "",
-          delay: 200
+          delay: 900
         },
         {
           text: "智慧园区",
           className: "core-park",
           isActive: "",
-          delay: 300
+          delay: 1300
         }
       ],
       menuItems: [
@@ -435,7 +438,7 @@ export default {
           background-size: 100% 100%;
         }
         .cont-intro {
-          & > p{
+          & > p {
             font-size: 18px;
             line-height: 24px;
             margin: 22px 0 20px;
@@ -536,7 +539,7 @@ export default {
 .btn-white {
   border: 1px solid #fff;
   color: #fff;
-  &:hover{
+  &:hover {
     background: #fff;
     color: @font-color-active;
   }

@@ -28,9 +28,10 @@
             alt=""
           />
         </div>
-        <cut-line-content :class="[{'hide': index == productDetailList.length-1}]"></cut-line-content>
+        <cut-line-content
+          :class="[{ hide: index == productDetailList.length - 1 }]"
+        ></cut-line-content>
       </div>
-
     </div>
     <div class="anchor-nav">
       <div
@@ -47,11 +48,13 @@
 </template>
 
 <script>
-  import CutLineContent from './CutLineContent'
-export default {
+  import CutLineContent from "./CutLineContent";
+
+  export default {
   name: "ProductEnvironmentDetail",
   components: { CutLineContent },
   props: ["name"],
+
   data() {
     return {
       active: -1,
@@ -115,7 +118,7 @@ export default {
         description:
           "水库监测系统适用于水利管理部门远程监测水库的水位、降雨量等实时数据，同时支持远程图像监控，为保障水库的适度蓄水和安全度汛提供了准确、及时的现场信息。 系统通过远程监测水库分布位置、水位、降雨量及现场设备运行状态等实时数据，当水位/降雨量超过阈值或现场设备故障时，系统自动报警向责任人发送短信报警。系统支持自定义水库水位/降雨量的时、日、月、年数据报表，自动生成水位、降雨量等数据过程曲线。",
         img: "product-sub-skhbyqjc.png",
-        anchor: "skhbyqjc-sys"
+        anchor: "skhpyqjc-sys"
       },
       {
         title: "河湖长制管理信息系统",
@@ -285,7 +288,7 @@ export default {
         description:
           "本系统由减排措施与减排潜力动态评估系统、社会经济成本系统、减排与空气质量快速响应系统、达标评估系统、效益评估系统和数据融合及可视化分析工具等6个独立的工具组成的集成化工具。它为科学家和决策者们提供了一个用户友好的系统化框架，能实现“经济发展-能源消耗-防控措施-污染排放-空气质量-人群健康”的系统化评估，为决策者提供快速辅助决策支持。",
         img: "product-sub-dqwrfzzhjczc.png",
-        anchor: `dqwrfzzhjczc`
+        anchor: `dqwrfzzhjczc-sys`
       }
     ];
 
@@ -310,13 +313,20 @@ export default {
       }
       next();
     });
+  },
+  beforeRouteUpdate(to, from, next) {
+    this.active = this.$_.findIndex(this.productDetailList, [
+      "anchor",
+      to.params.name
+    ]);
+    next();
   }
 };
 </script>
 
 <style lang="less" scoped>
 @import "../assets/css/variables";
-.hide{
+.hide {
   display: none;
 }
 // 外层容器
