@@ -23,7 +23,9 @@ Vue.config.productionTip = false;
 new Vue({
   created() {
     AOS.init({
-      once: true
+      once: true,
+      duration: 800,
+      easing: "ease-in-sine"
     });
   },
   router,

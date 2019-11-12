@@ -12,11 +12,7 @@
             :key="index"
             @mouseover="mouseOver(item, items)"
           >
-            <div
-              data-aos="fade-up"
-              :data-aos-delay="item.delay"
-              data-aos-duration="800"
-            >
+            <div data-aos="fade-up" :data-aos-delay="item.delay">
               <div class="img"></div>
               <div class="txt">{{ item.text }}</div>
               <div class="arrow"></div>
