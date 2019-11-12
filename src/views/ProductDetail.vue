@@ -48,9 +48,9 @@
 </template>
 
 <script>
-  import CutLineContent from "./CutLineContent";
+import CutLineContent from "./CutLineContent";
 
-  export default {
+export default {
   name: "ProductEnvironmentDetail",
   components: { CutLineContent },
   props: ["name"],

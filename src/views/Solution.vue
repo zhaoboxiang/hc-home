@@ -291,19 +291,6 @@
         </div>
       </div>
     </div>
-    <!--智慧园区-->
-
-    <!--<div class="section section-bak">-->
-    <!--<div class="content section-content">-->
-    <!--<h3 class="section-h3">顶层架构</h3>-->
-    <!--<h6 class="section-h6">TOP ARCHITECTURE</h6>-->
-    <!--<div class="info-container section-flex">-->
-    <!--<div class="flex-item"></div>-->
-    <!--<div class="flex-item"></div>-->
-    <!--<div class="flex-item"></div>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</div>-->
     <router-view />
   </div>
 </template>
@@ -316,7 +303,7 @@ export default {
 
 <style lang="less" scoped>
 @import "../assets/css/solution";
-.solution .solution-banner-box > .banner-content .ban-left .ban-h6{
+.solution .solution-banner-box > .banner-content .ban-left .ban-h6 {
   font-family: PingFangSC-Regular, PingFang SC, Microsoft Yahei, sans-serif;
 }
 </style>

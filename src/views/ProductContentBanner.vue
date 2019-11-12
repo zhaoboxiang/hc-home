@@ -35,7 +35,6 @@ export default {
       font-size: 32px;
     }
   }
-
 }
 .product-list {
   padding: 80px 120px;

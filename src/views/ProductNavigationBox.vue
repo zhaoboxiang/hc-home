@@ -4,7 +4,9 @@
       <div class="wisdom-environment">
         <div class="content-title">
           <router-link :to="{ name: 'product-env' }">智慧环保产品</router-link>
-          <router-link :to="{ name: 'product-env' }">了解更多 <img src="../assets/images/icon_more_blue.png"/></router-link>
+          <router-link :to="{ name: 'product-env' }"
+            >了解更多 <img src="../assets/images/icon_more_blue.png"
+          /></router-link>
         </div>
         <div class="nav-lists-wrap">
           <div class="nav-list-left">
@@ -101,7 +103,9 @@
           <router-link :to="{ name: 'product-water' }" class="title"
             >智慧水务产品</router-link
           >
-          <router-link :to="{ name: 'product-water' }">了解更多 <img src="../assets/images/icon_more_blue.png"/></router-link>
+          <router-link :to="{ name: 'product-water' }"
+            >了解更多 <img src="../assets/images/icon_more_blue.png"
+          /></router-link>
         </div>
         <div class="nav-lists-wrap">
           <div class="nav-list-left">
@@ -203,7 +207,9 @@
           <router-link class="title" :to="{ name: 'product-park' }"
             >智慧园区产品</router-link
           >
-          <router-link :to="{ name: 'product-park' }">了解更多 <img src="../assets/images/icon_more_blue.png"/></router-link>
+          <router-link :to="{ name: 'product-park' }"
+            >了解更多 <img src="../assets/images/icon_more_blue.png"
+          /></router-link>
         </div>
         <div class="nav-lists-wrap">
           <div class="nav-list-left">

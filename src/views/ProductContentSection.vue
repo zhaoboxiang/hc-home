@@ -1,7 +1,7 @@
 <template>
   <div class="product-section">
     <div class="content section-content">
-      <div class="section-title">{{sectitle}}</div>
+      <div class="section-title">{{ sectitle }}</div>
       <div class="section-img">
         <img :src="imgurl" />
       </div>
@@ -12,7 +12,7 @@
 <script>
 export default {
   name: "ProductContentSection",
-  props:['sectitle','imgurl'],
+  props: ["sectitle", "imgurl"]
 };
 </script>
 

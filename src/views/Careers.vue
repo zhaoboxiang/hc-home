@@ -12,9 +12,8 @@
         <h6>虹川科技期待您的加入</h6>
         <p>
           虹川科技高度重视人才和团队建设，全面设立和实施“优秀合伙人”和“优秀人才”计划，以价值创造为根本，成就共同理想为目标，欢迎各类优秀贤士加入。
-          <br/>
-          应聘人员请将个人简历发送至<span>hr@hcttop.com</span
-          >邮箱，合则约见，勿访。
+          <br />
+          应聘人员请将个人简历发送至<span>hr@hcttop.com</span>邮箱，合则约见，勿访。
         </p>
       </div>
       <div class="cont-section content">
@@ -24,7 +23,10 @@
             <p>职位类别：产品类 工作地点：深圳 招聘人数：1人</p>
           </div>
           <div class="sec-h-right">
-            <div :class="['change',{'spread':sectionListShowFlag[0]}]" @click="changeShow(0)"></div>
+            <div
+              :class="['change', { spread: sectionListShowFlag[0] }]"
+              @click="changeShow(0)"
+            ></div>
           </div>
         </div>
         <div class="sec-details" v-show="sectionListShowFlag[0]">
@@ -33,10 +35,13 @@
             <div class="sec-d-p">
               1、在国内政府部门、国际500强企业、国内环保类上市公司、政府环境管理机构具备8年及以上工作经历；<br />
               2、至少具备以下一项工作经验：<br />
-              <span>·</span>有从事研究咨询和战略规划研究工作经验，具有较高的理论政策水平、研究素质、战略思维能力和立足长远、把握全局的意识，能高质量地组织完成重大研究任务；
+              <span>·</span
+              >有从事研究咨询和战略规划研究工作经验，具有较高的理论政策水平、研究素质、战略思维能力和立足长远、把握全局的意识，能高质量地组织完成重大研究任务；
               <br />
-              <span>·</span>具备扎实的技术功底，在生态环境、水务治理、园区管理中任一领域有良好的工作成果（获得专利或市级以上奖项者优先）；<br />
-              <span>·</span>具备较好的经济学、企业战略与管理、金融、财会、法律方面的专业知识，从事主管及以上管理岗位者。<br />
+              <span>·</span
+              >具备扎实的技术功底，在生态环境、水务治理、园区管理中任一领域有良好的工作成果（获得专利或市级以上奖项者优先）；<br />
+              <span>·</span
+              >具备较好的经济学、企业战略与管理、金融、财会、法律方面的专业知识，从事主管及以上管理岗位者。<br />
               3、有很强的文字和口头表达能力，较强的团队领导能力和激励、沟通、协调能力；<br />
               4、理解公司使命、经营理念、企业文化，忠诚敬业、成熟自信、进取心强，有较强的再学习能力和创新精神；<br />
               5、专长突出者，以上条件可适当放宽。
@@ -62,7 +67,10 @@
             <p>职位类别：产品类 工作地点：深圳 招聘人数：5人</p>
           </div>
           <div class="sec-h-right">
-            <div :class="['change',{'spread':sectionListShowFlag[1]}]" @click="changeShow(1)"></div>
+            <div
+              :class="['change', { spread: sectionListShowFlag[1] }]"
+              @click="changeShow(1)"
+            ></div>
           </div>
         </div>
         <div class="sec-details" v-show="sectionListShowFlag[1]">
@@ -96,7 +104,10 @@
             <p>职位类别：研发类 工作地点：深圳 招聘人数：1人</p>
           </div>
           <div class="sec-h-right">
-            <div :class="['change',{'spread':sectionListShowFlag[2]}]"  @click="changeShow(2)"></div>
+            <div
+              :class="['change', { spread: sectionListShowFlag[2] }]"
+              @click="changeShow(2)"
+            ></div>
           </div>
         </div>
         <div class="sec-details" v-show="sectionListShowFlag[2]">
@@ -127,7 +138,10 @@
             <p>职位类别：研发类 工作地点：深圳 招聘人数：若干</p>
           </div>
           <div class="sec-h-right">
-            <div :class="['change',{'spread':sectionListShowFlag[3]}]"  @click="changeShow(3)"></div>
+            <div
+              :class="['change', { spread: sectionListShowFlag[3] }]"
+              @click="changeShow(3)"
+            ></div>
           </div>
         </div>
         <div class="sec-details" v-show="sectionListShowFlag[3]">
@@ -136,7 +150,8 @@
             <div class="sec-d-p">
               1、精通Python语言，熟悉Tensorflow、Pytorch等主流框架； <br />
               2、深刻理解面向对象设计理念和面向服务架构；<br />
-              3、有良好的代码编写能力，对机器学习常规算法CNN、RNN、FNN等有一定的了解； <br />
+              3、有良好的代码编写能力，对机器学习常规算法CNN、RNN、FNN等有一定的了解；
+              <br />
               4、熟练产品设计文档编写、应用方案PPT编写；<br />
               5、善于沟通交流，能出差；<br />
               6、有自然语言处理经验者优先；<br />
@@ -162,7 +177,10 @@
             <p>职位类别：研发类 工作地点：深圳 招聘人数：若干</p>
           </div>
           <div class="sec-h-right">
-            <div :class="['change',{'spread':sectionListShowFlag[4]}]"  @click="changeShow(4)"></div>
+            <div
+              :class="['change', { spread: sectionListShowFlag[4] }]"
+              @click="changeShow(4)"
+            ></div>
           </div>
         </div>
         <div class="sec-details" v-show="sectionListShowFlag[4]">
@@ -171,7 +189,9 @@
             <div class="sec-d-p">
               1、本科及以上学历，5年及以上相关工作经验；<br />
               2、良好的数据结构与算法基础，具有较好的软件开发及设计思维；<br />
-              3、具有Java web开发经验，熟悉Spring/Hibernate/Axis2等Java平台主流技术栈； <br />
+              3、具有Java
+              web开发经验，熟悉Spring/Hibernate/Axis2等Java平台主流技术栈；
+              <br />
               4、能熟悉使用Jvisualvm/Jstack/MemoryAnalyzer等JVM调优工具； <br />
               5、至少熟悉使用包括Weblogic/WAS/Tomcat在内的一款主流的Web应用服务器；<br />
               6、SQL功底扎实，熟练使用Oracle、MySql数据库，具备较好的数据库设计能力。
@@ -196,7 +216,10 @@
             <p>职位类别：市场类 工作地点：深圳 招聘人数：若干</p>
           </div>
           <div class="sec-h-right">
-            <div :class="['change',{'spread':sectionListShowFlag[5]}]"  @click="changeShow(5)"></div>
+            <div
+              :class="['change', { spread: sectionListShowFlag[5] }]"
+              @click="changeShow(5)"
+            ></div>
           </div>
         </div>
         <div class="sec-details" v-show="sectionListShowFlag[5]">
@@ -213,7 +236,8 @@
           <div class="sec-d-box">
             <div class="sec-d-h">工作职责</div>
             <div class="sec-d-p">
-              1、负责产品的市场渠道开拓与销售工作，执行并完成个人年度销售计划； <br />
+              1、负责产品的市场渠道开拓与销售工作，执行并完成个人年度销售计划；
+              <br />
               2、配合与监督公司职能部门完成合同的履行，维护客户关系； <br />
               3、完成合同应收货款的回笼；<br />
               4、了解、掌握竞争对手的情况，为公司的决策和市场竞争提供帮助。
@@ -229,10 +253,10 @@
 import CompanyCulture from "./CompanyCulture";
 export default {
   components: { CompanyCulture },
-  data () {
+  data() {
     return {
-      sectionListShowFlag:[true,false,false,false,false,false]
-    }
+      sectionListShowFlag: [true, false, false, false, false, false]
+    };
   },
   methods: {
     changeShow: function(e) {
@@ -245,7 +269,7 @@ export default {
 
 <style scoped lang="less">
 @import "../assets/css/global";
-.careers{
+.careers {
   padding-top: 68px;
 }
 .careers-banner {
@@ -278,7 +302,8 @@ export default {
     }
     & > p {
       line-height: 24px;
-      & > a,span {
+      & > a,
+      span {
         color: @font-color-active;
         cursor: pointer;
       }
@@ -318,17 +343,17 @@ export default {
     }
     .sec-details {
       margin-top: 30px;
-      border-top: 1px solid rgba(149,171,216,0.2);
-      .sec-d-box{
+      border-top: 1px solid rgba(149, 171, 216, 0.2);
+      .sec-d-box {
         margin-top: 30px;
-        .sec-d-h{
+        .sec-d-h {
           font-size: 20px;
           color: @font-color-active;
         }
-        .sec-d-p{
+        .sec-d-p {
           line-height: 24px;
           margin-top: 10px;
-          &>span{
+          & > span {
             padding: 0 10px 0 28px;
           }
         }

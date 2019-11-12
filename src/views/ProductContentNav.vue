@@ -2,19 +2,34 @@
   <div class="product-nav">
     <div class="nav-box">
       <div class="content banner-nav">
-        <div :class="['ban-nav-item',{'ban-nav-cur':this.$route.name==='product-env'}]">
+        <div
+          :class="[
+            'ban-nav-item',
+            { 'ban-nav-cur': this.$route.name === 'product-env' }
+          ]"
+        >
           <router-link :to="{ name: 'product-env' }">
             <div class="item-icon icon-1"></div>
             <div class="item-tips">智慧环保产品</div>
           </router-link>
         </div>
-        <div :class="['ban-nav-item',{'ban-nav-cur':this.$route.name==='product-water'}]">
+        <div
+          :class="[
+            'ban-nav-item',
+            { 'ban-nav-cur': this.$route.name === 'product-water' }
+          ]"
+        >
           <router-link :to="{ name: 'product-water' }">
             <div class="item-icon icon-2"></div>
             <div class="item-tips">智慧水务产品</div>
           </router-link>
         </div>
-        <div :class="['ban-nav-item',{'ban-nav-cur':this.$route.name==='product-park'}]">
+        <div
+          :class="[
+            'ban-nav-item',
+            { 'ban-nav-cur': this.$route.name === 'product-park' }
+          ]"
+        >
           <router-link :to="{ name: 'product-park' }">
             <div class="item-icon icon-3"></div>
             <div class="item-tips">智慧园区产品</div>
@@ -27,12 +42,7 @@
 
 <script>
 export default {
-  name: "ProductContentNav",
-  props: ['current'],
-  mounted: function() {
-    console.log(this.$route.name)
-    ;
-  }
+  name: "ProductContentNav"
 };
 </script>
 

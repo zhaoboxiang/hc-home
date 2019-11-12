@@ -100,7 +100,7 @@ export default {
           right: 0;
           top: 0;
         }
-        &:last-child:after{
+        &:last-child:after {
           display: none;
         }
         .item-icon {
