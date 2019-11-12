@@ -12,7 +12,11 @@
             :key="index"
             @mouseover="mouseOver(item, items)"
           >
-            <div data-aos="fade-up" :data-aos-delay="item.delay">
+            <div
+              data-aos="fade-up"
+              :data-aos-delay="item.delay"
+              data-aos-duration="800"
+            >
               <div class="img"></div>
               <div class="txt">{{ item.text }}</div>
               <div class="arrow"></div>
@@ -174,25 +178,25 @@ export default {
           text: "智慧城市",
           className: "core-city",
           isActive: "active",
-          delay: 0
+          delay: 100
         },
         {
           text: "智慧环保",
           className: "core-huanb",
           isActive: "",
-          delay: 100
+          delay: 500
         },
         {
           text: "智慧水务",
           className: "core-water",
           isActive: "",
-          delay: 200
+          delay: 900
         },
         {
           text: "智慧园区",
           className: "core-park",
           isActive: "",
-          delay: 300
+          delay: 1300
         }
       ],
       menuItems: [

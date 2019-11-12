@@ -48,16 +48,12 @@ export default {
     return {
       showContent: ""
     };
-  },
-  mounted() {
-    console.log(this.$route
-    )
   }
 };
 </script>
 <style lang="less" scoped>
 @import "../assets/css/global";
-  .hc-product-container {
-    padding-top: 68px;
-  }
+.hc-product-container {
+  padding-top: 68px;
+}
 </style>

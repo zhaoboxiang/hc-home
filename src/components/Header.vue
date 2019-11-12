@@ -75,7 +75,6 @@ export default {
       this.showProductNavBox = isVisible;
     },
     toggle(index) {
-      console.log(index, this.active);
       this.active = index;
     }
   }
