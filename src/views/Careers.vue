@@ -245,6 +245,9 @@ export default {
 
 <style scoped lang="less">
 @import "../assets/css/global";
+.careers{
+  padding-top: 68px;
+}
 .careers-banner {
   padding: 120px 100px;
   background: @font-color-active

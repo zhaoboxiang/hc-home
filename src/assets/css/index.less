@@ -3,7 +3,7 @@
 html,
 body {
   font-family: @font-family;
-  line-height: normal!important;
+  line-height: normal !important;
 }
 .home {
   padding-top: 68px;
@@ -14,7 +14,7 @@ body {
   flex-flow: row wrap;
   .hc-nav {
     align-self: center;
-    .nav-link-wrap a.main-nav-link  {
+    .nav-link-wrap a.main-nav-link {
       display: inline-block;
       height: 68px;
       line-height: 68px;
@@ -29,7 +29,8 @@ body {
         color: rgba(48, 60, 168, 1);
       }
     }
-    .nav-link-wrap a.router-link-exact-active, .nav-link-wrap a.router-link-active {
+    .nav-link-wrap a.router-link-exact-active,
+    .nav-link-wrap a.router-link-active {
       border-bottom: 2px solid rgba(48, 60, 168, 1);
       color: #373ea4;
     }
@@ -37,25 +38,24 @@ body {
 }
 
 .hc-introduction {
-  .hc-introduction-content{
+  .hc-introduction-content {
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
     align-items: center;
-    //background:rgba(247,249,255,1);
     height: 420px;
-    .hc-intro-detail{
+    .hc-intro-detail {
       width: 600px;
       h1 {
-        height:32px;
-        font-size:32px;
-        color:rgba(0,53,157,1);
+        height: 32px;
+        font-size: 32px;
+        color: rgba(0, 53, 157, 1);
       }
       .intro-title {
         padding: 16px 0 30px;
-        font-size:20px;
-        font-weight:400;
-        color:rgba(16,16,16,1);
+        font-size: 20px;
+        font-weight: 400;
+        color: rgba(16, 16, 16, 1);
       }
       .btn-more {
         margin-top: 60px;
@@ -68,18 +68,33 @@ body {
         line-height: 40px;
         color: rgba(48, 60, 168, 1);
         cursor: pointer;
-        &:hover{
+        position: relative;
+        &:hover {
           background: @font-color-active;
           color: #fff;
+          &:after {
+            background: url("../images/icon_more_white.png") center no-repeat;
+            background-size: 100% 100%;
+          }
+        }
+        &:after {
+          content: "";
+          display: block;
+          width: 14px;
+          height: 14px;
+          background: url("../images/icon_more_blue.png") center no-repeat;
+          background-size: 100% 100%;
+          position: absolute;
+          right: 26px;
+          top: 0;
+          bottom: 0;
+          margin: auto;
         }
       }
     }
-
-
   }
-
 }
 
-.md-card{
-  box-shadow: none!important;
+.md-card {
+  box-shadow: none !important;
 }
