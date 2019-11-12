@@ -2,19 +2,19 @@
   <div class="product-nav">
     <div class="nav-box">
       <div class="content banner-nav">
-        <div :class="['ban-nav-item']">
+        <div :class="['ban-nav-item',{'ban-nav-cur':this.$route.name==='product-env'}]">
           <router-link :to="{ name: 'product-env' }">
             <div class="item-icon icon-1"></div>
             <div class="item-tips">智慧环保产品</div>
           </router-link>
         </div>
-        <div :class="['ban-nav-item']">
+        <div :class="['ban-nav-item',{'ban-nav-cur':this.$route.name==='product-water'}]">
           <router-link :to="{ name: 'product-water' }">
             <div class="item-icon icon-2"></div>
             <div class="item-tips">智慧水务产品</div>
           </router-link>
         </div>
-        <div :class="['ban-nav-item']">
+        <div :class="['ban-nav-item',{'ban-nav-cur':this.$route.name==='product-park'}]">
           <router-link :to="{ name: 'product-park' }">
             <div class="item-icon icon-3"></div>
             <div class="item-tips">智慧园区产品</div>
@@ -28,36 +28,10 @@
 <script>
 export default {
   name: "ProductContentNav",
-  data() {
-    const TYPE_OBJ = {
-      water: "water",
-      park: "park",
-      envpro: "envpro"
-    };
-    return {
-      bannerNavType: {
-        water: TYPE_OBJ.water,
-        park: TYPE_OBJ.park,
-        envpro: TYPE_OBJ.envpro
-      },
-      navListObj: [
-        {
-          navType: TYPE_OBJ.envpro,
-          isCurrent: true,
-          navTitle: "智慧环保产品1"
-        },
-        {
-          navType: TYPE_OBJ.water,
-          isCurrent: false,
-          navTitle: "智慧水务产品1"
-        },
-        {
-          navType: TYPE_OBJ.park,
-          isCurrent: false,
-          navTitle: "智慧园区产品1"
-        }
-      ]
-    };
+  props: ['current'],
+  mounted: function() {
+    console.log(this.$route.name)
+    ;
   }
 };
 </script>
