@@ -3,6 +3,9 @@ body {
   font-family: PingFangSC-Medium, PingFang SC, Microsoft Yahei, sans-serif;
   line-height: normal!important;
 }
+.home {
+  padding-top: 68px;
+}
 .hc-header {
   display: flex;
   justify-content: space-around;
