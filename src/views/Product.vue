@@ -1,18 +1,18 @@
 <template>
-  <div>
+  <div class="hc-product-container">
     <product-content-banner></product-content-banner>
     <product-content-nav></product-content-nav>
-    <div v-show="this.$route.params.name === 'envpro' ? 'envpro' : ''">
+    <div v-show="this.$route.name === 'product-env' ? 'env' : ''">
       <product-content-list-evn></product-content-list-evn>
       <!--          环保-->
       <product-content-evn-section></product-content-evn-section>
     </div>
-    <div v-show="this.$route.params.name === 'water' ? 'water' : ''">
+    <div v-show="this.$route.name === 'product-water' ? 'water' : ''">
       <product-content-list-water></product-content-list-water>
       <!--          水务-->
       <product-content-water-section></product-content-water-section>
     </div>
-    <div v-show="this.$route.params.name === 'park' ? 'park' : ''">
+    <div v-show="this.$route.name === 'product-park' ? 'park' : ''">
       <product-content-list-park></product-content-list-park>
       <!--          园区-->
       <product-content-park-section></product-content-park-section>
@@ -48,9 +48,16 @@ export default {
     return {
       showContent: ""
     };
+  },
+  mounted() {
+    console.log(this.$route
+    )
   }
 };
 </script>
 <style lang="less" scoped>
 @import "../assets/css/global";
+  .hc-product-container {
+    padding-top: 68px;
+  }
 </style>

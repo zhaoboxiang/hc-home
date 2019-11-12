@@ -6,13 +6,13 @@ const SolutionCity = () => import("../views/SolutionCity.vue");
 const SolutionWater = () => import("../views/SolutionWater.vue");
 const SolutionPark = () => import("../views/SolutionPark.vue");
 const SolutionEvnPro = () => import("../views/SolutionEvnPro.vue");
-// const Product = () => import("../views/Product.vue");
+const Product = () => import("../views/Product.vue");
 const Careers = () => import("../views/Careers.vue");
 // const ProductDetail = () => import("../views/ProductDetail.vue");
-
-import ProductContentListEvn from "../views/ProductContentListEvn";
-import ProductContentListWater from "../views/ProductContentListWater";
-import ProductContentListPark from "../views/ProductContentListPark";
+//
+// import ProductContentListEvn from "../views/ProductContentListEvn";
+// import ProductContentListWater from "../views/ProductContentListWater";
+// import ProductContentListPark from "../views/ProductContentListPark";
 
 import ProductDetail from "../views/ProductDetail";
 
@@ -73,22 +73,22 @@ const routes = [
     path: "/product",
     name: "product",
     redirect: "/product/env",
-    component: ProductContentListEvn
+    component: Product
   },
   {
     path: "/product/env",
     name: "product-env",
-    component: ProductContentListEvn
+    component: Product
   },
   {
     path: "/product/water",
     name: "product-water",
-    component: ProductContentListWater
+    component: Product
   },
   {
     path: "/product/park",
     name: "product-park",
-    component: ProductContentListPark
+    component: Product
   },
   // 产品中心 --- 子页面
   {
