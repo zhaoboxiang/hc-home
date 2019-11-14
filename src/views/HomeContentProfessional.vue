@@ -89,7 +89,7 @@
           <div class="btn btn-white"><router-link to="solution/wisdom-environment">了解更多</router-link><i></i></div>
         </div>
         <div class="business-content">
-          <div data-aos="fade-up" data-aos-delay="100" class="data-aos">
+          <div data-aos="fade-up" class="data-aos">
             <ul>
               <li>
                 <span>大气环境监测</span>
@@ -121,7 +121,7 @@
           <div class="btn btn-white"><router-link to="solution/wisdom-water">了解更多</router-link><i></i></div>
         </div>
         <div class="business-content">
-          <div data-aos="fade-up" data-aos-delay="100" class="data-aos">
+          <div data-aos="fade-up" class="data-aos">
             <ul>
               <li>
                 <span>水源水质监测</span>
@@ -152,7 +152,7 @@
           <div class="btn btn-white"><router-link to="solution/wisdom-park">了解更多</router-link><i></i></div>
         </div>
         <div class="business-content">
-          <div data-aos="fade-up" data-aos-delay="100" class="data-aos">
+          <div data-aos="fade-up" class="data-aos">
             <ul>
               <li>
                 <span>物业管理</span>

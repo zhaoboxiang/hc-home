@@ -14,7 +14,7 @@
       </div>
       <footer>
         © 2019 虹川科技Hong Chuan Technology. All Rights Reserved.
-        <a href="http://www.beian.miit.gov.cn" target="_blank">粤ICP备19122684号-2</a>
+        <a href="http://www.beian.miit.gov.cn" target="_blank"><i></i>粤ICP备19122684号-2</a>
       </footer>
     </div>
   </div>
@@ -84,6 +84,16 @@ export default {
       }
       a{
         color: #95abd8;
+        i{
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          line-height: 20px;
+          background: url("../assets/images/icon-police.png") center no-repeat;
+          background-size: 100% 100%;
+          vertical-align: middle;
+          margin-top: -4px;
+        }
       }
     }
   }
