@@ -15,7 +15,7 @@
             实现“信息全面感知、数据综合分析、高度智慧决策”的智慧化应用模式，保障国民用水安全。<br />
           </div>
         </div>
-        <div class="ban-right"></div>
+        <div class="ban-right"><img src="../assets/images/solution/img_jjfa_zhsw_topimg.png"></div>
       </div>
     </div>
     <div class="section section-1">
@@ -50,7 +50,7 @@
           <div class="info-course">
             <div class="course-item">
               <div class="course-icon icon-1"></div>
-              <div class="course-tips">技术助攻</div>
+              <div class="course-tips">技术支撑</div>
             </div>
             <div class="course-item">
               <div class="course-icon icon-2"></div>

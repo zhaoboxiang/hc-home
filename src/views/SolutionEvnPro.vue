@@ -13,7 +13,7 @@
             以源解析加减排规划制定为科技指引，结合大数据应用分析，精准找源，科学治理，实现区域环境持续达标治理与保持经济发展平衡。
           </div>
         </div>
-        <div class="ban-right"></div>
+        <div class="ban-right"><img src="../assets/images/solution/img_jjfa_zhhb_topimg.png"></div>
       </div>
     </div>
     <div class="section section-1">

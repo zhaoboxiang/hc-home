@@ -13,7 +13,7 @@
             不断提升城市在环保、水利水务、城市管理等方面复杂事项的多部门协同指挥处置。
           </div>
         </div>
-        <div class="ban-right"></div>
+        <div class="ban-right"><img src="../assets/images/solution/img_jjfa_zhcs_topimg.png"></div>
       </div>
     </div>
     <div class="section section-1">
@@ -21,14 +21,6 @@
         <h3 class="section-h3">方案理念</h3>
         <h6 class="section-h6">SOLUTION CONCEPT</h6>
         <div class="section-flex">
-          <div class="flex-item">
-            <div class="item-icon icon-1"></div>
-            <div class="item-tips">人·幸福</div>
-            <div class="item-h">民生及管理智慧化<br />社会治理 · 人文智慧</div>
-            <div class="item-p">
-              促进民生服务和社会管理智慧化<br />智慧教育、智慧医疗、智慧政务<br />…
-            </div>
-          </div>
           <div class="flex-item">
             <div class="item-icon icon-2"></div>
             <div class="item-tips">城·智能</div>
@@ -48,6 +40,14 @@
             <div class="item-p">
               促进工农业生产、市场经济智慧化<br />
               智慧产业、智慧农业、电子商务<br />…
+            </div>
+          </div>
+          <div class="flex-item">
+            <div class="item-icon icon-1"></div>
+            <div class="item-tips">人·幸福</div>
+            <div class="item-h">民生及管理智慧化<br />社会治理 · 人文智慧</div>
+            <div class="item-p">
+              促进民生服务和社会管理智慧化<br />智慧教育、智慧医疗、智慧政务<br />…
             </div>
           </div>
         </div>

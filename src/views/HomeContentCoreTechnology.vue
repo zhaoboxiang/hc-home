@@ -12,16 +12,22 @@
             已在环境监测、气象预测、灾难模拟等场景应用卓见成效。
           </span>
         </div>
-        <div data-aos="fade-up">
-          <div class="tec-box">
+        <div data-aos="fade-up"></div>
+
+        <div class="tec-box">
+          <div data-aos="fade-up" data-aos-delay="100">
             <div class="tec-item tec-item-one">
               <div class="tips-en">BIG DATA</div>
               <div class="tips-ch">大数据</div>
             </div>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="300">
             <div class="tec-item tec-item-two">
               <div class="tips-en">INTERNET OF THINGS</div>
               <div class="tips-ch">物联网</div>
             </div>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="500">
             <div class="tec-item tec-item-three">
               <div class="tips-en">ARTIFICIAL INTELLIGENCE</div>
               <div class="tips-ch">人工智能</div>
