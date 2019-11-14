@@ -13,7 +13,7 @@
         </div>
       </div>
       <footer>
-        <a href="http://www.beian.miit.gov.cn" target="_blank">粤ICP备19122684号-2 <i></i>粤公网安备</a>
+        <a href="http://www.beian.miit.gov.cn" target="_blank">粤ICP备19122684号-2 <i></i>粤公网安备 44030502004701号</a>
         <br/> © 2019 虹川科技Hong Chuan Technology. All Rights Reserved.
       </footer>
     </div>
