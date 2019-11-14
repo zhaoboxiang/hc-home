@@ -68,9 +68,15 @@ body {
   cursor: pointer;
   position: relative;
 }
+.hc-introduction .hc-introduction-content .hc-intro-detail .btn-more a {
+  color: inherit;
+}
 .hc-introduction .hc-introduction-content .hc-intro-detail .btn-more:hover {
   background: #303CA8;
   color: #fff;
+}
+.hc-introduction .hc-introduction-content .hc-intro-detail .btn-more:hover a {
+  text-decoration: none;
 }
 .hc-introduction .hc-introduction-content .hc-intro-detail .btn-more:hover:after {
   background: url("../images/icon_more_white.png") center no-repeat;

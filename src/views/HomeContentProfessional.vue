@@ -10,7 +10,7 @@
             v-for="(item, index) in items"
             :class="['item', item.className, item.isActive]"
             :key="index"
-            @mouseover="mouseOver(item, items)"
+            @mouseover="mouseOver(item, index, items)"
           >
             <div data-aos="fade-up" :data-aos-delay="item.delay">
               <div class="img"></div>
@@ -31,10 +31,11 @@
           <div class="business-title">
             <b>智慧城市</b><span>信息技术与城市现代化深度融合、迭代演进</span>
           </div>
-          <div class="btn btn-white"><router-link to="solution/wisdom-city">了解更多</router-link><i></i></div>
+          <div class="btn btn-white">
+            <router-link to="solution/wisdom-city">了解更多</router-link><i></i>
+          </div>
         </div>
         <div class="business-content">
-
           <div data-aos="fade-up" data-aos-delay="100">
             <div class="item">
               <div class="cont-icon cont-icon-two"></div>
@@ -42,7 +43,8 @@
               <div class="cont-intro">
                 <p>基础设施智慧化<br />基础设施 · 物联智慧</p>
                 <div>
-                  建设智慧化的城市基础设施 智慧楼宇、智慧照明、智慧交通、智慧能源
+                  建设智慧化的城市基础设施
+                  智慧楼宇、智慧照明、智慧交通、智慧能源
                   <br />…
                 </div>
               </div>
@@ -62,7 +64,7 @@
               <div class="cont"></div>
             </div>
           </div>
-          <div data-aos="fade-up"  data-aos-delay="500">
+          <div data-aos="fade-up" data-aos-delay="500">
             <div class="item">
               <div class="cont-icon cont-icon-one"></div>
               <div class="tips"><span>人</span>·幸福</div>
@@ -86,7 +88,10 @@
           <div class="business-title">
             <b>智慧环保</b><span>覆盖生态环境全数据，为中国生态保驾护航</span>
           </div>
-          <div class="btn btn-white"><router-link to="solution/wisdom-environment">了解更多</router-link><i></i></div>
+          <div class="btn btn-white">
+            <router-link to="solution/wisdom-environment">了解更多</router-link
+            ><i></i>
+          </div>
         </div>
         <div class="business-content">
           <div data-aos="fade-up" class="data-aos">
@@ -107,7 +112,6 @@
               </li>
             </ul>
           </div>
-
         </div>
       </div>
       <div
@@ -118,7 +122,10 @@
           <div class="business-title">
             <b>智慧水务</b><span>供水排水水务全流程管理，为城市生活供给生</span>
           </div>
-          <div class="btn btn-white"><router-link to="solution/wisdom-water">了解更多</router-link><i></i></div>
+          <div class="btn btn-white">
+            <router-link to="solution/wisdom-water">了解更多</router-link
+            ><i></i>
+          </div>
         </div>
         <div class="business-content">
           <div data-aos="fade-up" class="data-aos">
@@ -149,7 +156,9 @@
           <div class="business-title">
             <b>智慧园区</b><span>让园区管理像操作APP一样简单</span>
           </div>
-          <div class="btn btn-white"><router-link to="solution/wisdom-park">了解更多</router-link><i></i></div>
+          <div class="btn btn-white">
+            <router-link to="solution/wisdom-park">了解更多</router-link><i></i>
+          </div>
         </div>
         <div class="business-content">
           <div data-aos="fade-up" class="data-aos">
@@ -227,7 +236,7 @@ export default {
   },
 
   methods: {
-    mouseOver(item, items) {
+    mouseOver(item, index, items) {
       this.isCurNavTab = true;
       item.isActive = this.isCurNavTab ? "active" : "";
       this.isMenuShow = item.className;
@@ -375,7 +384,7 @@ export default {
     .business-content {
       display: flex;
       justify-content: space-between;
-      .data-aos{
+      .data-aos {
         width: 100%;
       }
       .item {
@@ -455,12 +464,12 @@ export default {
   display: flex;
   justify-items: center;
   align-items: center;
-  a{
+  a {
     color: inherit;
   }
   &:hover {
     cursor: pointer;
-    a{
+    a {
       text-decoration: none;
     }
   }
