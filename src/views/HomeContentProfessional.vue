@@ -25,138 +25,151 @@
     <div class="business-intro">
       <div
         :class="['business-item', 'content']"
-        v-show="this.isMenuShow === 'core-city'"
+        v-if="this.isMenuShow === 'core-city'"
       >
         <div class="title-box">
           <div class="business-title">
             <b>智慧城市</b><span>信息技术与城市现代化深度融合、迭代演进</span>
           </div>
-          <div class="btn btn-white"><span>了解更多</span><i></i></div>
+          <div class="btn btn-white"><router-link to="solution/wisdom-city">了解更多</router-link><i></i></div>
         </div>
         <div class="business-content">
 
-          <div class="item">
-            <div class="cont-icon cont-icon-two"></div>
-            <div class="tips"><span>城</span>·智能</div>
-            <div class="cont-intro">
-              <p>基础设施智慧化<br />基础设施 · 物联智慧</p>
-              <div>
-                建设智慧化的城市基础设施 智慧楼宇、智慧照明、智慧交通、智慧能源
-                <br />…
+          <div data-aos="fade-up" data-aos-delay="100">
+            <div class="item">
+              <div class="cont-icon cont-icon-two"></div>
+              <div class="tips"><span>城</span>·智能</div>
+              <div class="cont-intro">
+                <p>基础设施智慧化<br />基础设施 · 物联智慧</p>
+                <div>
+                  建设智慧化的城市基础设施 智慧楼宇、智慧照明、智慧交通、智慧能源
+                  <br />…
+                </div>
               </div>
+              <div class="cont"></div>
             </div>
-            <div class="cont"></div>
           </div>
-          <div class="item">
-            <div class="cont-icon cont-icon-three"></div>
-            <div class="tips"><span>市</span>·繁荣</div>
-            <div class="cont-intro">
-              <p>经济产业智慧化<br />经济生产 · 产业智慧</p>
-              <div>
-                促进工农业生产、市场经济智慧化 智慧产业、智慧农业、电子商务<br />…
+          <div data-aos="fade-up" data-aos-delay="300">
+            <div class="item">
+              <div class="cont-icon cont-icon-three"></div>
+              <div class="tips"><span>市</span>·繁荣</div>
+              <div class="cont-intro">
+                <p>经济产业智慧化<br />经济生产 · 产业智慧</p>
+                <div>
+                  促进工农业生产、市场经济智慧化 智慧产业、智慧农业、电子商务<br />…
+                </div>
               </div>
+              <div class="cont"></div>
             </div>
-            <div class="cont"></div>
           </div>
-          <div class="item">
-            <div class="cont-icon cont-icon-one"></div>
-            <div class="tips"><span>人</span>·幸福</div>
-            <div class="cont-intro">
-              <p>民生及管理智慧化<br />社会治理 · 人文智慧</p>
-              <div>
-                促进民生服务和社会管理智慧化 智慧教育、智慧医疗、智慧政务
-                <br />…
+          <div data-aos="fade-up"  data-aos-delay="500">
+            <div class="item">
+              <div class="cont-icon cont-icon-one"></div>
+              <div class="tips"><span>人</span>·幸福</div>
+              <div class="cont-intro">
+                <p>民生及管理智慧化<br />社会治理 · 人文智慧</p>
+                <div>
+                  促进民生服务和社会管理智慧化 智慧教育、智慧医疗、智慧政务
+                  <br />…
+                </div>
               </div>
+              <div class="cont"></div>
             </div>
-            <div class="cont"></div>
           </div>
         </div>
       </div>
       <div
         :class="['business-item', 'content']"
-        v-show="this.isMenuShow === 'core-huanb'"
+        v-if="this.isMenuShow === 'core-huanb'"
       >
         <div class="title-box">
           <div class="business-title">
             <b>智慧环保</b><span>覆盖生态环境全数据，为中国生态保驾护航</span>
           </div>
-          <div class="btn btn-white"><span>了解更多</span><i></i></div>
+          <div class="btn btn-white"><router-link to="solution/wisdom-environment">了解更多</router-link><i></i></div>
         </div>
         <div class="business-content">
-          <ul>
-            <li>
-              <span>大气环境监测</span>
-              <span>企业电量监控</span>
-              <span>AI图像识别</span>
-              <span>污染源特征分析</span>
-              <span>空气质量预报</span>
-            </li>
-            <li>
-              <span>环境综合分析</span>
-              <span>网格监管</span>
-              <span>重污染天气应对</span>
-              <span>空气质量评估</span>
-              <span>节能减排评估</span>
-            </li>
-          </ul>
+          <div data-aos="fade-up" data-aos-delay="100" class="data-aos">
+            <ul>
+              <li>
+                <span>大气环境监测</span>
+                <span>企业电量监控</span>
+                <span>AI图像识别</span>
+                <span>污染源特征分析</span>
+                <span>空气质量预报</span>
+              </li>
+              <li>
+                <span>环境综合分析</span>
+                <span>网格监管</span>
+                <span>重污染天气应对</span>
+                <span>空气质量评估</span>
+                <span>节能减排评估</span>
+              </li>
+            </ul>
+          </div>
+
         </div>
       </div>
       <div
         :class="['business-item', 'content']"
-        v-show="this.isMenuShow === 'core-water'"
+        v-if="this.isMenuShow === 'core-water'"
       >
         <div class="title-box">
           <div class="business-title">
             <b>智慧水务</b><span>供水排水水务全流程管理，为城市生活供给生</span>
           </div>
-          <div class="btn btn-white"><span>了解更多</span><i></i></div>
+          <div class="btn btn-white"><router-link to="solution/wisdom-water">了解更多</router-link><i></i></div>
         </div>
         <div class="business-content">
-          <ul>
-            <li>
-              <span>水源水质监测</span>
-              <span>供排水管理</span>
-              <span>GIS管网</span>
-              <span>直饮水水质监测</span>
-              <span>水利管理</span>
-            </li>
-            <li>
-              <span>防汛抗旱</span>
-              <span>SCADA运行调度</span>
-              <span>河湖长制管理</span>
-              <span>海绵城市</span>
-              <span>污水处理监测</span>
-            </li>
-          </ul>
+          <div data-aos="fade-up" data-aos-delay="100" class="data-aos">
+            <ul>
+              <li>
+                <span>水源水质监测</span>
+                <span>供排水管理</span>
+                <span>GIS管网</span>
+                <span>直饮水水质监测</span>
+                <span>水利管理</span>
+              </li>
+              <li>
+                <span>防汛抗旱</span>
+                <span>SCADA运行调度</span>
+                <span>河湖长制管理</span>
+                <span>海绵城市</span>
+                <span>污水处理监测</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div
         :class="['business-item', 'content']"
-        v-show="this.isMenuShow === 'core-park'"
+        v-if="this.isMenuShow === 'core-park'"
       >
         <div class="title-box">
           <div class="business-title">
             <b>智慧园区</b><span>让园区管理像操作APP一样简单</span>
           </div>
-          <div class="btn btn-white"><span>了解更多</span><i></i></div>
+          <div class="btn btn-white"><router-link to="solution/wisdom-park">了解更多</router-link><i></i></div>
         </div>
         <div class="business-content">
-          <ul>
-            <li>
-              <span>物业管理</span>
-              <span>移动OA</span>
-              <span>招商管理</span>
-              <span>视频监控</span>
-              <span>客户管理</span>
-            </li>
-            <li>
-              <span>能耗管理</span>
-              <span>门禁管理</span>
-              <span>消防管理</span>
-              <span>租赁管理</span>
-              <span>资产管理</span>
-            </li>
-          </ul>
+          <div data-aos="fade-up" data-aos-delay="100" class="data-aos">
+            <ul>
+              <li>
+                <span>物业管理</span>
+                <span>移动OA</span>
+                <span>招商管理</span>
+                <span>视频监控</span>
+                <span>客户管理</span>
+              </li>
+              <li>
+                <span>能耗管理</span>
+                <span>门禁管理</span>
+                <span>消防管理</span>
+                <span>租赁管理</span>
+                <span>资产管理</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -181,19 +194,19 @@ export default {
           text: "智慧环保",
           className: "core-huanb",
           isActive: "",
-          delay: 500
+          delay: 300
         },
         {
           text: "智慧水务",
           className: "core-water",
           isActive: "",
-          delay: 900
+          delay: 500
         },
         {
           text: "智慧园区",
           className: "core-park",
           isActive: "",
-          delay: 1300
+          delay: 700
         }
       ],
       menuItems: [
@@ -362,7 +375,10 @@ export default {
     .business-content {
       display: flex;
       justify-content: space-between;
-      & > .item {
+      .data-aos{
+        width: 100%;
+      }
+      .item {
         text-align: center;
         width: 320px;
         border-radius: 4px;
@@ -406,7 +422,7 @@ export default {
           }
         }
       }
-      & > ul {
+      ul {
         width: 100%;
         padding: 120px 0 180px;
         li {
@@ -439,8 +455,14 @@ export default {
   display: flex;
   justify-items: center;
   align-items: center;
+  a{
+    color: inherit;
+  }
   &:hover {
     cursor: pointer;
+    a{
+      text-decoration: none;
+    }
   }
   & > span,
   i {

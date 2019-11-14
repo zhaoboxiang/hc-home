@@ -128,10 +128,12 @@ export default {
   margin-top: 10px;
 }
 
+.about{
+  padding-top: 68px;
+}
 .about-banner-box {
   height: 240px;
   width: 100%;
-  padding-top: 68px;
   background: linear-gradient(
     135deg,
     rgba(226, 242, 249, 1) 0%,

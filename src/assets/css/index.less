@@ -69,9 +69,15 @@ body {
         color: rgba(48, 60, 168, 1);
         cursor: pointer;
         position: relative;
+        a{
+          color: inherit;
+        }
         &:hover {
           background: @font-color-active;
           color: #fff;
+          a{
+            text-decoration: none;
+          }
           &:after {
             background: url("../images/icon_more_white.png") center no-repeat;
             background-size: 100% 100%;
