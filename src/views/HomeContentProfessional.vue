@@ -34,18 +34,7 @@
           <div class="btn btn-white"><span>了解更多</span><i></i></div>
         </div>
         <div class="business-content">
-          <div class="item">
-            <div class="cont-icon cont-icon-one"></div>
-            <div class="tips"><span>人</span>·幸福</div>
-            <div class="cont-intro">
-              <p>民生及管理智慧化<br />社会治理 · 人文智慧</p>
-              <div>
-                促进民生服务和社会管理智慧化 智慧教育、智慧医疗、智慧政务
-                <br />…
-              </div>
-            </div>
-            <div class="cont"></div>
-          </div>
+
           <div class="item">
             <div class="cont-icon cont-icon-two"></div>
             <div class="tips"><span>城</span>·智能</div>
@@ -60,11 +49,23 @@
           </div>
           <div class="item">
             <div class="cont-icon cont-icon-three"></div>
-            <div class="tips"><span>市</span>·繁华</div>
+            <div class="tips"><span>市</span>·繁荣</div>
             <div class="cont-intro">
               <p>经济产业智慧化<br />经济生产 · 产业智慧</p>
               <div>
                 促进工农业生产、市场经济智慧化 智慧产业、智慧农业、电子商务<br />…
+              </div>
+            </div>
+            <div class="cont"></div>
+          </div>
+          <div class="item">
+            <div class="cont-icon cont-icon-one"></div>
+            <div class="tips"><span>人</span>·幸福</div>
+            <div class="cont-intro">
+              <p>民生及管理智慧化<br />社会治理 · 人文智慧</p>
+              <div>
+                促进民生服务和社会管理智慧化 智慧教育、智慧医疗、智慧政务
+                <br />…
               </div>
             </div>
             <div class="cont"></div>

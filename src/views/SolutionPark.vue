@@ -13,7 +13,7 @@
             建成基础设施高端、管理服务高效、创新环境高质、可持续发展的园区。
           </div>
         </div>
-        <div class="ban-right"></div>
+        <div class="ban-right"><img src="../assets/images/solution/img_jjfa_zhyq_topimg.png"></div>
       </div>
     </div>
     <div class="section section-1">

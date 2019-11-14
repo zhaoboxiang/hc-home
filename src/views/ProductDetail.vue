@@ -1,8 +1,10 @@
 <template>
   <div class="product-env-detail-wrap">
     <div class="env-detail-banner">
-      <div class="banner-content">
-        <img
+      <div
+        :class="['content banner-content', `banner-content-${bannerClassName}`]"
+      >
+        <img style="display: none"
           :src="
             require(`../assets/images/product/${productDetailTitleIcon}.png`)
           "
@@ -60,6 +62,7 @@ export default {
       active: -1,
       productDetailTitle: "",
       productDetailTitleIcon: "icon-env",
+      bannerClassName: "env",
       productDetailList: [],
       productEnv: [
         "wzjc-sys",
@@ -297,16 +300,19 @@ export default {
         vm.productDetailList = envData;
         vm.productDetailTitle = "智慧环保产品";
         vm.productDetailTitleIcon = "icon-env";
+        vm.bannerClassName = "env";
         vm.active = vm.productEnv.indexOf(paramsName);
       } else if (vm.productPark.indexOf(paramsName) !== -1) {
         vm.productDetailList = parkData;
         vm.productDetailTitle = "智慧园区产品";
         vm.productDetailTitleIcon = "icon-park";
+        vm.bannerClassName = "park";
         vm.active = vm.productPark.indexOf(paramsName);
       } else if (vm.productWater.indexOf(paramsName) !== -1) {
         vm.productDetailList = waterData;
         vm.productDetailTitle = "智慧水务产品";
         vm.productDetailTitleIcon = "icon-water";
+        vm.bannerClassName = "water";
         vm.active = vm.productWater.indexOf(paramsName);
       } else {
         next();
@@ -391,7 +397,7 @@ export default {
   }
 }
 .env-detail-banner {
-  height: 240px;
+  height: 360px;
   background: linear-gradient(
     135deg,
     rgba(226, 242, 249, 1) 0%,
@@ -406,6 +412,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
     span {
       height: 48px;
       font-size: 48px;
@@ -415,5 +422,17 @@ export default {
       line-height: 48px;
     }
   }
+}
+.banner-content-env {
+  background: url("../assets/images/product/img_cpzx_zhhbcp_topimg.png") center
+    no-repeat;
+}
+.banner-content-park {
+  background: url("../assets/images/product/img_cpzx_zhyqcp_topimg.png") center
+    no-repeat;
+}
+.banner-content-water {
+  background: url("../assets/images/product/img_cpzx_zhswcp_topimg.png") center
+    no-repeat;
 }
 </style>
