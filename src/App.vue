@@ -13,17 +13,15 @@
 #nav a.router-link-exact-active {
   color: #373ea4;
 }
-
 </style>
 <script>
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-// import DropDownBox from "./views/ProductNavigationBox";
+
 export default {
   components: {
     Header,
-    Footer,
-    // DropDownBox
+    Footer
   }
 };
 </script>
