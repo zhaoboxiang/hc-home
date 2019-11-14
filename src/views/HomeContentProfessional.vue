@@ -397,13 +397,13 @@ export default {
         }
         width: 320px;
         height: 400px;
-        padding: 0 40px 47px;
+        padding: 43px 40px 0;
         background: rgba(13, 25, 136, 0.3);
         margin-top: 50px;
         .cont-icon {
           width: 90px;
           height: 90px;
-          margin: 43px auto 27px;
+          margin: 0 auto 27px;
           border-radius: 28px;
         }
         .cont-icon-one {

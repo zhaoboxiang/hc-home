@@ -20,7 +20,7 @@
         <div class="sec-head">
           <div class="sec-h-left">
             <h3>规划专家</h3>
-            <p>职位类别：产品类 工作地点：深圳 招聘人数：1人</p>
+            <p><span>职位类别：产品类</span><span>工作地点：深圳 </span><span>招聘人数：1人</span></p>
           </div>
           <div class="sec-h-right">
             <div
@@ -64,7 +64,7 @@
         <div class="sec-head">
           <div class="sec-h-left">
             <h3>产品经理</h3>
-            <p>职位类别：产品类 工作地点：深圳 招聘人数：5人</p>
+            <p><span>职位类别：产品类</span><span>工作地点：深圳</span><span>招聘人数：5人</span></p>
           </div>
           <div class="sec-h-right">
             <div
@@ -101,7 +101,7 @@
         <div class="sec-head">
           <div class="sec-h-left">
             <h3>人工智能工程师</h3>
-            <p>职位类别：研发类 工作地点：深圳 招聘人数：1人</p>
+            <p><span>职位类别：研发类</span><span>工作地点：深圳</span><span>招聘人数：1人</span></p>
           </div>
           <div class="sec-h-right">
             <div
@@ -135,7 +135,7 @@
         <div class="sec-head">
           <div class="sec-h-left">
             <h3>Phython开发工程师</h3>
-            <p>职位类别：研发类 工作地点：深圳 招聘人数：若干</p>
+            <p><span>职位类别：研发类</span><span>工作地点：深圳</span><span>招聘人数：若干</span></p>
           </div>
           <div class="sec-h-right">
             <div
@@ -174,7 +174,7 @@
         <div class="sec-head">
           <div class="sec-h-left">
             <h3>Java开发工程师</h3>
-            <p>职位类别：研发类 工作地点：深圳 招聘人数：若干</p>
+            <p><span>职位类别：研发类</span><span>工作地点：深圳</span><span>招聘人数：若干</span></p>
           </div>
           <div class="sec-h-right">
             <div
@@ -213,7 +213,7 @@
         <div class="sec-head">
           <div class="sec-h-left">
             <h3>销售经理</h3>
-            <p>职位类别：市场类 工作地点：深圳 招聘人数：若干</p>
+            <p><span>职位类别：市场类</span><span> 工作地点：深圳</span><span>招聘人数：若干</span></p>
           </div>
           <div class="sec-h-right">
             <div
@@ -325,6 +325,9 @@ export default {
         }
         & > p {
           font-size: 16px;
+          span{
+            margin-right: 40px;
+          }
         }
       }
       .sec-h-right {
