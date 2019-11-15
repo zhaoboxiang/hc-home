@@ -6,9 +6,7 @@
       :key="index"
     >
       <div @click="hideMenu">
-        <router-link class="menu-item" :to="{ name: menu.name }">
-          {{ menu.title }}</router-link
-        >
+        <a class="menu-item" :href="`${menu.name}.html`"> {{ menu.title }}</a>
       </div>
     </div>
   </div>
@@ -55,7 +53,7 @@ a.menu-item {
   box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.06);
   border-radius: 0 0 2px 2px;
 }
-a.menu-item.router-link-exact-active.router-link-active {
+a.menu-item.a-exact-active.a-active {
   border: none !important;
 }
 
