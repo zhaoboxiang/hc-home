@@ -2,8 +2,10 @@
   <div class="product-section">
     <div class="content section-content">
       <div class="section-title">{{ sectitle }}</div>
-      <div class="section-img">
-        <img :src="imgurl" />
+      <div data-aos="fade-up">
+        <div class="section-img" data-aos-delay="100">
+          <img :src="imgurl" />
+        </div>
       </div>
     </div>
   </div>

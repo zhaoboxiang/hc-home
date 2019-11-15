@@ -240,6 +240,7 @@ export default {
       this.isCurNavTab = true;
       item.isActive = this.isCurNavTab ? "active" : "";
       this.isMenuShow = item.className;
+      console.log(item)
       items.map(function(itm) {
         if (itm.text !== item.text) {
           itm.isActive = "";

@@ -11,15 +11,15 @@
           一图感知、数据模拟、多维呈现，随时随地掌握环境动态趋势，从容面对各类预警事件
         </div>
         <div class="sec-box">
-          <div class="sec-item">
+          <div class="sec-item" data-aos="fade-up" data-aos-delay="100">
             <div class="item-icon icon-1"></div>
             <div class="item-tips">一图感知</div>
           </div>
-          <div class="sec-item">
+          <div class="sec-item" data-aos="fade-up" data-aos-delay="300">
             <div class="item-icon icon-2"></div>
             <div class="item-tips">数据模拟</div>
           </div>
-          <div class="sec-item">
+          <div class="sec-item" data-aos="fade-up" data-aos-delay="500">
             <div class="item-icon icon-3"></div>
             <div class="item-tips">多维呈现</div>
           </div>
