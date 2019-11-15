@@ -37,28 +37,31 @@
           <div class="img"></div>
         </div>
         <div class="intro-advantage">
-          <div class="adv-item">
+          <div class="adv-item" data-aos="fade-up" data-aos-delay="100">
             <div class="adv-icon icon-one"></div>
             <div class="adv-tips">规模化的技术团队</div>
             <div class="adv-p">
               规模的学习型技术团队，技术研发实力雄厚，保证了技术应用的可持续反正和行业领先，为客户提供高品质的整体解决方案。
             </div>
           </div>
-          <div class="adv-item">
+          <div class="cut" data-aos="zoom-in" data-aos-easing="ease-in-out-cubic" data-aos-delay="700"></div>
+          <div class="adv-item" data-aos="fade-up" data-aos-delay="300">
             <div class="adv-icon icon-two"></div>
             <div class="adv-tips">成熟的研发技术</div>
             <div class=" adv">
               从底层到应用层，拥有成熟的技术架构，保障多行业系统应用，在安全、性能、UE多维度领先业界。
             </div>
           </div>
-          <div class="adv-item">
+          <div class="cut"  data-aos="zoom-in" data-aos-easing="ease-in-out-cubic" data-aos-delay="700"></div>
+          <div class="adv-item" data-aos="fade-up" data-aos-delay="500">
             <div class="adv-icon icon-three"></div>
             <div class="adv-tips">丰富的实战经验</div>
             <div class="adv-p">
               多年基于实战经验培养的团队技术优势，大量大型项目的实战经验，保障项目完美的落地。
             </div>
           </div>
-          <div class="adv-item">
+          <div class="cut"  data-aos="zoom-in" data-aos-easing="ease-in-out-cubic" data-aos-delay="700"></div>
+          <div class="adv-item" data-aos="fade-up" data-aos-delay="700">
             <div class="adv-icon icon-four"></div>
             <div class="adv-tips">系统集成优势</div>
             <div class="adv-p">
@@ -80,7 +83,7 @@
         <h3 class="section-h3">企业资质</h3>
         <h6 class="section-h6">ENTERPRISE QUALIFICATION</h6>
         <div class="cul-box">
-          <div class="cul-left">
+          <div class="cul-left" data-aos="fade-up" data-aos-delay="100">
             · 双软资质<br />
             · 信息安全管理体系认证 <br />
             · 信息技术服务管理体系认证<br />
@@ -90,7 +93,7 @@
             · 多项计算机软件著作权及专利<br />
             ...
           </div>
-          <div class="cul-right"></div>
+          <div class="cul-right" data-aos="fade-up" data-aos-delay="300"></div>
         </div>
       </div>
     </div>
@@ -100,9 +103,10 @@
         <h3 class="section-h3">服务案例</h3>
         <h6 class="section-h6">SERVICE CASES</h6>
         <div class="cases">
-          <p>
+          <p data-aos="fade-up" data-aos-delay="100">
             公司通过物联、数联和智联以及大数据领域的技术积累，与人工智能技术深度融合，创新性的推出业界领先的智慧环保生态大数据平台、水务监管平台、园区监管运营平台等多套成熟产品，获得客户一致好评。
           </p>
+          <div class="case-bg" data-aos="fade-up" data-aos-delay="300"></div>
         </div>
       </div>
     </div>
@@ -128,7 +132,7 @@ export default {
   margin-top: 10px;
 }
 
-.about{
+.about {
   padding-top: 68px;
 }
 .about-banner-box {
@@ -189,23 +193,25 @@ export default {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      height: 280px;
       .adv-item {
         padding: 20px 60px;
         position: relative;
-        &:after {
-          content: "";
-          display: block;
-          width: 1px;
-          height: 100%;
-          position: absolute;
-          right: 0;
-          top: 0;
-          background: linear-gradient(
-            rgba(149, 171, 216, 0) 0%,
-            rgba(149, 171, 216, 1) 50%,
-            rgba(149, 171, 216, 0) 100%
-          );
-        }
+        /*&:after {*/
+          /*content: "";*/
+          /*display: block;*/
+          /*width: 1px;*/
+          /*height: 100%;*/
+          /*position: absolute;*/
+          /*right: 0;*/
+          /*top: 0;*/
+          /*background: linear-gradient(*/
+            /*rgba(149, 171, 216, 0) 0%,*/
+            /*rgba(149, 171, 216, 1) 50%,*/
+            /*rgba(149, 171, 216, 0) 100%*/
+          /*);*/
+        /*}*/
+        flex: 1;
         &:first-child {
           padding-left: 0;
         }
@@ -243,6 +249,16 @@ export default {
           color: @font-color;
         }
       }
+      .cut {
+        display: block;
+        width: 1px;
+        height: 100%;
+        background: linear-gradient(
+                rgba(149, 171, 216, 0) 0%,
+                rgba(149, 171, 216, 1) 50%,
+                rgba(149, 171, 216, 0) 100%
+        );
+      }
     }
   }
 }
@@ -279,11 +295,20 @@ export default {
   .cases {
     width: 1200px;
     height: 800px;
-    background: url("../assets/images/img_about_anli_bg.png") center no-repeat;
     margin: 60px auto 0;
     line-height: 24px;
+    position: relative;
     & > p {
       max-width: 600px;
+    }
+    .case-bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url("../assets/images/img_about_anli_bg.png") center no-repeat;
+      top: 0;
+      left: 0;
+      z-index: -10;
     }
   }
 }
