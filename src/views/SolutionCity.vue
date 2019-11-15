@@ -7,13 +7,15 @@
           <div class="ban-h3">智慧城市</div>
           <div class="ban-h6">信息技术与城市现代化深度融合、迭代演进</div>
           <div class="ban-p">
-            智慧城市定位为城市内生态环境、公共管理、公共服务的决策指挥大脑，<br />
-            以“物联、数联、智联”为特征，做强核心、广泛延伸、细化感知，创新城市日常管理和运营模式的手段。<br />
-            强化主动发现和协同指挥处置功能，借助人工智能、大数据、物联网新技术，实现对城市精细化管理的智能化手段，<br />
+            智慧城市定位为城市内生态环境、公共管理、公共服务的决策指挥大脑，
+            以“物联、数联、智联”为特征，做强核心、广泛延伸、细化感知，创新城市日常管理和运营模式的手段。
+            强化主动发现和协同指挥处置功能，借助人工智能、大数据、物联网新技术，实现对城市精细化管理的智能化手段，
             不断提升城市在环保、水利水务、城市管理等方面复杂事项的多部门协同指挥处置。
           </div>
         </div>
-        <div class="ban-right"><img src="../assets/images/solution/img_jjfa_zhcs_topimg.png"></div>
+        <div class="ban-right">
+          <img src="../assets/images/solution/img_jjfa_zhcs_topimg.png" />
+        </div>
       </div>
     </div>
     <div class="section section-1">

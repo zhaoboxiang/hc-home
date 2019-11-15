@@ -7,13 +7,15 @@
           <div class="ban-h3">智慧环保</div>
           <div class="ban-h6">覆盖生态环境全数据，为中国生态保驾护航</div>
           <div class="ban-p">
-            环保产业发展事关国计民生，是我国重要的战略性产业。<br />
-            虹川科技智慧环保解决方案旨在打造集环境感知、分析、管控、治理于一体的全产业链创新综合体，<br />
-            整合联合环保产业链的创新资源，综合运用环境物联网、人工智能、高密度、全覆盖监测和大数据分析等技术手段，<br />
+            环保产业发展事关国计民生，是我国重要的战略性产业。
+            虹川科技智慧环保解决方案旨在打造集环境感知、分析、管控、治理于一体的全产业链创新综合体，
+            整合联合环保产业链的创新资源，综合运用环境物联网、人工智能、高密度、全覆盖监测和大数据分析等技术手段，
             以源解析加减排规划制定为科技指引，结合大数据应用分析，精准找源，科学治理，实现区域环境持续达标治理与保持经济发展平衡。
           </div>
         </div>
-        <div class="ban-right"><img src="../assets/images/solution/img_jjfa_zhhb_topimg.png"></div>
+        <div class="ban-right">
+          <img src="../assets/images/solution/img_jjfa_zhhb_topimg.png" />
+        </div>
       </div>
     </div>
     <div class="section section-1">

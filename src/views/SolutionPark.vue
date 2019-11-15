@@ -7,13 +7,15 @@
           <div class="ban-h3">智慧园区</div>
           <div class="ban-h6">让园区管理像操作APP一样简单</div>
           <div class="ban-p">
-            虹川数字园区解决方案充分考虑园区管理方、入园企业、企业员工和社区居民需求，<br />
-            梳理园区的目标、任务、产业结构与智慧园区项目内在关系，<br />
-            以物联网、云计算、大数据、移动互联等现代信息技术为基础，通过感知化、互联化、智能化、平台化、一体化的手段，<br />
+            虹川数字园区解决方案充分考虑园区管理方、入园企业、企业员工和社区居民需求，
+            梳理园区的目标、任务、产业结构与智慧园区项目内在关系，
+            以物联网、云计算、大数据、移动互联等现代信息技术为基础，通过感知化、互联化、智能化、平台化、一体化的手段，
             建成基础设施高端、管理服务高效、创新环境高质、可持续发展的园区。
           </div>
         </div>
-        <div class="ban-right"><img src="../assets/images/solution/img_jjfa_zhyq_topimg.png"></div>
+        <div class="ban-right">
+          <img src="../assets/images/solution/img_jjfa_zhyq_topimg.png" />
+        </div>
       </div>
     </div>
     <div class="section section-1">
