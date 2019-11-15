@@ -25,7 +25,7 @@
           <p v-show="true">
             {{ item.description }}
           </p>
-          <img
+          <img v-if="item.img"
             :src="item.img && require(`../assets/images/product/${item.img}`)"
             alt=""
           />
