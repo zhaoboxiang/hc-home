@@ -348,7 +348,9 @@ export default {
   box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.06);
   border-radius: 8px;
   position: fixed;
-  top: 408px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 20px 0;
   p {
     width: 220px;
     height: 40px;
