@@ -344,15 +344,15 @@ li {
   flex: 1;
   line-height: 24px;
 }
-.solution .section-3 .section-content .section-flex > .item-1:after {
+.solution .section-3 .section-content .section-flex .item-1:after {
   background: url("../images/solution/img_jjfa_zhcs_fatd_1.png") center no-repeat;
   background-size: 100% 100%;
 }
-.solution .section-3 .section-content .section-flex > .item-2:after {
+.solution .section-3 .section-content .section-flex .item-2:after {
   background: url("../images/solution/img_jjfa_zhcs_fatd_2.png") center no-repeat;
   background-size: 100% 100%;
 }
-.solution .section-3 .section-content .section-flex > .item-n:after {
+.solution .section-3 .section-content .section-flex .item-n:after {
   background: url("../images/solution/img_jjfa_zhcs_fatd_3.png") center no-repeat;
   background-size: 100% 100%;
 }
@@ -369,19 +369,19 @@ li {
   font-weight: bold;
   margin-bottom: 10px;
 }
-.solution .hc-env-pro .section-content .section-flex > .item-1:after {
+.solution .hc-env-pro .section-content .section-flex .item-1:after {
   background: url("../images/solution/img_jjfa_fatd_1.png") center no-repeat;
   background-size: 100% 100%;
 }
-.solution .hc-env-pro .section-content .section-flex > .item-2:after {
+.solution .hc-env-pro .section-content .section-flex .item-2:after {
   background: url("../images/solution/img_jjfa_fatd_2.png") center no-repeat;
   background-size: 100% 100%;
 }
-.solution .hc-env-pro .section-content .section-flex > .item-3:after {
+.solution .hc-env-pro .section-content .section-flex .item-3:after {
   background: url("../images/solution/img_jjfa_fatd_3.png") center no-repeat;
   background-size: 100% 100%;
 }
-.solution .hc-env-pro .section-content .section-flex > .item-4:after {
+.solution .hc-env-pro .section-content .section-flex .item-4:after {
   background: url("../images/solution/img_jjfa_fatd_4.png") center no-repeat;
   background-size: 100% 100%;
 }
