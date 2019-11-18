@@ -29,8 +29,8 @@ body {
   text-decoration: none;
   color: #303ca8;
 }
-.hc-header .hc-nav .nav-link-wrap a.router-link-exact-active,
-.hc-header .hc-nav .nav-link-wrap a.router-link-active {
+.hc-header .hc-nav .nav-link-wrap a.a-exact-active,
+.hc-header .hc-nav .nav-link-wrap a.a-active {
   border-bottom: 2px solid #303ca8;
   color: #373ea4;
 }
