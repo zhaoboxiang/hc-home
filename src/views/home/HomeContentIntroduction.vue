@@ -24,4 +24,6 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped lang="less">
+@import "../../assets/css/global";
+</style>

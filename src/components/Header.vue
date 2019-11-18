@@ -19,7 +19,7 @@
         <!-- 其他 -->
         <a
           :exact="index === 0"
-          :class="['main-nav-link']"
+          :class="['main-nav-link', { 'a-active': headerNav[index].isActive }]"
           :href="`${nav.pathName}.html`"
           >{{ nav.title }}</a
         >
@@ -31,7 +31,7 @@
         ></drop-down-menu>
         <!-- 产品中心的下拉菜单 -->
         <product-navigation-box
-          v-if="active === index && nav.pathName === 'wisdom-env-product'"
+          v-show="active === index && nav.pathName === 'wisdom-env-product'"
         ></product-navigation-box>
       </div>
     </div>
@@ -53,17 +53,17 @@ export default {
       showProductNavBox: false,
       active: -1,
       headerNav: [
-        { title: "首页", pathName: "index" },
-        { title: "关于虹川", pathName: "about" },
-        { title: "解决方案", pathName: "wisdom-env-solution" },
-        { title: "产品中心", pathName: "wisdom-env-product" },
-        { title: "广纳贤才", pathName: "careers" }
+        { title: "首页", pathName: "index", isActive: true },
+        { title: "关于虹川", pathName: "about", isActive: false },
+        { title: "解决方案", pathName: "wisdom-env-solution", isActive: false },
+        { title: "产品中心", pathName: "wisdom-env-product", isActive: false },
+        { title: "广纳贤才", pathName: "careers", isActive: false }
       ],
       solutionMenuItems: [
-        { name: "wisdom-city-solution", title: "智慧城市" },
-        { name: "wisdom-env-solution", title: "智慧环保" },
-        { name: "wisdom-water-solution", title: "智慧水务" },
-        { name: "wisdom-park-solution", title: "智慧园区" }
+        { name: "wisdom-city-solution", title: "智慧城市", isActive: false },
+        { name: "wisdom-env-solution", title: "智慧环保", isActive: true },
+        { name: "wisdom-water-solution", title: "智慧水务", isActive: false },
+        { name: "wisdom-park-solution", title: "智慧园区", isActive: false }
       ]
     };
   },
@@ -78,6 +78,22 @@ export default {
     toggle(index) {
       this.active = index;
     }
+  },
+  mounted: function() {
+    // header 导航栏active样式控制 start
+    let pathName = window.location.pathname;
+    for (let i = 0; i < this.headerNav.length; i++) {
+      this.headerNav[i].isActive = false;
+      if (pathName.includes("solution")) {
+        this.headerNav[2].isActive = true;
+      } else if (pathName.includes("product")) {
+        this.headerNav[3].isActive = true;
+      } else if (pathName.includes(this.headerNav[i].pathName)) {
+        this.headerNav[i].isActive = true;
+      }
+    }
+    this.headerNav.splice();
+    // header 导航栏active样式控制 end
   }
 };
 </script>

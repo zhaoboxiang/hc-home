@@ -2,19 +2,19 @@
   <div class="product-nav">
     <div class="nav-box">
       <div class="content banner-nav">
-        <div :class="['ban-nav-item', 'ban-nav-cur']">
+        <div :class="['ban-nav-item', { 'ban-nav-cur': currentFlag[0] }]">
           <a href="wisdom-env-product.html">
             <div class="item-icon icon-1"></div>
             <div class="item-tips">智慧环保产品</div>
           </a>
         </div>
-        <div :class="['ban-nav-item', 'ban-nav-cur']">
+        <div :class="['ban-nav-item', { 'ban-nav-cur': currentFlag[1] }]">
           <a href="wisdom-water-product.html">
             <div class="item-icon icon-2"></div>
             <div class="item-tips">智慧水务产品</div>
           </a>
         </div>
-        <div :class="['ban-nav-item', 'ban-nav-cur']">
+        <div :class="['ban-nav-item', { 'ban-nav-cur': currentFlag[2] }]">
           <a href="wisdom-park-product.html">
             <div class="item-icon icon-3"></div>
             <div class="item-tips">智慧园区产品</div>
@@ -27,7 +27,26 @@
 
 <script>
 export default {
-  name: "ProductContentNav"
+  name: "ProductContentNav",
+  data() {
+    return {
+      currentFlag: [true, false, false]
+    };
+  },
+  mounted: function() {
+    let pathname = window.location.pathname;
+    for (let i = 0; i < this.currentFlag.length; i++) {
+      this.currentFlag[i] = false;
+    }
+    if (pathname.includes("water")) {
+      this.currentFlag[1] = true;
+    } else if (pathname.includes("park")) {
+      this.currentFlag[2] = true;
+    } else {
+      this.currentFlag[0] = true;
+    }
+    this.currentFlag.splice();
+  }
 };
 </script>
 
@@ -57,23 +76,27 @@ export default {
           margin: 24px auto 16px;
         }
         .icon-1 {
-          background: url("../assets/images/product/icon_yewu_1.png")
-            center no-repeat;
+          background: url("../assets/images/product/icon_yewu_1.png") center
+            no-repeat;
           background-size: 100% 100%;
         }
         .icon-2 {
-          background: url("../assets/images/product/icon_yewu_2.png")
-            center no-repeat;
+          background: url("../assets/images/product/icon_yewu_2.png") center
+            no-repeat;
           background-size: 100% 100%;
         }
         .icon-3 {
-          background: url("../assets/images/product/icon_yewu_3.png")
-            center no-repeat;
+          background: url("../assets/images/product/icon_yewu_3.png") center
+            no-repeat;
           background-size: 100% 100%;
         }
         .item-tips {
           font-size: 20px;
           color: #fff;
+        }
+
+        a:hover {
+          text-decoration: none;
         }
       }
       .ban-nav-cur,

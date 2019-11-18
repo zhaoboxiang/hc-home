@@ -114,7 +114,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="less" scoped>
+@import "../assets/css/global";
 .hc-drop-down-box {
   width: 100%;
   position: absolute;
@@ -169,6 +170,7 @@ export default {
         display: block;
         padding: 5px 0;
         border: none !important;
+        color: @font-color;
         &:hover {
           text-decoration: none;
           color: rgba(48, 60, 168, 1);

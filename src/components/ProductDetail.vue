@@ -145,7 +145,7 @@ export default {
         title: "取水泵远程监控系统",
         description:
           "水厂远程监控系统适用于供水企业远程监控管理水厂。水厂操作人员可以在水厂控制室远程监测厂内水池水位、进厂流量、出厂流量、出厂压力、水质等信息；远程监测加压泵组、配电设备及其它自动化设备的工作情况；远程控制加压泵的启停。水司调度中心工作人员及公司主管领导可以远程监测各水厂的工作情况及水厂操作人员的操作情况。",
-        img: "product-sub-qsbycjk.png",
+        img: "",
         anchor: "qsbycjk-sys"
       },
       {
@@ -363,7 +363,7 @@ export default {
         title: "取水泵远程监控系统",
         description:
           "水厂远程监控系统适用于供水企业远程监控管理水厂。水厂操作人员可以在水厂控制室远程监测厂内水池水位、进厂流量、出厂流量、出厂压力、水质等信息；远程监测加压泵组、配电设备及其它自动化设备的工作情况；远程控制加压泵的启停。水司调度中心工作人员及公司主管领导可以远程监测各水厂的工作情况及水厂操作人员的操作情况。",
-        img: "product-sub-qsbycjk.png",
+        img: "",
         anchor: "qsbycjk-sys"
       },
       {
@@ -525,6 +525,7 @@ export default {
     ];
 
     next(vm => {
+      debugger
       if (vm.productEnv.indexOf(paramsName) !== -1) {
         vm.productDetailList = envData;
         vm.productDetailTitle = "智慧环保产品";
@@ -554,13 +555,14 @@ export default {
       "anchor",
       to.params.name
     ]);
+    debugger
     next();
   }
 };
 </script>
 
 <style lang="less" scoped>
-@import "../assets/css/variables";
+@import "../assets/css/global";
 .hide {
   display: none;
 }
