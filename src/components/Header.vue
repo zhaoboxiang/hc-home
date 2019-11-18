@@ -19,7 +19,10 @@
         <!-- 其他 -->
         <a
           :exact="index === 0"
-          :class="['main-nav-link', { 'a-active': headerNav[index].isActive }]"
+          :class="[
+            'main-nav-link',
+            nav.pathName.indexOf(activeCurNav) > -1 ? 'a-active' : ''
+          ]"
           :href="`${nav.pathName}.html`"
           >{{ nav.title }}</a
         >
@@ -52,6 +55,7 @@ export default {
       showSolutionNav: false,
       showProductNavBox: false,
       active: -1,
+      activeCurNav: window.location.pathname,
       headerNav: [
         { title: "首页", pathName: "index", isActive: true },
         { title: "关于虹川", pathName: "about", isActive: false },
@@ -67,7 +71,6 @@ export default {
       ]
     };
   },
-  computed: {},
   methods: {
     hideOnClick() {
       this.active = -1;
@@ -80,20 +83,12 @@ export default {
     }
   },
   mounted: function() {
-    // header 导航栏active样式控制 start
-    let pathName = window.location.pathname;
-    for (let i = 0; i < this.headerNav.length; i++) {
-      this.headerNav[i].isActive = false;
-      if (pathName.includes("solution")) {
-        this.headerNav[2].isActive = true;
-      } else if (pathName.includes("product")) {
-        this.headerNav[3].isActive = true;
-      } else if (pathName.includes(this.headerNav[i].pathName)) {
-        this.headerNav[i].isActive = true;
-      }
-    }
-    this.headerNav.splice();
-    // header 导航栏active样式控制 end
+    const pathName = window.location.pathname
+      .replace(/^\/|\.html$/g, "")
+      .split("-");
+    this.activeCurNav = pathName[pathName.length - 1]
+      ? pathName[pathName.length - 1]
+      : "index";
   }
 };
 </script>

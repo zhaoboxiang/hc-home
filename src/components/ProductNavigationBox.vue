@@ -5,35 +5,37 @@
         <div class="content-title">
           <a :href="`wisdom-env-product.html`">智慧环保产品</a>
           <a :href="`wisdom-env-product.html`"
-            >了解更多 <img src="../assets/images/icon_more_blue.png"
+            >了解更多 <img src="../assets/images/icon_more_blue.png" alt=""
           /></a>
         </div>
         <div class="nav-lists-wrap">
           <div class="nav-list-left">
             <!--            v-scroll-to="`#wzjc-sys`"-->
-            <a :href="`env-detail.html`">微站监测系统</a>
+            <a :href="`env-detail-product.html`">微站监测系统</a>
             <!--            v-scroll-to="`#zhjc-sys`"-->
-            <a :href="`env-detail.html`">走航监测系统</a>
+            <a :href="`env-detail-product.html`">走航监测系统</a>
             <!--            v-scroll-to="`#qydljk-sys`"-->
-            <a :href="`env-detail.html`">企业电量监控系统</a>
+            <a :href="`env-detail-product.html`">企业电量监控系统</a>
             <!--            v-scroll-to="`#spjksb-sys`"-->
-            <a :href="`env-detail.html`">视频监控识别系统</a>
+            <a :href="`env-detail-product.html`">视频监控识别系统</a>
             <!--            v-scroll-to="`#kqzlybyj-sys`"-->
-            <a :href="`env-detail.html`">空气质量预报预警系统</a>
+            <a :href="`env-detail-product.html`">空气质量预报预警系统</a>
             <!--            v-scroll-to="`#yyyd-sys`"-->
-            <a :href="`env-detail.html`">一源一档系统</a>
+            <a :href="`env-detail-product.html`">一源一档系统</a>
           </div>
           <div class="nav-list-right">
             <!--            v-scroll-to="`#wghjg-sys`"-->
-            <a :href="`env-detail.html`">网格化监管系统</a>
+            <a :href="`env-detail-product.html`">网格化监管系统</a>
             <!--            v-scroll-to="`#ztcznjg-sys`"-->
-            <a :href="`env-detail.html`">渣土车智能监管系统</a>
+            <a :href="`env-detail-product.html`">渣土车智能监管系统</a>
             <!--            v-scroll-to="`#zwrtqyjxy-sys`"-->
-            <a :href="`env-detail.html`">重污染天气应急响应系统</a>
+            <a :href="`env-detail-product.html`">重污染天气应急响应系统</a>
             <!--            v-scroll-to="`#hjzhfx-sys`"-->
-            <a :href="`env-detail.html`">环境综合分析系统</a>
+            <a :href="`env-detail-product.html`">环境综合分析系统</a>
             <!--            v-scroll-to="`#dqwrfzzhjczc-sys`"-->
-            <a :href="`env-detail.html`">大气污染防治综合决策支持系统</a>
+            <a :href="`env-detail-product.html`"
+              >大气污染防治综合决策支持系统</a
+            >
           </div>
         </div>
       </div>
@@ -41,35 +43,35 @@
         <div class="content-title">
           <a :href="`wisdom-water-product.html`" class="title">智慧水务产品</a>
           <a :href="`wisdom-water-product.html`"
-            >了解更多 <img src="../assets/images/icon_more_blue.png"
+            >了解更多 <img src="../assets/images/icon_more_blue.png" alt=""
           /></a>
         </div>
         <div class="nav-lists-wrap">
           <div class="nav-list-left">
             <!--            v-scroll-to="`#dbsjc-sys`"-->
-            <a :href="`water-detail.html`">地表水监测系统</a>
+            <a :href="`water-detail-product.html`">地表水监测系统</a>
             <!--            v-scroll-to="`#dxsjc-sys`"-->
-            <a :href="`water-detail.html`">地下水监测系统</a>
+            <a :href="`water-detail-product.html`">地下水监测系统</a>
             <!--            v-scroll-to="`#skhpyqjc-sys`"-->
-            <a :href="`water-detail.html`">水库湖泊雨情监测系统</a>
+            <a :href="`water-detail-product.html`">水库湖泊雨情监测系统</a>
             <!--            v-scroll-to="`#hhczglxx-sys`"-->
-            <a :href="`water-detail.html`">河湖长制管理信息系统</a>
+            <a :href="`water-detail-product.html`">河湖长制管理信息系统</a>
             <!--            v-scroll-to="`#qsbycjk-sys`"-->
-            <a :href="`water-detail.html`">取水泵远程监控系统</a>
+            <a :href="`water-detail-product.html`">取水泵远程监控系统</a>
             <!--            v-scroll-to="`#scycjk-sys`"-->
-            <a :href="`water-detail.html`">水厂远程监控系统</a>
+            <a :href="`water-detail-product.html`">水厂远程监控系统</a>
           </div>
           <div class="nav-list-right">
             <!--            v-scroll-to="`#gwjc-sys`"-->
-            <a :href="`water-detail.html`">管网监测系统</a>
+            <a :href="`water-detail-product.html`">管网监测系统</a>
             <!--            v-scroll-to="`#zyssszxjc-sys`"-->
-            <a :href="`water-detail.html`">直饮水实时在线监测系统</a>
+            <a :href="`water-detail-product.html`">直饮水实时在线监测系统</a>
             <!--            v-scroll-to="`#csdljsjcyj-sys`"-->
-            <a :href="`water-detail.html`">城市道路积水监测预警系统</a>
+            <a :href="`water-detail-product.html`">城市道路积水监测预警系统</a>
             <!--            v-scroll-to="`#wsclsszxjc-sys`"-->
-            <a :href="`water-detail.html`">污水处理实时在线监测系统</a>
+            <a :href="`water-detail-product.html`">污水处理实时在线监测系统</a>
             <!--            v-scroll-to="`#hmcszxjc-sys`"-->
-            <a :href="`water-detail.html`">海绵城市在线监测系统</a>
+            <a :href="`water-detail-product.html`">海绵城市在线监测系统</a>
           </div>
         </div>
       </div>
@@ -77,19 +79,19 @@
         <div class="content-title">
           <a class="title" :href="`wisdom-park-product.html`">智慧园区产品</a>
           <a :href="`wisdom-park-product.html`"
-            >了解更多 <img src="../assets/images/icon_more_blue.png"
+            >了解更多 <img src="../assets/images/icon_more_blue.png" alt=""
           /></a>
         </div>
         <div class="nav-lists-wrap">
           <div class="nav-list-left">
             <!--            v-scroll-to="`#qydahx-sys`"-->
-            <a :href="`park-detail.html`">企业档案画像</a>
+            <a :href="`park-detail-product.html`">企业档案画像</a>
             <!--            v-scroll-to="`#wyglyfw-sys`"-->
-            <a :href="`park-detail.html`">物业管理与服务</a>
+            <a :href="`park-detail-product.html`">物业管理与服务</a>
             <!--            v-scroll-to="`#qyfwpt-sys`"-->
-            <a :href="`park-detail.html`">企业服务平台</a>
+            <a :href="`park-detail-product.html`">企业服务平台</a>
             <!--            v-scroll-to="`#yft-sys`"-->
-            <a :href="`park-detail.html`">园付通</a>
+            <a :href="`park-detail-product.html`">园付通</a>
           </div>
           <div class="nav-list-right" style="width: 150px"></div>
         </div>
@@ -171,6 +173,9 @@ export default {
         padding: 5px 0;
         border: none !important;
         color: @font-color;
+        &:visited {
+          color: rgba(48, 60, 168, 1);
+        }
         &:hover {
           text-decoration: none;
           color: rgba(48, 60, 168, 1);

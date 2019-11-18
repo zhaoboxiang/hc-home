@@ -126,47 +126,47 @@ module.exports = {
       // extracted common chunks and vendor chunks.
       chunks: ["chunk-vendors", "chunk-common", "wisdom-park-product"]
     },
-    "env-detail": {
+    "env-detail-product": {
       // entry for the page
-      entry: "src/views/product/environment/env-detail/env-detail.js",
+      entry: "src/views/product/environment/env-detail/env-detail-product.js",
       // the source template
-      template: "public/env-detail.html",
+      template: "public/env-detail-product.html",
       // output as dist/index.html
-      filename: "env-detail.html",
+      filename: "env-detail-product.html",
       // when using title option,
       // template title tag needs to be <title><%= htmlWebpackPlugin.options.title %></title>
       title: "深圳虹川科技有限公司",
       // chunks to include on this page, by default includes
       // extracted common chunks and vendor chunks.
-      chunks: ["chunk-vendors", "chunk-common", "env-detail"]
+      chunks: ["chunk-vendors", "chunk-common", "env-detail-product"]
     },
-    "water-detail": {
+    "water-detail-product": {
       // entry for the page
-      entry: "src/views/product/water/water-detail/water-detail.js",
+      entry: "src/views/product/water/water-detail/water-detail-product.js",
       // the source template
-      template: "public/water-detail.html",
+      template: "public/water-detail-product.html",
       // output as dist/index.html
-      filename: "water-detail.html",
+      filename: "water-detail-product.html",
       // when using title option,
       // template title tag needs to be <title><%= htmlWebpackPlugin.options.title %></title>
       title: "深圳虹川科技有限公司",
       // chunks to include on this page, by default includes
       // extracted common chunks and vendor chunks.
-      chunks: ["chunk-vendors", "chunk-common", "water-detail"]
+      chunks: ["chunk-vendors", "chunk-common", "water-detail-product"]
     },
-    "park-detail": {
+    "park-detail-product": {
       // entry for the page
-      entry: "src/views/product/park/park-detail/park-detail.js",
+      entry: "src/views/product/park/park-detail/park-detail-product.js",
       // the source template
-      template: "public/park-detail.html",
+      template: "public/park-detail-product.html",
       // output as dist/index.html
-      filename: "park-detail.html",
+      filename: "park-detail-product.html",
       // when using title option,
       // template title tag needs to be <title><%= htmlWebpackPlugin.options.title %></title>
       title: "深圳虹川科技有限公司",
       // chunks to include on this page, by default includes
       // extracted common chunks and vendor chunks.
-      chunks: ["chunk-vendors", "chunk-common", "park-detail"]
+      chunks: ["chunk-vendors", "chunk-common", "park-detail-product"]
     },
     careers: {
       // entry for the page

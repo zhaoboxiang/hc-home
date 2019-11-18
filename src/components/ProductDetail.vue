@@ -111,7 +111,6 @@ export default {
   },
   mounted() {
     const pathName = window.location.pathname.replace(/^\/|\.html$/g, "");
-    console.log(pathName);
     const waterData = [
       {
         title: "地表水监测系统",
