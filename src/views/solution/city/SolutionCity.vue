@@ -21,7 +21,12 @@
           </div>
           <div data-aos="fade-up">
             <div class="ban-right">
-              <img src="../assets/images/solution/img_jjfa_zhcs_topimg.png" />
+              <img
+                :src="
+                  require(`../../../assets/images/solution/img_jjfa_zhcs_topimg.png`)
+                "
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -49,7 +54,9 @@
               <div class="flex-item">
                 <div class="item-icon icon-3"></div>
                 <div class="item-tips">市·繁华</div>
-                <div class="item-h">经济产业智慧化<br />经济生产 · 产业智慧</div>
+                <div class="item-h">
+                  经济产业智慧化<br />经济生产 · 产业智慧
+                </div>
                 <div class="item-p">
                   促进工农业生产、市场经济智慧化<br />
                   智慧产业、智慧农业、电子商务<br />…
@@ -77,7 +84,12 @@
           <h6 class="section-h6">TOP ARCHITECTURE</h6>
           <div data-aos="fade-up">
             <div class="info-container">
-              <img src="../assets/images/solution/img_jjfa_zhcs_dcjg.png" />
+              <img
+                :src="
+                  require(`../../../assets/images/solution/img_jjfa_zhcs_dcjg.png`)
+                "
+                alt=""
+              />
             </div>
           </div>
           <div class="tec-box">

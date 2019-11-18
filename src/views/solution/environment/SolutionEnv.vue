@@ -21,7 +21,7 @@
           </div>
           <div data-aos="fade-up">
             <div class="ban-right">
-              <img src="../assets/images/solution/img_jjfa_zhhb_topimg.png" />
+              <img :src="require(`../../../assets/images/solution/img_jjfa_zhhb_topimg.png`)" alt=""/>
             </div>
           </div>
         </div>
@@ -59,12 +59,17 @@
           <div class="info-container">
             <div data-aos="fade-up">
               <div class="info-title">
-              <span>1</span
-              >个数据中心<span>3</span>大保障体系<span>5</span>大技术支撑<span>N</span>个应用服务
+                <span>1</span
+                >个数据中心<span>3</span>大保障体系<span>5</span>大技术支撑<span>N</span>个应用服务
               </div>
             </div>
             <div data-aos="fade-up">
-              <img src="../assets/images/solution/img_jjfa_zhhb_dcjg.png" alt="" />
+              <img
+                :src="
+                  require(`../../../assets/images/solution/img_jjfa_zhhb_dcjg.png`)
+                "
+                alt=""
+              />
             </div>
           </div>
         </div>

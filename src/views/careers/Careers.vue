@@ -285,7 +285,7 @@
 </template>
 
 <script>
-import CompanyCulture from "./CompanyCulture";
+import CompanyCulture from "../../components/CompanyCulture";
 import collapse from "../../assets/javascript/collapse";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";

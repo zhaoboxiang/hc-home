@@ -136,7 +136,7 @@
   </div>
 </template>
 <script>
-import CompanyCulture from "./CompanyCulture";
+import CompanyCulture from "../../components/CompanyCulture";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 export default {
