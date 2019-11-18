@@ -11,14 +11,15 @@
             :class="['item', item.className, item.isActive]"
             :key="index"
             @mouseover="mouseOver(item, index, items)"
+            :ref="item.className"
           >
             <div data-aos="fade-up" :data-aos-delay="item.delay">
               <div class="img"></div>
               <div class="txt">{{ item.text }}</div>
-              <div class="arrow"></div>
             </div>
           </div>
         </div>
+        <div class="arrow" ref="arrow"></div>
       </div>
     </div>
     <!--单个业务介绍-->
@@ -89,8 +90,7 @@
             <b>智慧环保</b><span>覆盖生态环境全数据，为中国生态保驾护航</span>
           </div>
           <div class="btn btn-white">
-            <a href="index.html">了解更多</a
-            ><i></i>
+            <a href="index.html">了解更多</a><i></i>
           </div>
         </div>
         <div class="business-content">
@@ -123,8 +123,7 @@
             <b>智慧水务</b><span>供水排水水务全流程管理，为城市生活供给生</span>
           </div>
           <div class="btn btn-white">
-            <a href="index.html">了解更多</a
-            ><i></i>
+            <a href="index.html">了解更多</a><i></i>
           </div>
         </div>
         <div class="business-content">
@@ -231,16 +230,26 @@ export default {
         {
           title: "智慧园区"
         }
-      ]
+      ],
+      offSetLeft: 0,
+      offsetWidth: 0
     };
   },
-
+  mounted() {
+    this.offSetLeft = this.$refs[this.items[0].className][0].offsetLeft;
+    this.offsetWidth = this.$refs[this.items[0].className][0].offsetWidth;
+  },
+  watch: {
+    offSetLeft: function(e){
+      this.$refs.arrow.style.cssText = `left: ${e + this.offsetWidth/2}px`;
+    }
+  },
   methods: {
     mouseOver(item, index, items) {
+      this.offSetLeft = this.$refs[item.className][0].offsetLeft;
       this.isCurNavTab = true;
       item.isActive = this.isCurNavTab ? "active" : "";
       this.isMenuShow = item.className;
-      console.log(item)
       items.map(function(itm) {
         if (itm.text !== item.text) {
           itm.isActive = "";
@@ -253,6 +262,20 @@ export default {
 
 <style scoped lang="less">
 @import "../../assets/css/global";
+
+/*箭头样式*/
+.arrow {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-bottom: 16px solid #303ca8;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  position: absolute;
+  bottom: 0;
+}
+
 .section-box {
   width: 100%;
 }
@@ -263,6 +286,7 @@ export default {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: relative;
 
   h3 {
     color: @font-color-active;
@@ -280,11 +304,6 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    .active {
-      .arrow {
-        display: block;
-      }
-    }
     & > .item {
       position: relative;
       .img {
@@ -308,7 +327,8 @@ export default {
       }
       &:hover {
         .img {
-          background: url("../../assets/images/icon_city_cur.png") center no-repeat;
+          background: url("../../assets/images/icon_city_cur.png") center
+            no-repeat;
         }
       }
     }
@@ -340,7 +360,8 @@ export default {
       }
       &:hover {
         .img {
-          background: url("../../assets/images/icon_park_cur.png") center no-repeat;
+          background: url("../../assets/images/icon_park_cur.png") center
+            no-repeat;
         }
       }
     }
@@ -408,15 +429,18 @@ export default {
           border-radius: 28px;
         }
         .cont-icon-one {
-          background: url("../../assets/images/icon_zhcs_1.png") center no-repeat;
+          background: url("../../assets/images/icon_zhcs_1.png") center
+            no-repeat;
           background-size: 100% 100%;
         }
         .cont-icon-two {
-          background: url("../../assets/images/icon_zhcs_2.png") center no-repeat;
+          background: url("../../assets/images/icon_zhcs_2.png") center
+            no-repeat;
           background-size: 100% 100%;
         }
         .cont-icon-three {
-          background: url("../../assets/images/icon_zhcs_3.png") center no-repeat;
+          background: url("../../assets/images/icon_zhcs_3.png") center
+            no-repeat;
           background-size: 100% 100%;
         }
         .cont-intro {
@@ -507,7 +531,8 @@ export default {
     background: @font-color-active;
     color: #fff;
     & > i {
-      background: url("../../assets/images/icon_more_white.png") center no-repeat;
+      background: url("../../assets/images/icon_more_white.png") center
+        no-repeat;
       background-size: 100% 100%;
     }
   }
@@ -517,17 +542,4 @@ export default {
   }
 }
 
-// 箭头
-.arrow {
-  width: 0;
-  height: 0;
-  border-bottom: 16px solid rgba(48, 60, 168, 1);
-  border-left: 14px solid transparent;
-  border-right: 14px solid transparent;
-  margin: 0 auto;
-  position: absolute;
-  bottom: -75px;
-  left: 45px;
-  display: none;
-}
 </style>
