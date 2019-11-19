@@ -59,21 +59,21 @@
           <h3 class="section-h3">顶层架构</h3>
           <h6 class="section-h6">TOP ARCHITECTURE</h6>
           <div class="info-container">
-            <div class="info-course" data-aos="fade-up">
-              <div class="course-item">
+            <div class="info-course">
+              <div class="course-item" data-aos="fade-up" data-aos-delay="100">
                 <div class="course-icon icon-1"></div>
                 <div class="course-tips">技术支撑</div>
               </div>
-              <div class="course-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="course-item" data-aos="fade-up" data-aos-delay="300">
                 <div class="course-icon icon-2"></div>
                 <div class="course-tips">融合应用</div>
               </div>
-              <div class="course-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="course-item" data-aos="fade-up" data-aos-delay="500">
                 <div class="course-icon icon-3"></div>
                 <div class="course-tips">目的成效</div>
               </div>
             </div>
-            <div data-aos="fade-up">
+            <div data-aos="fade-up" data-aos-delay="700">
               <img :src="require(`../../../assets/images/solution/img_jjfa_zhsw_dcjg.png`)" alt=""/>
             </div>
           </div>
