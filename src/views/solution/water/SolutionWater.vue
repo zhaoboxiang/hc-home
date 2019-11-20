@@ -23,7 +23,12 @@
           </div>
           <div data-aos="fade-up">
             <div class="ban-right">
-              <img :src="require(`../../../assets/images/solution/img_jjfa_zhsw_topimg.png`)" alt=""/>
+              <img
+                :src="
+                  require(`../../../assets/images/solution/img_jjfa_zhsw_topimg.png`)
+                "
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -74,7 +79,12 @@
               </div>
             </div>
             <div data-aos="fade-up" data-aos-delay="700">
-              <img :src="require(`../../../assets/images/solution/img_jjfa_zhsw_dcjg.png`)" alt=""/>
+              <img
+                :src="
+                  require(`../../../assets/images/solution/img_jjfa_zhsw_dcjg.png`)
+                "
+                alt=""
+              />
             </div>
           </div>
         </div>

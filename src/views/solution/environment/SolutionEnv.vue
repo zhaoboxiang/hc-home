@@ -21,7 +21,12 @@
           </div>
           <div data-aos="fade-up">
             <div class="ban-right">
-              <img :src="require(`../../../assets/images/solution/img_jjfa_zhhb_topimg.png`)" alt=""/>
+              <img
+                :src="
+                  require(`../../../assets/images/solution/img_jjfa_zhhb_topimg.png`)
+                "
+                alt=""
+              />
             </div>
           </div>
         </div>

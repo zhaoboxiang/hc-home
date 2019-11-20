@@ -21,7 +21,12 @@
           </div>
           <div data-aos="fade-up">
             <div class="ban-right">
-              <img :src="require(`../../../assets/images/solution/img_jjfa_zhyq_topimg.png`)" alt=""/>
+              <img
+                :src="
+                  require(`../../../assets/images/solution/img_jjfa_zhyq_topimg.png`)
+                "
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -87,7 +92,12 @@
           <h6 class="section-h6">DEMAND ANALYSIS</h6>
           <div data-aos="fade-up">
             <div class="info-container">
-              <img :src="require(`../../../assets/images/solution/img_jjfa_zhyq_xqfx.png`)" alt=""/>
+              <img
+                :src="
+                  require(`../../../assets/images/solution/img_jjfa_zhyq_xqfx.png`)
+                "
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -98,7 +108,11 @@
           <h6 class="section-h6">TOP ARCHITECTURE</h6>
           <div data-aos="fade-up">
             <div class="info-container">
-              <img :src="require(`../../../assets/images/solution/img_jjfa_zhyq_dcjg.png`)" />
+              <img
+                :src="
+                  require(`../../../assets/images/solution/img_jjfa_zhyq_dcjg.png`)
+                "
+              />
             </div>
           </div>
         </div>

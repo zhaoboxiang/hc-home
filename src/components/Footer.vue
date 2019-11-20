@@ -13,8 +13,11 @@
         </div>
       </div>
       <footer>
-        <a href="http://www.beian.miit.gov.cn" target="_blank">粤ICP备19122684号-2 <i></i>粤公网安备 44030502004701号</a>
-        <br/> © 2019 虹川科技Hong Chuan Technology. All Rights Reserved.
+        <a href="http://www.beian.miit.gov.cn" target="_blank"
+          >粤ICP备19122684号-2 <i></i>粤公网安备 44030502004701号</a
+        >
+        <br />
+        © 2019 虹川科技Hong Chuan Technology. All Rights Reserved.
       </footer>
     </div>
   </div>
@@ -82,9 +85,9 @@ export default {
         top: 0;
         left: 0;
       }
-      a{
+      a {
         color: #95abd8;
-        i{
+        i {
           display: inline-block;
           width: 20px;
           height: 20px;

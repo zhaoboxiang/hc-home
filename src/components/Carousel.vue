@@ -14,14 +14,14 @@
           </div>
         </swiper-slide>
         <!--<swiper-slide class="slide-2">-->
-          <!--<div class="slide-content">-->
-            <!--<div class="tips">-->
-              <!--<div class="tips-ch">111虹川科技，绿色智慧城市理念倡行者</div>-->
-              <!--<div class="tips-en">-->
-                <!--111HCTTOP TECHNOLOGY<br />111GREEN SMART CITY COMMEMORATE ADVOCATE-->
-              <!--</div>-->
-            <!--</div>-->
-          <!--</div>-->
+        <!--<div class="slide-content">-->
+        <!--<div class="tips">-->
+        <!--<div class="tips-ch">111虹川科技，绿色智慧城市理念倡行者</div>-->
+        <!--<div class="tips-en">-->
+        <!--111HCTTOP TECHNOLOGY<br />111GREEN SMART CITY COMMEMORATE ADVOCATE-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
         <!--</swiper-slide>-->
         <div
           class="swiper-pagination swiper-pagination-white"
@@ -80,20 +80,20 @@ export default {
     }
   }
 
-  &.slide-1{
+  &.slide-1 {
     background: linear-gradient(to right, #e2f1f9, #eceaf9);
     .slide-content {
       background: url("../assets/images/img_index_banner_1_bg.png") center
-      no-repeat;
+        no-repeat;
       background-size: auto 100%;
     }
   }
 
-  &.slide-2{
+  &.slide-2 {
     background: #eceaf9;
     .slide-content {
       background: url("../assets/images/img_index_banner_1_bg.png") center
-      no-repeat;
+        no-repeat;
       background-size: auto 100%;
     }
   }
