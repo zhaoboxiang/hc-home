@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import ProductContentBanner from "../../../components/ProductContentBanner";
-import ProductContentNav from "../../../components/ProductContentNav";
+import ProductContentBanner from "../../../components/product/ProductContentBanner";
+import ProductContentNav from "../../../components/product/ProductContentNav";
 import ProductContentListPark from "./ProductContentListPark";
 import ProductContentParkSection from "./ProductContentParkSection";
 import Header from "../../../components/Header";

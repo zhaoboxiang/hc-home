@@ -12,7 +12,7 @@
           <img
             style="display: none"
             :src="
-              require(`../assets/images/product/${productDetailTitleIcon}.png`)
+              require(`../../assets/images/product/${productDetailTitleIcon}.png`)
             "
             alt=""
           />
@@ -33,7 +33,9 @@
             </p>
             <img
               v-if="item.img"
-              :src="item.img && require(`../assets/images/product/${item.img}`)"
+              :src="
+                item.img && require(`../../assets/images/product/${item.img}`)
+              "
               alt=""
             />
           </div>
@@ -524,7 +526,7 @@ export default {
     ];
 
     next(vm => {
-      debugger
+      debugger;
       if (vm.productEnv.indexOf(paramsName) !== -1) {
         vm.productDetailList = envData;
         vm.productDetailTitle = "智慧环保产品";
@@ -554,7 +556,7 @@ export default {
       "anchor",
       to.params.name
     ]);
-    debugger
+    debugger;
     next();
   }
 };
@@ -656,15 +658,15 @@ export default {
   }
 }
 .banner-content-env {
-  background: url("../../assets/images/product/img_cpzx_zhhbcp_topimg.png") center
-    no-repeat;
+  background: url("../../assets/images/product/img_cpzx_zhhbcp_topimg.png")
+    center no-repeat;
 }
 .banner-content-park {
-  background: url("../../assets/images/product/img_cpzx_zhyqcp_topimg.png") center
-    no-repeat;
+  background: url("../../assets/images/product/img_cpzx_zhyqcp_topimg.png")
+    center no-repeat;
 }
 .banner-content-water {
-  background: url("../../assets/images/product/img_cpzx_zhswcp_topimg.png") center
-    no-repeat;
+  background: url("../../assets/images/product/img_cpzx_zhswcp_topimg.png")
+    center no-repeat;
 }
 </style>

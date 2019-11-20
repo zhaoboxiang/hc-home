@@ -34,7 +34,7 @@
         ></drop-down-menu>
         <!-- 产品中心的下拉菜单 -->
         <product-navigation-box
-          v-show="false"
+          v-show="active === index && nav.pathName === 'wisdom-env-product'"
         ></product-navigation-box>
       </div>
     </div>
@@ -43,7 +43,7 @@
 
 <script>
 import DropDownMenu from "./DropDownMenu";
-import ProductNavigationBox from "./ProductNavigationBox";
+import ProductNavigationBox from "./product/ProductNavigationBox";
 export default {
   name: "Header",
   components: {

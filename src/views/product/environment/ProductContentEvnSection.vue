@@ -40,7 +40,7 @@
 </template>
 
 <script>
-import ProductContentSection from "../../../components/ProductContentSection";
+import ProductContentSection from "../../../components/product/ProductContentSection";
 import CutLineContent from "../../../components/CutLineContent";
 export default {
   name: "ProductContentEvnSection",

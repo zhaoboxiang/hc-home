@@ -1,5 +1,5 @@
 import Vue from "vue";
-import ProductDetail from "../../../../components/ProductDetail";
+import ProductDetail from "../../../../components/product/ProductDetail";
 import "vue-material/dist/vue-material.min.css";
 import "../../../../assets/css/index.less";
 import VueScrollTo from "vue-scrollto";
