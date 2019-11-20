@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style scoped lang="less">
-@import "../assets/css/global";
+@import "../../assets/css/global";
 .product-banner {
   background: @font-color-active;
   height: 600px;
@@ -24,7 +24,7 @@ export default {
   position: relative;
 
   .banner-content {
-    background: url("../assets/images/product/img_cpzx_topimg.png") right top
+    background: url("../../assets/images/product/img_cpzx_topimg.png") right top
       no-repeat;
     height: 100%;
     h3 {

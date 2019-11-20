@@ -51,7 +51,7 @@ export default {
 </script>
 
 <style scoped lang="less">
-@import "../assets/css/global";
+@import "../../assets/css/global";
 .product-nav {
   position: relative;
   .nav-box {
@@ -76,17 +76,17 @@ export default {
           margin: 24px auto 16px;
         }
         .icon-1 {
-          background: url("../assets/images/product/icon_yewu_1.png") center
+          background: url("../../assets/images/product/icon_yewu_1.png") center
             no-repeat;
           background-size: 100% 100%;
         }
         .icon-2 {
-          background: url("../assets/images/product/icon_yewu_2.png") center
+          background: url("../../assets/images/product/icon_yewu_2.png") center
             no-repeat;
           background-size: 100% 100%;
         }
         .icon-3 {
-          background: url("../assets/images/product/icon_yewu_3.png") center
+          background: url("../../assets/images/product/icon_yewu_3.png") center
             no-repeat;
           background-size: 100% 100%;
         }

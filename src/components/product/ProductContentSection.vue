@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style scoped lang="less">
-@import "../assets/css/global";
+@import "../../assets/css/global";
 .product-section {
   .section-content {
     padding: 120px 0;

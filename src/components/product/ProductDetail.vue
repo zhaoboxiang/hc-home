@@ -59,9 +59,9 @@
 </template>
 
 <script>
-import CutLineContent from "./CutLineContent";
-import Header from "./Header";
-import Footer from "./Footer";
+import CutLineContent from "../CutLineContent";
+import Header from "../Header";
+import Footer from "../Footer";
 
 export default {
   name: "ProductEnvironmentDetail",
@@ -561,7 +561,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import "../assets/css/global";
+@import "../../assets/css/global";
 .hide {
   display: none;
 }
@@ -656,15 +656,15 @@ export default {
   }
 }
 .banner-content-env {
-  background: url("../assets/images/product/img_cpzx_zhhbcp_topimg.png") center
+  background: url("../../assets/images/product/img_cpzx_zhhbcp_topimg.png") center
     no-repeat;
 }
 .banner-content-park {
-  background: url("../assets/images/product/img_cpzx_zhyqcp_topimg.png") center
+  background: url("../../assets/images/product/img_cpzx_zhyqcp_topimg.png") center
     no-repeat;
 }
 .banner-content-water {
-  background: url("../assets/images/product/img_cpzx_zhswcp_topimg.png") center
+  background: url("../../assets/images/product/img_cpzx_zhswcp_topimg.png") center
     no-repeat;
 }
 </style>

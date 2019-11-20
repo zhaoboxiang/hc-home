@@ -240,8 +240,8 @@ export default {
     this.offsetWidth = this.$refs[this.items[0].className][0].offsetWidth;
   },
   watch: {
-    offSetLeft: function(e){
-      this.$refs.arrow.style.cssText = `left: ${e + this.offsetWidth/2}px`;
+    offSetLeft: function(e) {
+      this.$refs.arrow.style.cssText = `left: ${e + this.offsetWidth / 2}px`;
     }
   },
   methods: {
@@ -541,5 +541,4 @@ export default {
     background-size: 100% 100%;
   }
 }
-
 </style>

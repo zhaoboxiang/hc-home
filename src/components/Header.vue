@@ -34,7 +34,7 @@
         ></drop-down-menu>
         <!-- 产品中心的下拉菜单 -->
         <product-navigation-box
-          v-show="active === index && nav.pathName === 'wisdom-env-product'"
+          v-show="false"
         ></product-navigation-box>
       </div>
     </div>
