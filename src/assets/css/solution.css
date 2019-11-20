@@ -94,6 +94,7 @@ li {
   height: 180px;
   background: bisque;
   text-align: left;
+  border-radius: 4px;
 }
 .tec-box .tec-item .tips-en {
   padding: 20px 0 3px 20px;
@@ -438,7 +439,7 @@ li {
   height: 100px;
   line-height: 100px;
   text-align: center;
-  background: red;
+  border-radius: 4px 4px 0 0;
 }
 .solution .section-3-hc-water .section-content .section-flex .flex-item .i-t-1 {
   background: url("../images/solution/img_jjfa_zhsw_fatd_1.png") center no-repeat;
