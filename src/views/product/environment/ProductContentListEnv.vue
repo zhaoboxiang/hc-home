@@ -5,8 +5,9 @@
       <div class="list-line" v-if="navList && navList.length > 0">
         <a
           v-for="(item, index) in navList"
+          @click="activeCurNav(item)"
           :key="index"
-          :href="`${item.url}.html`"
+          :href="`product-detail.html?name=env`"
           >{{ item.name }}</a
         >
       </div>
@@ -15,6 +16,7 @@
 </template>
 
 <script>
+import Cookies from "js-cookie";
 export default {
   name: "ProductContentListEvn",
   data() {
@@ -22,62 +24,56 @@ export default {
     return {
       navList: [
         {
-          url: "env-detail",
-          params: "wzjc-sys",
+          anchor: "wzjc-sys",
           name: "微站监测系统"
         },
         {
-          url: "env-detail",
-          params: "zhjc-sys",
+          anchor: "zhjc-sys",
           name: "走航监测系统"
         },
         {
-          url: "env-detail",
-          params: "spjksb-sys",
+          anchor: "spjksb-sys",
           name: "视频监控识别系统"
         },
         {
-          url: "env-detail",
-          params: "qydljk-sys",
+          anchor: "qydljk-sys",
           name: "企业电量监控系统"
         },
         {
-          url: "env-detail",
-          params: "kqzlybyj-sys",
+          anchor: "kqzlybyj-sys",
           name: "空气质量预报预警系统"
         },
         {
-          url: "env-detail",
-          params: "yyyd-sys",
+          anchor: "yyyd-sys",
           name: "一源一档系统"
         },
         {
-          url: "env-detail",
-          params: "wghjg-sys",
+          anchor: "wghjg-sys",
           name: "网格化监管系统"
         },
         {
-          url: "env-detail",
-          params: "ztcznjg-sys",
+          anchor: "ztcznjg-sys",
           name: "渣土车智能监管系统"
         },
         {
-          url: "env-detail",
-          params: "zwrtqyjxy-sys",
+          anchor: "zwrtqyjxy-sys",
           name: "重污染天气应急响应系统"
         },
         {
-          url: "env-detail",
-          params: "hjzhfx-sys",
+          anchor: "hjzhfx-sys",
           name: "环境综合分析系统"
         },
         {
-          url: "env-detail",
-          params: "dqwrfzzhjczc-sys",
+          anchor: "dqwrfzzhjczc-sys",
           name: "大气污染防治综合决策支持系统"
         }
       ]
     };
+  },
+  methods: {
+    activeCurNav(nav) {
+      Cookies.set("CURRENT_ANCHOR", nav.anchor);
+    }
   }
 };
 </script>

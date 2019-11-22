@@ -5,8 +5,9 @@
       <div class="list-line" v-if="navList && navList.length > 0">
         <a
           v-for="(item, index) in navList"
+          @click="activeCurNav(item)"
           :key="index"
-          :href="`${item.url}.html`"
+          :href="`product-detail.html?name=park`"
           >{{ item.name }}</a
         >
       </div>
@@ -15,6 +16,7 @@
 </template>
 
 <script>
+import Cookies from "js-cookie";
 export default {
   name: "ProductContentListPark",
   data() {
@@ -22,27 +24,28 @@ export default {
       //"qydahx-sys", "wyglyfw-sys", "qyfwpt-sys", "yft-sys"
       navList: [
         {
-          url: "park-detail",
-          params: "qydahx-sys",
+          anchor: "qydahx-sys",
           name: "企业档案画像"
         },
         {
-          url: "park-detail",
-          params: "wyglyfw-sys",
+          anchor: "wyglyfw-sys",
           name: "物业管理与服务"
         },
         {
-          url: "park-detail",
-          params: "qyfwpt-sys",
+          anchor: "qyfwpt-sys",
           name: "企业服务平台"
         },
         {
-          url: "park-detail",
-          params: "yft-sys",
+          anchor: "yft-sys",
           name: "园付通"
         }
       ]
     };
+  },
+  methods: {
+    activeCurNav(nav) {
+      Cookies.set("CURRENT_ANCHOR", nav.anchor);
+    }
   }
 };
 </script>

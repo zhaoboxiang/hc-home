@@ -14,28 +14,28 @@
         <div class="nav-lists-wrap">
           <div class="nav-list-left">
             <a
-              :href="`${navL.destination}`"
+              :href="
+                `${navL.destination}?name=${product.destination.split('-')[1]}`
+              "
+              @click="activeCurNav(navL)"
               v-for="navL in product.navList.listLeft"
               :key="navL.id"
-              @click="activeCurNav(navL)"
               :class="{
-                active:
-                  storedTitle === navL.title &&
-                  navL.destination.indexOf(curPath) > -1
+                active: navL.anchor === curAnchor
               }"
               >{{ navL.title }}</a
             >
           </div>
           <div class="nav-list-right">
             <a
-              :href="`${navR.destination}`"
+              :href="
+                `${navR.destination}?name=${product.destination.split('-')[1]}`
+              "
+              @click="activeCurNav(navR)"
               v-for="navR in product.navList.listRight"
               :key="navR.id"
-              @click="activeCurNav(navR)"
               :class="{
-                active:
-                  storedTitle === navR.title &&
-                  navR.destination.indexOf(curPath) > -1
+                active: navR.anchor === curAnchor
               }"
               >{{ navR.title }}</a
             >
@@ -54,8 +54,7 @@ export default {
   name: "DropDownBox",
   data() {
     return {
-      storedTitle: Cookies.get("CURRENT_PRODUCT_NAV"),
-      curPath: window.location.pathname.replace(/^\/|\.html$/g, ""),
+      curAnchor: "",
       isVisible: false,
       productList: [
         {
@@ -66,59 +65,70 @@ export default {
             listLeft: [
               {
                 title: "微站监测系统",
-                destination: "env-detail-product.html",
+                destination: "product-detail.html",
+                anchor: "wzjc-sys",
                 id: shortid.generate()
               },
               {
                 title: "走航监测系统",
-                destination: "env-detail-product.html",
+                destination: "product-detail.html",
+                anchor: "zhjc-sys",
                 id: shortid.generate()
               },
               {
                 title: "企业电量监控系统",
-                destination: "env-detail-product.html",
+                destination: "product-detail.html",
+                anchor: "qydljk-sys",
                 id: shortid.generate()
               },
               {
                 title: "视频监控识别系统",
-                destination: "env-detail-product.html",
+                destination: "product-detail.html",
+                anchor: "spjksb-sys",
                 id: shortid.generate()
               },
               {
                 title: "空气质量预报预警系统",
-                destination: "env-detail-product.html",
+                destination: "product-detail.html",
+                anchor: "kqzlybyj-sys",
                 id: shortid.generate()
               },
               {
                 title: "一源一档系统",
-                destination: "env-detail-product.html",
+                destination: "product-detail.html",
+                anchor: "yyyd-sys",
                 id: shortid.generate()
               }
             ],
             listRight: [
               {
                 title: "网格化监管系统",
-                destination: "env-detail-product.html",
+                destination: "product-detail.html",
+                anchor: "wghjg-sys",
                 id: shortid.generate()
               },
               {
                 title: "渣土车智能监管系统",
-                destination: "env-detail-product.html",
+                destination: "product-detail.html",
+                anchor: "ztcznjg-sys",
                 id: shortid.generate()
               },
               {
                 title: "重污染天气应急响应系统",
-                destination: "env-detail-product.html",
+                destination: "product-detail.html",
+                anchor: "zwrtqyjxy-sys",
                 id: shortid.generate()
               },
               {
                 title: "环境综合分析系统",
-                destination: "env-detail-product.html",
+                destination: "product-detail.html",
+                anchor: "hjzhfx-sys",
                 id: shortid.generate()
               },
               {
                 title: "大气污染防治综合决策支持系统",
-                destination: "env-detail-product.html",
+                destination: "product-detail.html",
+                anchor: "dqwrfzzhjczc-sys",
                 id: shortid.generate()
               }
             ]
@@ -132,59 +142,70 @@ export default {
             listLeft: [
               {
                 title: "地表水监测系统",
-                destination: "water-detail-product.html",
+                destination: "product-detail.html",
+                anchor: "dbsjc-sys",
                 id: shortid.generate()
               },
               {
                 title: "地下水监测系统",
-                destination: "water-detail-product.html",
+                destination: "product-detail.html",
+                anchor: "dxsjc-sys",
                 id: shortid.generate()
               },
               {
                 title: "水库湖泊雨情监测系统",
-                destination: "water-detail-product.html",
+                destination: "product-detail.html",
+                anchor: "skhpyqjc-sys",
                 id: shortid.generate()
               },
               {
                 title: "河湖长制管理信息系统",
-                destination: "water-detail-product.html",
+                destination: "product-detail.html",
+                anchor: "hhczglxx-sys",
                 id: shortid.generate()
               },
               {
                 title: "取水泵远程监控系统",
-                destination: "water-detail-product.html",
+                destination: "product-detail.html",
+                anchor: "qsbycjk-sys",
                 id: shortid.generate()
               },
               {
                 title: "水厂远程监控系统",
-                destination: "water-detail-product.html",
+                destination: "product-detail.html",
+                anchor: "scycjk-sys",
                 id: shortid.generate()
               }
             ],
             listRight: [
               {
                 title: "管网监测系统",
-                destination: "water-detail-product.html",
+                destination: "product-detail.html",
+                anchor: "gwjc-sys",
                 id: shortid.generate()
               },
               {
                 title: "直饮水实时在线监测系统",
-                destination: "water-detail-product.html",
+                destination: "product-detail.html",
+                anchor: "zyssszxjc-sys",
                 id: shortid.generate()
               },
               {
                 title: "城市道路积水监测预警系统",
-                destination: "water-detail-product.html",
+                destination: "product-detail.html",
+                anchor: "csdljsjcyj-sys",
                 id: shortid.generate()
               },
               {
                 title: "污水处理实时在线监测系统",
-                destination: "water-detail-product.html",
+                destination: "product-detail.html",
+                anchor: "wsclsszxjc-sys",
                 id: shortid.generate()
               },
               {
                 title: "海绵城市在线监测系统",
-                destination: "water-detail-product.html",
+                destination: "product-detail.html",
+                anchor: "hmcszxjc-sys",
                 id: shortid.generate()
               }
             ]
@@ -198,22 +219,26 @@ export default {
             listLeft: [
               {
                 title: "企业档案画像",
-                destination: "park-detail-product.html",
+                destination: "product-detail.html",
+                anchor: "qydahx-sys",
                 id: shortid.generate()
               },
               {
                 title: "物业管理与服务",
-                destination: "park-detail-product.html",
+                destination: "product-detail.html",
+                anchor: "wyglyfw-sys",
                 id: shortid.generate()
               },
               {
                 title: "企业服务平台",
-                destination: "park-detail-product.html",
+                destination: "product-detail.html",
+                anchor: "qyfwpt-sys",
                 id: shortid.generate()
               },
               {
                 title: "园付通",
-                destination: "park-detail-product.html",
+                destination: "product-detail.html",
+                anchor: "yft-sys",
                 id: shortid.generate()
               }
             ],
@@ -223,9 +248,12 @@ export default {
       ]
     };
   },
+  mounted() {
+    this.curAnchor = Cookies.get("CURRENT_ANCHOR");
+  },
   methods: {
     activeCurNav(nav) {
-      Cookies.set("CURRENT_PRODUCT_NAV", nav.title);
+      Cookies.set("CURRENT_ANCHOR", nav.anchor);
     },
     hideOnMouseLeave() {
       this.$emit("hideProductNavBox", this.isVisible);

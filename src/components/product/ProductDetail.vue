@@ -1,28 +1,20 @@
 <template>
   <div>
     <Header></Header>
-    <div class="product-env-detail-wrap">
-      <div class="env-detail-banner">
+    <div class="product-detail-wrap">
+      <div class="detail-banner">
         <div
           :class="[
             'content banner-content',
             `banner-content-${bannerClassName}`
           ]"
         >
-          <img
-            style="display: none"
-            :src="
-              require(`../../assets/images/product/${productDetailTitleIcon}.png`)
-            "
-            alt=""
-          />
           <span>{{ productDetailTitle }}</span>
         </div>
       </div>
-      <div class="env-content-detail-wrap">
+      <div class="content-detail-wrap">
         <div
-          class="env-detail-main"
-          id="wzjc"
+          class="detail-main"
           v-for="(item, index) in productDetailList"
           :key="index"
         >
@@ -50,7 +42,10 @@
           :key="index"
           v-scroll-to="`#${item.anchor}`"
         >
-          <p @click="toggle(index)" :class="{ active: index === active }">
+          <p
+            @click="toggle(item, index)"
+            :class="{ active: index === active || curAnchor === item.anchor }"
+          >
             {{ item.title }}
           </p>
         </div>
@@ -64,6 +59,7 @@
 import CutLineContent from "../CutLineContent";
 import Header from "../Header";
 import Footer from "../Footer";
+import Cookies from "js-cookie";
 
 export default {
   name: "ProductEnvironmentDetail",
@@ -72,47 +68,28 @@ export default {
 
   data() {
     return {
+      curAnchor: "",
       active: -1,
       productDetailTitle: "",
-      productDetailTitleIcon: "icon-env",
       bannerClassName: "env",
-      productDetailList: [],
-      productEnv: [
-        "wzjc-sys",
-        "zhjc-sys",
-        "spjksb-sys",
-        "qydljk-sys",
-        "kqzlybyj-sys",
-        "yyyd-sys",
-        "wghjg-sys",
-        "ztcznjg-sys",
-        "zwrtqyjxy-sys",
-        "hjzhfx-sys",
-        "dqwrfzzhjczc-sys"
-      ],
-      productWater: [
-        "dbsjc-sys",
-        "dxsjc-sys",
-        "skhbyqjc-sys",
-        "hhczglxx-sys",
-        "qsbycjk-sys",
-        "scycjk-sys",
-        "gwjc-sys",
-        "zyssszxjc-sys",
-        "csdljsjcyj-sys",
-        "wsclsszxjc-sys",
-        "hmcszxjc-sys"
-      ],
-      productPark: ["qydahx-sys", "wyglyfw-sys", "qyfwpt-sys", "yft-sys"]
+      productDetailList: []
     };
   },
   methods: {
-    toggle(index) {
+    scrollToHash(hash) {
+      this.$nextTick(() => {
+        this.$scrollTo(`#${hash}`, { duration: 1000 });
+      });
+    },
+    toggle(item, index) {
       this.active = index;
+      this.curAnchor = "";
+      Cookies.set("CURRENT_ANCHOR", item.anchor);
     }
   },
   mounted() {
-    const pathName = window.location.pathname.replace(/^\/|\.html$/g, "");
+    const urlQueryParams = new URLSearchParams(window.location.search);
+    const pathName = urlQueryParams.get("name");
     const waterData = [
       {
         title: "地表水监测系统",
@@ -307,27 +284,27 @@ export default {
       }
     ];
 
-    if (pathName.indexOf("env") > -1) {
+    if (pathName === "env") {
       this.productDetailList = envData;
       this.productDetailTitle = "智慧环保产品";
-      this.productDetailTitleIcon = "icon-env";
       this.bannerClassName = "env";
-    } else if (pathName.indexOf("water") > -1) {
+    } else if (pathName === "water") {
       this.productDetailList = waterData;
       this.productDetailTitle = "智慧水务产品";
-      this.productDetailTitleIcon = "icon-water";
       this.bannerClassName = "water";
-    } else if (pathName.indexOf("park") > -1) {
+    } else if (pathName === "park") {
       this.productDetailList = parkData;
       this.productDetailTitle = "智慧园区产品";
-      this.productDetailTitleIcon = "icon-park";
       this.bannerClassName = "park";
     } else {
       this.productDetailList = [];
       this.productDetailTitle = "";
-      this.productDetailTitleIcon = "";
       this.bannerClassName = "";
     }
+
+    // 记录锚点定位位置
+    this.curAnchor = Cookies.get("CURRENT_ANCHOR");
+    this.scrollToHash(this.curAnchor);
   }
 };
 </script>
@@ -338,7 +315,7 @@ export default {
   display: none;
 }
 // 外层容器
-.product-env-detail-wrap {
+.product-detail-wrap {
   padding-top: 68px;
   width: 100%;
   font-family: @font-family;
@@ -354,6 +331,7 @@ export default {
   transform: translateY(-50%);
   padding: 20px 0;
   p {
+    cursor: pointer;
     width: 220px;
     height: 40px;
     border-radius: 4px;
@@ -367,12 +345,12 @@ export default {
   }
 }
 // 内容
-.env-content-detail-wrap {
+.content-detail-wrap {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: column wrap;
-  .env-detail-main {
+  .detail-main {
     width: 1200px;
     text-align: center;
     .detail-content {
@@ -400,7 +378,7 @@ export default {
     }
   }
 }
-.env-detail-banner {
+.detail-banner {
   height: 360px;
   background: linear-gradient(
     135deg,

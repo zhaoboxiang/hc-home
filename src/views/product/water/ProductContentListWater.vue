@@ -5,8 +5,9 @@
       <div class="list-line" v-if="navList && navList.length > 0">
         <a
           v-for="(item, index) in navList"
+          @click="activeCurNav(item)"
           :key="index"
-          :href="`${item.url}.html`"
+          :href="`product-detail.html?name=water`"
           >{{ item.name }}</a
         >
       </div>
@@ -15,79 +16,63 @@
 </template>
 
 <script>
+import Cookies from "js-cookie";
 export default {
   name: "ProductContentListWater",
   data() {
     return {
-      /*"dbsjc-sys",
-        "dxsjc-sys",
-        "skhbyqjc-sys",
-        "hhczglxx-sys",
-        "qsbycjk-sys",
-        "scycjk-sys",
-        "gwjc-sys",
-        "zyssszxjc-sys",
-        "csdljsjcyj-sys",
-        "wsclsszxjc-sys",
-        "hmcszxjc-sys"*/
       navList: [
         {
-          url: "water-detail",
-          params: "dbsjc-sys",
+          anchor: "dbsjc-sys",
           name: "地表水监测系统"
         },
         {
-          url: "water-detail",
-          params: "dxsjc-sys",
+          anchor: "dxsjc-sys",
           name: "地下水监测系统"
         },
         {
-          url: "water-detail",
-          params: "skhbyqjc-sys",
+          anchor: "skhpyqjc-sys",
           name: "水库湖泊雨情监测系统"
         },
         {
-          url: "water-detail",
-          params: "hhczglxx-sys",
+          anchor: "hhczglxx-sys",
           name: "河湖长制管理信息系统"
         },
         {
-          url: "water-detail",
-          params: "qsbycjk-sys",
+          anchor: "qsbycjk-sys",
           name: "取水泵远程监控系统"
         },
         {
-          url: "water-detail",
-          params: "scycjk-sys",
+          anchor: "scycjk-sys",
           name: "水厂远程监控系统"
         },
         {
-          url: "water-detail",
-          params: "gwjc-sys",
+          anchor: "gwjc-sys",
           name: "管网监测系统"
         },
         {
-          url: "water-detail",
-          params: "zyssszxjc-sys",
+          anchor: "zyssszxjc-sys",
           name: "直饮水实时在线监测系统"
         },
         {
-          url: "water-detail",
-          params: "csdljsjcyj-sys",
+          anchor: "csdljsjcyj-sys",
           name: "城市道路积水监测预警系统"
         },
         {
-          url: "water-detail",
-          params: "wsclsszxjc-sys",
+          anchor: "wsclsszxjc-sys",
           name: "污水处理实时在线监测系统"
         },
         {
-          url: "water-detail",
-          params: "hmcszxjc-sys",
+          anchor: "hmcszxjc-sys",
           name: "海绵城市在线监测系统"
         }
       ]
     };
+  },
+  methods: {
+    activeCurNav(nav) {
+      Cookies.set("CURRENT_ANCHOR", nav.anchor);
+    }
   }
 };
 </script>
