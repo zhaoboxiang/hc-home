@@ -70,7 +70,7 @@ export default {
     const data = {
       on: Transition
     };
-    console.log(children)
+    // console.log(children)
     return h("transition", data, children);
   }
 };

@@ -78,7 +78,7 @@
                 <div class="course-tips">目的成效</div>
               </div>
             </div>
-            <div data-aos="fade-up" data-aos-delay="700">
+            <div data-aos="fade-up" data-aos-delay="1000">
               <img
                 :src="
                   require(`../../../assets/images/solution/img_jjfa_zhsw_dcjg.png`)
