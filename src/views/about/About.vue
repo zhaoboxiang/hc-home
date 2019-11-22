@@ -216,7 +216,7 @@ export default {
     .intro-advantage {
       margin-top: 80px;
       display: flex;
-      align-items: center;
+      /*align-items: center;*/
       justify-content: space-between;
       height: 280px;
       .adv-item {
