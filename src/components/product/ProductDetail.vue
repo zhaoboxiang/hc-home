@@ -59,7 +59,6 @@
 import CutLineContent from "../CutLineContent";
 import Header from "../Header";
 import Footer from "../Footer";
-import Cookies from "js-cookie";
 
 export default {
   name: "ProductEnvironmentDetail",
@@ -78,13 +77,17 @@ export default {
   methods: {
     scrollToHash(hash) {
       this.$nextTick(() => {
-        this.$scrollTo(`#${hash}`, { duration: 1000 });
+        setTimeout(() => {
+          this.$scrollTo(`#${hash}`, {
+            duration: 1000
+          });
+        }, 200);
       });
     },
     toggle(item, index) {
       this.active = index;
       this.curAnchor = "";
-      Cookies.set("CURRENT_ANCHOR", item.anchor);
+      localStorage.setItem("CURRENT_ANCHOR", item.anchor);
     }
   },
   mounted() {
@@ -303,8 +306,9 @@ export default {
     }
 
     // 记录锚点定位位置
-    this.curAnchor = Cookies.get("CURRENT_ANCHOR");
+    this.curAnchor = localStorage.getItem("CURRENT_ANCHOR");
     this.scrollToHash(this.curAnchor);
+    console.log(this.curAnchor);
   }
 };
 </script>

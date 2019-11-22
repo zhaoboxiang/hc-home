@@ -3,7 +3,9 @@
     <div class="drop-down-box-content">
       <div v-for="product in productList" :key="product.id">
         <div class="content-title">
-          <a :href="`${product.destination}`">{{ product.title }}</a>
+          <a :href="`${product.destination}`" @click="cleanActiveAnchor">{{
+            product.title
+          }}</a>
           <a :href="`${product.destination}`"
             >了解更多
             <img
@@ -14,10 +16,7 @@
         <div class="nav-lists-wrap">
           <div class="nav-list-left">
             <a
-              :href="
-                `${navL.destination}?name=${product.destination.split('-')[1]}`
-              "
-              @click="activeCurNav(navL)"
+              @click="activeCurNav(navL, product)"
               v-for="navL in product.navList.listLeft"
               :key="navL.id"
               :class="{
@@ -28,10 +27,7 @@
           </div>
           <div class="nav-list-right">
             <a
-              :href="
-                `${navR.destination}?name=${product.destination.split('-')[1]}`
-              "
-              @click="activeCurNav(navR)"
+              @click="activeCurNav(navR, product)"
               v-for="navR in product.navList.listRight"
               :key="navR.id"
               :class="{
@@ -48,8 +44,6 @@
 
 <script>
 const shortid = require("shortid");
-import Cookies from "js-cookie";
-
 export default {
   name: "DropDownBox",
   data() {
@@ -249,14 +243,21 @@ export default {
     };
   },
   mounted() {
-    this.curAnchor = Cookies.get("CURRENT_ANCHOR");
+    this.curAnchor = localStorage.getItem("CURRENT_ANCHOR");
   },
   methods: {
-    activeCurNav(nav) {
-      Cookies.set("CURRENT_ANCHOR", nav.anchor);
+    activeCurNav(nav, product) {
+      localStorage.setItem("CURRENT_ANCHOR", nav.anchor);
+
+      window.location.href = `${nav.destination}?name=${
+        product.destination.split("-")[1]
+      }`;
     },
     hideOnMouseLeave() {
       this.$emit("hideProductNavBox", this.isVisible);
+    },
+    cleanActiveAnchor() {
+      localStorage.clear();
     }
   }
 };
@@ -318,6 +319,7 @@ export default {
         color: rgba(48, 60, 168, 1);
       }
       a {
+        cursor: pointer;
         display: block;
         padding: 5px 0;
         border: none !important;

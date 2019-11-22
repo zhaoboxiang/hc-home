@@ -7,10 +7,7 @@
     </div>
     <div class="hc-nav">
       <div
-        :class="[
-          'nav-link-wrap',
-          nav.pathName !== 'wisdom-env-product' ? 'relative-pos' : ''
-        ]"
+        :class="['nav-link-wrap', nav.name !== 'product' ? 'relative-pos' : '']"
         v-for="(nav, index) in headerNav"
         :key="index"
         @mouseover="toggle(index)"
@@ -21,20 +18,20 @@
           :exact="index === 0"
           :class="[
             'main-nav-link',
-            nav.pathName.indexOf(activeCurNav) > -1 ? 'a-active' : ''
+            activeCurNav.indexOf(nav.name) > -1 ? 'a-active' : ''
           ]"
-          :href="`${nav.pathName}.html`"
+          :href="`${nav.direction}${nav.name === 'index' ? '' : '.html'}`"
           >{{ nav.title }}</a
         >
         <!-- 解决方案的下拉菜单 -->
         <drop-down-menu
-          v-if="active === index && nav.pathName === 'wisdom-env-solution'"
+          v-if="active === index && nav.name === 'solution'"
           :menu-items="solutionMenuItems"
           @hideOnClick="hideOnClick"
         ></drop-down-menu>
         <!-- 产品中心的下拉菜单 -->
         <product-navigation-box
-          v-show="active === index && nav.pathName === 'wisdom-env-product'"
+          v-show="active === index && nav.name === 'product'"
         ></product-navigation-box>
       </div>
     </div>
@@ -55,19 +52,39 @@ export default {
       showSolutionNav: false,
       showProductNavBox: false,
       active: -1,
-      activeCurNav: window.location.pathname,
+      activeCurNav: "",
       headerNav: [
-        { title: "首页", pathName: "index", isActive: true },
-        { title: "关于虹川", pathName: "about", isActive: false },
-        { title: "解决方案", pathName: "wisdom-env-solution", isActive: false },
-        { title: "产品中心", pathName: "wisdom-env-product", isActive: false },
-        { title: "广纳贤才", pathName: "careers", isActive: false }
+        { title: "首页", name: "index", direction: "/" },
+        { title: "关于虹川", name: "about", direction: "about" },
+        {
+          title: "解决方案",
+          name: "solution",
+          direction: "wisdom-env-solution"
+        },
+        { title: "产品中心", name: "product", direction: "wisdom-env-product" },
+        { title: "广纳贤才", name: "careers", direction: "careers" }
       ],
       solutionMenuItems: [
-        { name: "wisdom-city-solution", title: "智慧城市", isActive: false },
-        { name: "wisdom-env-solution", title: "智慧环保", isActive: true },
-        { name: "wisdom-water-solution", title: "智慧水务", isActive: false },
-        { name: "wisdom-park-solution", title: "智慧园区", isActive: false }
+        {
+          direction: "wisdom-city-solution",
+          name: "city-solution",
+          title: "智慧城市"
+        },
+        {
+          direction: "wisdom-env-solution",
+          name: "env-solution",
+          title: "智慧环保"
+        },
+        {
+          direction: "wisdom-water-solution",
+          name: "water-solution",
+          title: "智慧水务"
+        },
+        {
+          direction: "wisdom-park-solution",
+          name: "park-solution",
+          title: "智慧园区"
+        }
       ]
     };
   },
@@ -80,15 +97,16 @@ export default {
     },
     toggle(index) {
       this.active = index;
+      localStorage.clear();
+    },
+    activeNav() {
+      // 判断是否当前已激活的导航
+      const pathName = window.location.pathname.replace(/^\/|\.html$/g, "");
+      this.activeCurNav = pathName ? pathName : "index";
     }
   },
   mounted: function() {
-    const pathName = window.location.pathname
-      .replace(/^\/|\.html$/g, "")
-      .split("-");
-    this.activeCurNav = pathName[pathName.length - 1]
-      ? pathName[pathName.length - 1]
-      : "index";
+    this.activeNav();
   }
 };
 </script>

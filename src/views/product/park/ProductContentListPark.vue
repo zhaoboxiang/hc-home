@@ -16,7 +16,6 @@
 </template>
 
 <script>
-import Cookies from "js-cookie";
 export default {
   name: "ProductContentListPark",
   data() {
@@ -44,7 +43,7 @@ export default {
   },
   methods: {
     activeCurNav(nav) {
-      Cookies.set("CURRENT_ANCHOR", nav.anchor);
+      localStorage.setItem("CURRENT_ANCHOR", nav.anchor);
     }
   }
 };

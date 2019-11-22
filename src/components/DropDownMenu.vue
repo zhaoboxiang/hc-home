@@ -7,8 +7,11 @@
     >
       <div @click="hideMenu">
         <a
-          :class="['menu-item', { 'a-exact-active': menu.isActive }]"
-          :href="`${menu.name}.html`"
+          :class="[
+            'menu-item',
+            { 'a-exact-active': activeCondition.indexOf(menu.name) > -1 }
+          ]"
+          :href="`${menu.direction}.html`"
         >
           {{ menu.title }}</a
         >
@@ -25,6 +28,7 @@ export default {
   },
   data() {
     return {
+      activeCondition: window.location.pathname,
       isVisible: -1
     };
   },
