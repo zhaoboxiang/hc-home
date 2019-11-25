@@ -32,8 +32,8 @@
           <div class="business-title">
             <b>智慧城市</b><span>信息技术与城市现代化深度融合、迭代演进</span>
           </div>
-          <div class="btn btn-white">
-            <a href="index.html">了解更多</a><i></i>
+          <div>
+            <a href="wisdom-city-solution.html" class="btn btn-white">了解更多</a><i></i>
           </div>
         </div>
         <div class="business-content">
@@ -89,8 +89,8 @@
           <div class="business-title">
             <b>智慧环保</b><span>覆盖生态环境全数据，为中国生态保驾护航</span>
           </div>
-          <div class="btn btn-white">
-            <a href="index.html">了解更多</a><i></i>
+          <div>
+            <a href="wisdom-env-solution.html" class="btn btn-white">了解更多</a><i></i>
           </div>
         </div>
         <div class="business-content">
@@ -122,8 +122,8 @@
           <div class="business-title">
             <b>智慧水务</b><span>供水排水水务全流程管理，为城市生活供给生</span>
           </div>
-          <div class="btn btn-white">
-            <a href="index.html">了解更多</a><i></i>
+          <div>
+            <a href="wisdom-water-solution.html" class="btn btn-white">了解更多</a><i></i>
           </div>
         </div>
         <div class="business-content">
@@ -155,8 +155,8 @@
           <div class="business-title">
             <b>智慧园区</b><span>让园区管理像操作APP一样简单</span>
           </div>
-          <div class="btn btn-white">
-            <a href="index.html">了解更多</a><i></i>
+          <div>
+            <a href="wisdom-park-solution.html" class="btn btn-white">了解更多</a><i></i>
           </div>
         </div>
         <div class="business-content">
@@ -512,6 +512,7 @@ export default {
   border: 1px solid #fff;
   color: #fff;
   &:hover {
+    text-decoration: none;
     background: #fff;
     color: @font-color-active;
     & > i {
