@@ -120,7 +120,7 @@
       >
         <div class="title-box">
           <div class="business-title">
-            <b>智慧水务</b><span>供水排水水务全流程管理，为城市生活供给生</span>
+            <b>智慧水务</b><span>供水排水水务全流程管理，为城市生活供给生命源泉</span>
           </div>
           <div>
             <a href="wisdom-water-solution.html" class="btn btn-white">了解更多</a><i></i>

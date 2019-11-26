@@ -8,7 +8,7 @@
           <div class="ban-left">
             <div data-aos="fade-down">
               <div class="ban-h3">智慧环保</div>
-              <div class="ban-h6">覆盖生态环境全数据，为中国生态保驾护航</div>
+              <div class="ban-h6">覆盖生态环境全应用，为中国生态保驾护航</div>
             </div>
             <div data-aos="fade-up">
               <div class="ban-p">
