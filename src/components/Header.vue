@@ -15,12 +15,22 @@
       >
         <!-- 其他 -->
         <a
+          v-if="nav.direction"
           :exact="index === 0"
           :class="[
             'main-nav-link',
             activeCurNav.indexOf(nav.name) > -1 ? 'a-active' : ''
           ]"
           :href="`${nav.direction}${nav.name === 'index' ? '' : '.html'}`"
+          >{{ nav.title }}</a
+        >
+        <a
+          v-else
+          :exact="index === 0"
+          :class="[
+            'main-nav-link',
+            activeCurNav.indexOf(nav.name) > -1 ? 'a-active' : ''
+          ]"
           >{{ nav.title }}</a
         >
         <!-- 解决方案的下拉菜单 -->
@@ -59,7 +69,7 @@ export default {
         {
           title: "解决方案",
           name: "solution",
-          direction: "wisdom-env-solution"
+          direction: ""
         },
         { title: "产品中心", name: "product", direction: "wisdom-env-product" },
         { title: "广纳贤才", name: "careers", direction: "careers" }

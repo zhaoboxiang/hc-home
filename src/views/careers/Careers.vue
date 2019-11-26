@@ -361,6 +361,7 @@ export default {
         h3 {
           color: @font-color;
           font-size: 24px;
+          padding-bottom: 20px;
         }
         & > p {
           font-size: 16px;
@@ -377,6 +378,7 @@ export default {
             url("../../assets/images/careers/icon_gnxc_list_zhankai.png") center
             no-repeat;
           transform: rotate(180deg);
+          border-radius: 2px;
         }
         .spread {
           transform: rotate(0deg);
