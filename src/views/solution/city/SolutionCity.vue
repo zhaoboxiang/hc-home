@@ -121,7 +121,7 @@
           <div class="section-flex">
             <div data-aos="fade-up" data-aos-delay="100">
               <div class="flex-item item-1">
-                <div class="left">1</div>
+                <div class="left">1·服务</div>
                 <div class="right">
                   从顶层规划的理念出发，构建符合城市实际和特色的一整套智慧城市的综合信息服务体系。
                 </div>
@@ -129,7 +129,7 @@
             </div>
             <div data-aos="fade-up" data-aos-delay="300">
               <div class="flex-item item-2">
-                <div class="left">2</div>
+                <div class="left">2·平台</div>
                 <div class="right">
                   构建脸大支撑平台，能够支撑智慧城市建设的城市云计算平台和智慧城市大数据融合服务平台。
                 </div>
@@ -137,7 +137,7 @@
             </div>
             <div data-aos="fade-up" data-aos-delay="500">
               <div class="flex-item item-n">
-                <div class="left">N</div>
+                <div class="left">N·应用</div>
                 <div class="right">
                   在智慧城市云计算中心的基础上，搭建包括城市运行体征、民生民情、生态环境、水文水利等多项应用体系，形成智慧城市的完整生态系统。
                 </div>

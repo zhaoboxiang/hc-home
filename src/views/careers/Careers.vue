@@ -293,7 +293,7 @@ export default {
   components: { CompanyCulture, collapse, Header, Footer },
   data() {
     return {
-      sectionListShowFlag: [true, false, false, false, false, false],
+      sectionListShowFlag: [false, false, false, false, false, false], // 招聘岗位展开收起标志列表
       isActive: false
     };
   },
