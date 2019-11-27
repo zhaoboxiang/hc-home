@@ -365,6 +365,7 @@ export default {
         }
         & > p {
           font-size: 16px;
+          color: @font-color-default;
           span {
             margin-right: 40px;
           }

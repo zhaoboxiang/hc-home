@@ -40,9 +40,14 @@
           @hideOnClick="hideOnClick"
         ></drop-down-menu>
         <!-- 产品中心的下拉菜单 -->
-        <product-navigation-box
-          v-show="active === index && nav.name === 'product'"
-        ></product-navigation-box>
+        <transition name="fade">
+          <product-navigation-box
+            v-show="active === index && nav.name === 'product'"
+          ></product-navigation-box>
+        </transition>
+        <!--<product-navigation-box-->
+        <!--v-show="active === index && nav.name === 'product'"-->
+        <!--&gt;</product-navigation-box>-->
       </div>
     </div>
   </div>
@@ -71,7 +76,7 @@ export default {
           name: "solution",
           direction: ""
         },
-        { title: "产品中心", name: "product", direction: "wisdom-env-product" },
+        { title: "产品中心", name: "product", direction: "" },
         { title: "广纳贤才", name: "careers", direction: "careers" }
       ],
       solutionMenuItems: [
@@ -122,6 +127,13 @@ export default {
 </script>
 
 <style scoped>
+.fade-enter-active {
+  transition: opacity 0.6s;
+}
+.fade-enter {
+  opacity: 0;
+}
+
 .nav-link-wrap {
   display: inline-block;
 }
