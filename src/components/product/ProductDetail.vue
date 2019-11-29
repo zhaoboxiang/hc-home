@@ -308,7 +308,6 @@ export default {
     // 记录锚点定位位置
     this.curAnchor = localStorage.getItem("CURRENT_ANCHOR");
     this.scrollToHash(this.curAnchor);
-    console.log(this.curAnchor);
   }
 };
 </script>

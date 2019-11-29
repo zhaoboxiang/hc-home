@@ -204,3 +204,64 @@ li {
     }
   }
 }
+
+
+.btn {
+  padding: 13px 40px;
+  border-radius: 30px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  a {
+    color: inherit;
+  }
+  &:hover {
+    cursor: pointer;
+    a {
+      text-decoration: none;
+    }
+  }
+  & > span,
+  i {
+    display: block;
+  }
+  & > i {
+    width: 14px;
+    height: 14px;
+    margin-left: 3px;
+  }
+}
+.btn.btn-white {
+  border: 1px solid #fff;
+  color: #fff;
+  &:hover {
+    text-decoration: none;
+    background: #fff;
+    color: @font-color-active;
+    & > i {
+      background: url("../../assets/images/icon_more_blue.png") center no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+  & > i {
+    background: url("../../assets/images/icon_more_white.png") center no-repeat;
+    background-size: 100% 100%;
+  }
+}
+.btn.btn-blue {
+  border: 1px solid @font-color-active;
+  color: @font-color-active;
+  &:hover {
+    background: @font-color-active;
+    color: #fff;
+    & > i {
+      background: url("../../assets/images/icon_more_white.png") center
+      no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+  & > i {
+    background: url("../../assets/images/icon_more_blue.png") center no-repeat;
+    background-size: 100% 100%;
+  }
+}
