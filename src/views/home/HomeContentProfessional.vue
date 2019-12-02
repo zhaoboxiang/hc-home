@@ -33,7 +33,7 @@
             <b>智慧城市</b><span>信息技术与城市现代化深度融合、迭代演进</span>
           </div>
           <div>
-            <a href="wisdom-city-solution.html" class="btn btn-white">了解更多</a><i></i>
+            <a href="wisdom-city-solution.html" class="btn btn-white">了解更多</a>
           </div>
         </div>
         <div class="business-content">
@@ -90,7 +90,7 @@
             <b>智慧环保</b><span>覆盖生态环境全数据，为中国生态保驾护航</span>
           </div>
           <div>
-            <a href="wisdom-env-solution.html" class="btn btn-white">了解更多</a><i></i>
+            <a href="wisdom-env-solution.html" class="btn btn-white">了解更多</a>
           </div>
         </div>
         <div class="business-content">
@@ -123,7 +123,7 @@
             <b>智慧水务</b><span>供水排水水务全流程管理，为城市生活供给生命源泉</span>
           </div>
           <div>
-            <a href="wisdom-water-solution.html" class="btn btn-white">了解更多</a><i></i>
+            <a href="wisdom-water-solution.html" class="btn btn-white">了解更多</a>
           </div>
         </div>
         <div class="business-content">
@@ -156,7 +156,7 @@
             <b>智慧园区</b><span>让园区管理像操作APP一样简单</span>
           </div>
           <div>
-            <a href="wisdom-park-solution.html" class="btn btn-white">了解更多</a><i></i>
+            <a href="wisdom-park-solution.html" class="btn btn-white">了解更多</a>
           </div>
         </div>
         <div class="business-content">
@@ -483,63 +483,4 @@ export default {
   }
 }
 
-.btn {
-  padding: 13px 40px;
-  border-radius: 30px;
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  a {
-    color: inherit;
-  }
-  &:hover {
-    cursor: pointer;
-    a {
-      text-decoration: none;
-    }
-  }
-  & > span,
-  i {
-    display: block;
-  }
-  & > i {
-    width: 14px;
-    height: 14px;
-    margin-left: 3px;
-  }
-}
-.btn-white {
-  border: 1px solid #fff;
-  color: #fff;
-  &:hover {
-    text-decoration: none;
-    background: #fff;
-    color: @font-color-active;
-    & > i {
-      background: url("../../assets/images/icon_more_blue.png") center no-repeat;
-      background-size: 100% 100%;
-    }
-  }
-  & > i {
-    background: url("../../assets/images/icon_more_white.png") center no-repeat;
-    background-size: 100% 100%;
-  }
-}
-.btn-blue {
-  border: 1px solid @font-color-active;
-  color: @font-color-active;
-  &:hover {
-    background: @font-color-active;
-    color: #fff;
-    & > i {
-      background: url("../../assets/images/icon_more_white.png") center
-        no-repeat;
-      background-size: 100% 100%;
-    }
-  }
-  & > i {
-    background: url("../../assets/images/icon_more_blue.png") center no-repeat;
-    background-size: 100% 100%;
-  }
-}
 </style>

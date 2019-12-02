@@ -6,14 +6,19 @@
 export default {
   name: "ParticleNetworkAnimation",
   data() {
-    return {};
+    return {
+      npa:{}
+    };
   },
   methods: {
     init: function(element) {
       let ctx = element.getContext('2d');
       console.log(ctx)
-    }
-
+      // this.npa.particleNetwork = new ParticleNetwork(this);
+      // this.npa.bindUiActions();
+      console.log(this)
+      return this;
+    },
   },
   mounted(){
     let e_canvas = document.getElementById('pna');

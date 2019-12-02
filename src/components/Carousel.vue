@@ -14,8 +14,28 @@
                 >解决方案</a
               >
             </div>
+            <div class="particle-content">
+              <vue-particles
+                color="#fff"
+                :particleOpacity="0.7"
+                :particlesNumber="60"
+                shapeType="circle"
+                :particleSize="2"
+                linesColor="#fff"
+                :linesWidth="1"
+                :lineLinked="true"
+                :lineOpacity="0.4"
+                :linesDistance="150"
+                :moveSpeed="2"
+                :hoverEffect="true"
+                hoverMode="grab"
+                :clickEffect="false"
+                clickMode="push"
+                class="lizi"
+              >
+              </vue-particles>
+            </div>
           </div>
-          <particle-network-animation></particle-network-animation>
         </swiper-slide>
         <!--<swiper-slide class="slide-2">-->
         <!--<div class="slide-content">-->
@@ -37,11 +57,9 @@
 </template>
 
 <script>
-
-import ParticleNetworkAnimation from "./ParticleNetworkAnimation";
+// import ParticleNetworkAnimation from "./ParticleNetworkAnimation";
 export default {
   name: "Carousel",
-  components: { ParticleNetworkAnimation },
   data() {
     return {
       swiperOption: {
@@ -58,9 +76,7 @@ export default {
       }
     };
   },
-  methods: {
-
-  },
+  methods: {},
   mounted: function() {}
 };
 </script>
@@ -91,11 +107,6 @@ export default {
         margin-top: 200px;
         line-height: 35px;
       }
-      .btn {
-        margin: 30px auto 0;
-        width: 144px;
-        height: 40px;
-      }
     }
   }
 
@@ -105,19 +116,33 @@ export default {
     .slide-content {
       background: #0d1030 url("../assets/images/img_index_banner_2_bg.png")
         center no-repeat;
-      background-size: cover;
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: 100;
-    }
-    canvas {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 199;
+      background-size: auto 100%;
+      /*position: absolute;*/
+      /*left: 0;*/
+      /*top: 0;*/
+      /*z-index: 100;*/
+
+      .tips {
+        position: absolute;
+        z-index: 99;
+      }
+
+      .particle-content {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9;
+      }
+      .btn {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 400px;
+        z-index: 199;
+      }
     }
   }
 
