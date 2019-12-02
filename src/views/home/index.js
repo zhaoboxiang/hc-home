@@ -7,10 +7,13 @@ import AOS from "aos"; // 滚动动画
 import "aos/dist/aos.css";
 import "../../assets/css/index.less";
 import VueMaterial from "vue-material";
+import VueParticles from "vue-particles";
 
 Vue.use(VueMaterial);
 
 Vue.use(VueAwesomeSwiper /* { default global options } */);
+
+Vue.use(VueParticles);
 
 Vue.config.productionTip = false;
 
