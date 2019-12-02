@@ -57,7 +57,6 @@
 </template>
 
 <script>
-// import ParticleNetworkAnimation from "./ParticleNetworkAnimation";
 export default {
   name: "Carousel",
   data() {
@@ -104,7 +103,7 @@ export default {
       }
       .tips-en {
         font-size: 24px;
-        margin-top: 200px;
+        margin-top: 210px;
         line-height: 35px;
       }
     }
@@ -114,7 +113,7 @@ export default {
     background: linear-gradient(to right, #e2f1f9, #eceaf9);
     position: relative;
     .slide-content {
-      background: #0d1030 url("../assets/images/img_index_banner_2_bg.png")
+      background: #0d1030 url("../assets/images/img_index_banner_3_bg.png")
         center no-repeat;
       background-size: auto 100%;
       /*position: absolute;*/
