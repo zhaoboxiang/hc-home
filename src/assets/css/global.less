@@ -209,26 +209,31 @@ li {
   width: 144px;
   height: 40px;
   position: relative;
-  padding: 13px 40px;
+  //padding: 13px 40px;
   border-radius: 30px;
   display: flex;
   justify-items: center;
   align-items: center;
+  justify-content: center;
+  padding-right: 15px;
+  &:hover{
+    text-decoration: none;
+    &:after{
+      background: url("../images/icon_more_blue.png") center no-repeat;
+      background-size: 100% 100%;
+    }
+  }
   &:after {
     content: "";
     display: block;
     width: 14px;
     height: 14px;
     position: absolute;
-    right: 26px;
+    right: 32px;
     top: 0;
     bottom: 0;
     margin: auto;
     background: url("../images/icon_more_white.png") center no-repeat;
-    background-size: 100% 100%;
-  }
-  &:hover:after{
-    background: url("../images/icon_more_blue.png") center no-repeat;
     background-size: 100% 100%;
   }
 }
@@ -236,10 +241,17 @@ li {
 .btn.btn-white {
   border: 1px solid #fff;
   color: #fff;
+  &:after{
+    background: url("../images/icon_more_white.png") center no-repeat;
+    background-size: 100% 100%;
+  }
   &:hover {
-    text-decoration: none;
     background: #fff;
     color: @font-color-active;
+    &:after{
+      background: url("../images/icon_more_blue.png") center no-repeat;
+      background-size: 100% 100%;
+    }
   }
 }
 .btn.btn-blue {
@@ -248,5 +260,13 @@ li {
   &:hover {
     background: @font-color-active;
     color: #fff;
+    &:after{
+      background: url("../images/icon_more_white.png") center no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+  &:after{
+    background: url("../images/icon_more_blue.png") center no-repeat;
+    background-size: 100% 100%;
   }
 }
