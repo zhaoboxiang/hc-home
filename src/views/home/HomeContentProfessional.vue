@@ -46,7 +46,7 @@
               <div class="cont-intro">
                 <p>基础设施智慧化<br />基础设施 · 物联智慧</p>
                 <div>
-                  建设智慧化的城市基础设施
+                  建设智慧化的城市基础设施 <br />
                   智慧楼宇、智慧照明、智慧交通、智慧能源
                   <br />…
                 </div>
@@ -61,7 +61,7 @@
               <div class="cont-intro">
                 <p>经济产业智慧化<br />经济生产 · 产业智慧</p>
                 <div>
-                  促进工农业生产、市场经济智慧化 智慧产业、智慧农业、电子商务<br />…
+                  促进工农业生产、市场经济智慧化<br />智慧产业、智慧农业、电子商务<br />…
                 </div>
               </div>
               <div class="cont"></div>
@@ -74,7 +74,7 @@
               <div class="cont-intro">
                 <p>民生及管理智慧化<br />社会治理 · 人文智慧</p>
                 <div>
-                  促进民生服务和社会管理智慧化 智慧教育、智慧医疗、智慧政务
+                  促进民生服务和社会管理智慧化<br />智慧教育、智慧医疗、智慧政务
                   <br />…
                 </div>
               </div>
@@ -381,7 +381,7 @@ export default {
   width: 100%;
   background: @font-color-active url("../../assets/images/img_core_info_bg.png")
     no-repeat center;
-  background-size: auto 100%;
+  background-size: cover;
   padding-bottom: 106px;
   height: 660px;
   .active {
@@ -428,7 +428,7 @@ export default {
         }
         width: 320px;
         height: 400px;
-        padding: 43px 40px 0;
+        padding: 43px 0 0;
         background: rgba(13, 25, 136, 0.3);
         margin-top: 50px;
         .cont-icon {
@@ -456,12 +456,13 @@ export default {
           & > p {
             font-size: 18px;
             line-height: 24px;
-            margin: 22px 0 20px;
+            margin: 0 40px;
+            padding: 22px 0 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.16);
           }
           & > div {
             line-height: 22px;
             padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.16);
           }
         }
       }

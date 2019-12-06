@@ -2,19 +2,19 @@
   <div class="company-culture">
     <div class="culture-box">
       <div class="content cul-content">
-        <div class="cul-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="cul-item" data-aos="zoom-in" data-aos-delay="100">
           <div class="keyword">使命</div>
           <div class="keyword-en">MISSION</div>
           <p>科技赋能、产业报国</p>
         </div>
-        <div class="line" data-aos="zoom-in" data-aos-delay="500"></div>
-        <div class="cul-item" data-aos="fade-up" data-aos-delay="300">
+        <div class="line" data-aos="zoom-in" data-aos-delay="700"></div>
+        <div class="cul-item" data-aos="zoom-in" data-aos-delay="300">
           <div class="keyword">愿景</div>
           <div class="keyword-en">ASPIRATION</div>
           <p>绿色智慧城市理念倡行者</p>
         </div>
-        <div class="line" data-aos="zoom-in" data-aos-delay="500"></div>
-        <div class="cul-item" data-aos="fade-up" data-aos-delay="500">
+        <div class="line" data-aos="zoom-in" data-aos-delay="700"></div>
+        <div class="cul-item" data-aos="zoom-in" data-aos-delay="500">
           <div class="keyword">价值观</div>
           <div class="keyword-en">SENSE OF WORTH</div>
           <p>品质、责任、创新、协作</p>

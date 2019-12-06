@@ -79,7 +79,7 @@
             <div data-aos="fade-up" data-aos-delay="500">
               <div class="flex-item item-3">
                 <div class="item-p">
-                  园区规划建设整体性完善度趋强<br />园区管理向
+                  园区规划建设整体性逐步完善<br />园区管理向城市化转变
                 </div>
               </div>
             </div>
@@ -137,7 +137,7 @@
                 <div class="item-icon icon-2"></div>
                 <div class="item-tips">一端操控</div>
                 <div class="item-p">
-                  物联基础设施感知与监控，园区服务与运营通过统一数据接入、统一入口通过园区可视化时空信息平台实现统一操作。
+                  物联基础设施、园区服务、园区运营数据统一接入，通过园区可视化时空信息平台实现一端操控。
                 </div>
               </div>
             </div>

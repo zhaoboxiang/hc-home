@@ -113,7 +113,7 @@ export default {
     background: linear-gradient(to right, #e2f1f9, #eceaf9);
     position: relative;
     .slide-content {
-      background: #0d1030 url("../assets/images/img_index_banner_3_bg.png")
+      background: #0a0b2c url("../assets/images/img_index_banner_3_bg.png")
         center no-repeat;
       background-size: auto 100%;
       /*position: absolute;*/
